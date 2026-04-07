@@ -1,8 +1,8 @@
 // ============================================================
-// Dashboard Layout (mirrors forum-row pattern)
+// Dashboard Layout
 // ============================================================
 .dash-row {
-  --sidebar-w: 240px;
+  --sidebar-w: 250px;
   --gap: 40px;
   display: flex;
   gap: var(--gap);
@@ -21,7 +21,7 @@
     top: 0;
     left: 0;
     transform: translateX(-100%);
-    width: 260px;
+    width: 270px;
     height: 100dvh;
     z-index: 999;
     overflow-y: auto;
@@ -58,24 +58,73 @@
 
 .dash-sidebar__inner {
   background: hsl(var(--section-bg));
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 14px;
+  padding: 20px 14px;
+  border: 1px solid hsl(var(--border-color) / 0.35);
 
   @include md-screen {
     background: transparent;
+    border: none;
     border-radius: 0;
     padding: 0;
   }
 }
 
+// ==================== Profile Snippet ====================
+.dash-profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid hsl(var(--border-color) / 0.25);
+
+  &__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid hsl(var(--border-color) / 0.4);
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__name {
+    font-size: rem(16px);
+    font-weight: 700;
+    color: hsl(var(--heading-color));
+    line-height: 1.2;
+  }
+
+  &__tag {
+    font-size: rem(13px);
+    color: hsl(var(--body-color));
+  }
+}
+
 // ==================== Sidebar Nav ====================
-.dash-nav__list {
-  padding: 0;
-  margin: 0;
+.dash-nav {
   display: flex;
   flex-direction: column;
-  gap: 1px;
-  list-style: none;
+  gap: 4px;
+
+  &__label {
+    font-size: rem(12px);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: hsl(var(--body-color) / 0.5);
+    padding: 0 6px 4px;
+  }
+}
+
+.dash-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .dash-nav__link {
@@ -83,42 +132,23 @@
   align-items: center;
   gap: 10px;
   padding: 8px 10px;
-  border-radius: 9px;
-  color: hsl(var(--white));
+  border-radius: 8px;
+  color: hsl(var(--body-color));
   font-size: rem(14px);
   font-weight: 500;
-  text-decoration: none;
   transition:
     background 0.15s ease,
     color 0.15s ease;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) scaleY(0);
-    width: 2.5px;
-    height: 60%;
-    border-radius: 2px;
-    background: hsl(var(--base));
-    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
 
   &:hover {
-    background: hsl(var(--white) / 0.05);
+    background: hsl(var(--white) / 0.04);
     color: hsl(var(--heading-color));
   }
 }
 
 .dash-nav__item.active > .dash-nav__link {
-  background: hsl(var(--white) / 0.08);
-  color: hsl(var(--heading-color));
-
-  &::before {
-    transform: translateY(-50%) scaleY(1);
-  }
+  background: hsl(var(--base) / 0.1);
+  color: hsl(var(--base));
 
   .dash-nav__icon {
     color: hsl(var(--base));
@@ -129,10 +159,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
-  font-size: rem(18px);
+  font-size: rem(17px);
   color: hsl(var(--body-color));
   transition: color 0.15s ease;
 }
@@ -157,14 +187,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   flex-wrap: wrap;
 
   &__title {
-    font-size: rem(22px);
+    font-size: rem(20px);
     font-weight: 700;
     color: hsl(var(--heading-color));
-    margin: 0 0 4px;
+    margin: 0 0 3px;
   }
 
   &__desc {
@@ -175,44 +205,41 @@
 }
 
 // ==================== Stat Cards ====================
-.dash-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-bottom: 28px;
-
-  @include lg-screen {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @include sm-screen {
-    grid-template-columns: 1fr;
-  }
-}
 
 .dash-stat {
-  display: flex;
-  align-items: center;
-  gap: 14px;
   background: hsl(var(--section-bg));
-  border: 1px solid hsl(var(--border-color) / 0.4);
+  border: 1px solid hsl(var(--border-color) / 0.35);
   border-radius: 12px;
-  padding: 18px 16px;
+  padding: 16px;
   transition: border-color 0.2s;
 
   &:hover {
-    border-color: hsl(var(--border-color));
+    border-color: hsl(var(--border-color) / 0.7);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    font-size: rem(12px);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: hsl(var(--body-color));
+    font-weight: 600;
   }
 
   &__icon {
     width: 40px;
     height: 40px;
-    border-radius: 10px;
-    background: hsl(var(--base) / 0.1);
-    display: flex;
+    border-radius: 8px;
+    background: hsl(var(--base) / 0.08);
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
 
     i {
       font-size: 20px;
@@ -220,32 +247,24 @@
     }
   }
 
-  &__info {
-    flex: 1;
-    min-width: 0;
-  }
-
-  &__label {
-    font-size: rem(11px);
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    color: hsl(var(--body-color));
-    font-weight: 600;
-  }
-
   &__value {
-    font-size: rem(20px);
-    font-weight: 700;
+    font-size: rem(22px);
+    font-weight: 800;
     color: hsl(var(--heading-color));
-    margin: 2px 0 0;
-    line-height: 1.2;
+    margin: 0 0 6px;
+    line-height: 1;
+    letter-spacing: -0.5px;
   }
 
   &__change {
-    font-size: rem(11px);
-    font-weight: 600;
-    color: hsl(var(--body-color));
-    white-space: nowrap;
+    font-size: rem(13px);
+    font-weight: 500;
+    color: hsl(var(--body-color) / 0.6);
+
+    i {
+      font-size: 10px;
+      margin-right: 1px;
+    }
 
     &--up {
       color: hsl(var(--success));
@@ -253,73 +272,70 @@
   }
 }
 
-// ==================== Two-column Grid ====================
-.dash-grid {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 24px;
-  align-items: start;
-
-  @include lg-screen {
-    grid-template-columns: 1fr;
-  }
-
-  &__main,
-  &__aside {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
 // ==================== Card ====================
 .dash-card {
   background: hsl(var(--section-bg));
-  border: 1px solid hsl(var(--border-color) / 0.4);
+  border: 1px solid hsl(var(--border-color) / 0.35);
   border-radius: 12px;
-  padding: 20px;
+  padding: 18px;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: hsl(var(--border-color) / 0.6);
+  }
 
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid hsl(var(--border-color) / 0.2);
   }
 
   &__title {
-    font-size: rem(14px);
+    font-size: rem(18px);
     font-weight: 700;
     color: hsl(var(--heading-color));
     margin: 0;
   }
 
   &__link {
-    font-size: rem(12px);
-    color: hsl(var(--base));
+    font-size: rem(11px);
+    color: hsl(var(--body-color));
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    transition: color 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    i {
+      font-size: 12px;
+      transition: transform 0.15s;
+    }
 
     &:hover {
-      color: hsl(var(--base-l-100));
+      color: hsl(var(--base));
+
+      i {
+        transform: translateX(2px);
+      }
     }
   }
 }
 
 // ==================== Activity ====================
 .dash-activity {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0;
 
   &__item {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid hsl(var(--border-color) / 0.15);
+    padding: 11px 0;
+    border-bottom: 1px solid hsl(var(--border-color) / 0.12);
 
     &:first-child {
       padding-top: 0;
@@ -331,23 +347,34 @@
     }
   }
 
-  &__dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-top: 6px;
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
+    font-size: 18px;
 
-    &--green {
-      background: hsl(var(--success));
+    &--upvote {
+      background: hsl(var(--success) / 0.1);
+      color: hsl(var(--success));
     }
 
-    &--blue {
-      background: hsl(var(--info));
+    &--comment {
+      background: hsl(var(--info) / 0.1);
+      color: hsl(var(--info));
     }
 
-    &--orange {
-      background: hsl(var(--warning));
+    &--rank {
+      background: hsl(var(--warning) / 0.1);
+      color: hsl(var(--warning));
+    }
+
+    &--follow {
+      background: hsl(var(--base) / 0.1);
+      color: hsl(var(--base));
     }
   }
 
@@ -357,7 +384,7 @@
   }
 
   &__text {
-    font-size: rem(13px);
+    font-size: rem(14px);
     color: hsl(var(--body-color));
     margin: 0;
     line-height: 1.5;
@@ -369,8 +396,8 @@
   }
 
   &__time {
-    font-size: rem(11px);
-    color: hsl(var(--body-color) / 0.6);
+    font-size: rem(12px);
+    color: hsl(var(--body-color) / 0.5);
     margin-top: 2px;
     display: block;
   }
@@ -380,110 +407,14 @@
 .dash-products {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .dash-product {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 14px 0;
-  border-bottom: 1px solid hsl(var(--border-color) / 0.15);
-
-  &:first-child {
-    padding-top: 0;
-  }
-
-  &:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-
-  &__logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    object-fit: cover;
-    background: hsl(var(--border-color) / 0.2);
-    flex-shrink: 0;
-  }
-
-  &__info {
-    flex: 1;
-    min-width: 0;
-  }
-
-  &__name {
-    font-size: rem(13px);
-    font-weight: 600;
-    color: hsl(var(--heading-color));
-    margin: 0 0 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  &__desc {
-    font-size: rem(12px);
-    color: hsl(var(--body-color));
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  &__meta {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 4px;
-    flex-shrink: 0;
-  }
-
-  &__votes {
-    font-size: rem(13px);
-    font-weight: 700;
-    color: hsl(var(--heading-color));
-
-    i {
-      color: hsl(var(--base));
-    }
-  }
-
-  &__badge {
-    font-size: rem(10px);
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-
-    &--live {
-      background: hsl(var(--success) / 0.12);
-      color: hsl(var(--success));
-    }
-
-    &--soon {
-      background: hsl(var(--info) / 0.12);
-      color: hsl(var(--info));
-    }
-  }
-}
-
-// ==================== Bookmarks ====================
-.dash-bookmarks {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.dash-bookmark {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid hsl(var(--border-color) / 0.15);
-  text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 1px solid hsl(var(--border-color) / 0.12);
   transition: opacity 0.15s;
 
   &:first-child {
@@ -495,79 +426,76 @@
     padding-bottom: 0;
   }
 
-  &:hover {
-    opacity: 0.8;
+  &__logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: hsl(var(--border-color) / 0.15);
+    flex-shrink: 0;
+    border: 1px solid hsl(var(--border-color) / 0.2);
   }
 
-  &__img {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    object-fit: cover;
-    background: hsl(var(--border-color) / 0.2);
-    flex-shrink: 0;
+  &__info {
+    flex: 1;
+    min-width: 0;
   }
 
   &__name {
-    font-size: rem(13px);
+    font-size: rem(14px);
     font-weight: 600;
     color: hsl(var(--heading-color));
-    margin: 0;
+    margin: 0 0 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  &__votes {
-    font-size: rem(11px);
+  &__desc {
+    font-size: rem(13px);
     color: hsl(var(--body-color));
-
-    i {
-      color: hsl(var(--base));
-      font-size: rem(12px);
-    }
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-}
 
-// ==================== Performance Bars ====================
-.dash-perf {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  &__item {
+  &__meta {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 6px;
+    flex-shrink: 0;
   }
 
-  &__top {
+  &__upvote {
+    --size: 48px;
+    height: var(--size);
+    width: var(--size);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-  }
-
-  &__label {
-    font-size: rem(12px);
+    justify-content: center;
+    gap: 1px;
+    border-radius: 8px;
+    border: 1px solid hsl(var(--border-color) / 0.4);
+    background: transparent;
     color: hsl(var(--body-color));
-    font-weight: 500;
-  }
-
-  &__value {
     font-size: rem(12px);
-    color: hsl(var(--heading-color));
     font-weight: 700;
-  }
+    cursor: pointer;
+    transition: all 0.15s;
+    line-height: 1;
 
-  &__bar {
-    width: 100%;
-    height: 4px;
-    background: hsl(var(--border-color) / 0.25);
-    border-radius: 2px;
-    overflow: hidden;
-  }
+    svg {
+      color: hsl(var(--body-color));
+      line-height: 1;
+      margin-bottom: 2px;
+    }
 
-  &__fill {
-    height: 100%;
-    background: hsl(var(--base));
-    border-radius: 2px;
-    transition: width 0.4s ease;
+    &:hover {
+      border-color: hsl(var(--base) / 0.5);
+      background: hsl(var(--base) / 0.06);
+    }
   }
 }

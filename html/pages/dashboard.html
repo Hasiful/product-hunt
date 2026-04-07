@@ -9,7 +9,20 @@
             <i class="las la-times"></i>
           </button>
           <div class="dash-sidebar__inner">
+            <div class="dash-profile">
+              <img
+                src="assets/images/clients/1.webp"
+                alt="Avatar"
+                class="dash-profile__avatar"
+              />
+              <div class="dash-profile__content">
+                <h6 class="dash-profile__name">Hasiful Islam</h6>
+                <span class="dash-profile__tag">hasif@mail.com</span>
+              </div>
+            </div>
+
             <nav class="dash-nav">
+              <span class="dash-nav__label">Menu</span>
               <ul class="dash-nav__list">
                 <li class="dash-nav__item active">
                   <a href="dashboard.html" class="dash-nav__link">
@@ -51,12 +64,24 @@
                     <span class="dash-nav__text">Discussions</span>
                   </a>
                 </li>
+              </ul>
+
+              <span class="dash-nav__label">Account</span>
+              <ul class="dash-nav__list">
                 <li class="dash-nav__item">
                   <a href="#" class="dash-nav__link">
                     <span class="dash-nav__icon"
                       ><i class="las la-cog"></i
                     ></span>
                     <span class="dash-nav__text">Settings</span>
+                  </a>
+                </li>
+                <li class="dash-nav__item">
+                  <a href="#" class="dash-nav__link">
+                    <span class="dash-nav__icon"
+                      ><i class="las la-sign-out-alt"></i
+                    ></span>
+                    <span class="dash-nav__text">Log out</span>
                   </a>
                 </li>
               </ul>
@@ -69,9 +94,9 @@
           <!-- Welcome -->
           <div class="dash-welcome">
             <div>
-              <h4 class="dash-welcome__title">Welcome back, Hasif</h4>
+              <h4 class="dash-welcome__title">Good morning, Hasif</h4>
               <p class="dash-welcome__desc">
-                Here's what's happening with your products
+                Here's a summary of your launch activity
               </p>
             </div>
             <a href="dashboard-submit.html" class="btn btn--base btn--sm pill">
@@ -79,293 +104,203 @@
             </a>
           </div>
 
-          <!-- Stat Cards -->
-          <div class="dash-stats">
-            <div class="dash-stat">
-              <div class="dash-stat__icon">
-                <i class="las la-cube"></i>
+          <div class="row gy-4 mb-4">
+            <div class="col-lg-4 col-sm-6">
+              <div class="dash-stat">
+                <div class="dash-stat__top">
+                  <span class="dash-stat__label">Products</span>
+                  <span class="dash-stat__icon"
+                    ><i class="las la-cube"></i
+                  ></span>
+                </div>
+                <h3 class="dash-stat__value">12</h3>
+                <span class="dash-stat__change dash-stat__change--up"
+                  ><i class="las la-arrow-up"></i> 2 this month</span
+                >
               </div>
-              <div class="dash-stat__info">
-                <span class="dash-stat__label">Products</span>
-                <h4 class="dash-stat__value">12</h4>
-              </div>
-              <span class="dash-stat__change dash-stat__change--up">+2</span>
             </div>
-
-            <div class="dash-stat">
-              <div class="dash-stat__icon">
-                <i class="las la-caret-up"></i>
+            <div class="col-lg-4 col-sm-6">
+              <div class="dash-stat">
+                <div class="dash-stat__top">
+                  <span class="dash-stat__label">Upvotes</span>
+                  <span class="dash-stat__icon"
+                    ><i class="las la-caret-up"></i
+                  ></span>
+                </div>
+                <h3 class="dash-stat__value">1,234</h3>
+                <span class="dash-stat__change dash-stat__change--up"
+                  ><i class="las la-arrow-up"></i> 45 this week</span
+                >
               </div>
-              <div class="dash-stat__info">
-                <span class="dash-stat__label">Upvotes</span>
-                <h4 class="dash-stat__value">1,234</h4>
-              </div>
-              <span class="dash-stat__change dash-stat__change--up">+45</span>
             </div>
-
-            <div class="dash-stat">
-              <div class="dash-stat__icon">
-                <i class="las la-comment-dots"></i>
+            <div class="col-lg-4 col-sm-6 flex-grow-1">
+              <div class="dash-stat">
+                <div class="dash-stat__top">
+                  <span class="dash-stat__label">Comments</span>
+                  <span class="dash-stat__icon"
+                    ><i class="las la-comment-dots"></i
+                  ></span>
+                </div>
+                <h3 class="dash-stat__value">89</h3>
+                <span class="dash-stat__change">12 new</span>
               </div>
-              <div class="dash-stat__info">
-                <span class="dash-stat__label">Comments</span>
-                <h4 class="dash-stat__value">89</h4>
-              </div>
-              <span class="dash-stat__change">12 new</span>
-            </div>
-
-            <div class="dash-stat">
-              <div class="dash-stat__icon">
-                <i class="las la-eye"></i>
-              </div>
-              <div class="dash-stat__info">
-                <span class="dash-stat__label">Views</span>
-                <h4 class="dash-stat__value">5.2K</h4>
-              </div>
-              <span class="dash-stat__change dash-stat__change--up">+234</span>
             </div>
           </div>
 
-          <!-- Two-column content -->
-          <div class="dash-grid">
-            <!-- Left: Activity + Products -->
-            <div class="dash-grid__main">
-              <!-- Recent Activity -->
-              <div class="dash-card">
-                <div class="dash-card__header">
-                  <h6 class="dash-card__title">Recent Activity</h6>
-                  <a href="#" class="dash-card__link">View all</a>
+          <div class="dash-card mb-4">
+            <div class="dash-card__header">
+              <h6 class="dash-card__title">My Products</h6>
+              <a href="dashboard-products.html" class="dash-card__link"
+                >View all <i class="las la-angle-right"></i
+              ></a>
+            </div>
+            <div class="dash-products">
+              <div class="dash-product">
+                <img
+                  src="assets/images/product/1.png"
+                  alt="Product"
+                  class="dash-product__logo"
+                />
+                <div class="dash-product__info">
+                  <h6 class="dash-product__name">AI Writing Assistant</h6>
+                  <p class="dash-product__desc">
+                    Write better content with AI-powered suggestions
+                  </p>
                 </div>
-                <ul class="dash-activity">
-                  <li class="dash-activity__item">
-                    <span
-                      class="dash-activity__dot dash-activity__dot--green"
-                    ></span>
-                    <div class="dash-activity__body">
-                      <p class="dash-activity__text">
-                        "AI Assistant" received <strong>24 upvotes</strong>
-                      </p>
-                      <span class="dash-activity__time">2h ago</span>
-                    </div>
-                  </li>
-                  <li class="dash-activity__item">
-                    <span
-                      class="dash-activity__dot dash-activity__dot--blue"
-                    ></span>
-                    <div class="dash-activity__body">
-                      <p class="dash-activity__text">
-                        New comment from <strong>Sarah</strong> on "Dashboard UI
-                        Kit"
-                      </p>
-                      <span class="dash-activity__time">4h ago</span>
-                    </div>
-                  </li>
-                  <li class="dash-activity__item">
-                    <span
-                      class="dash-activity__dot dash-activity__dot--orange"
-                    ></span>
-                    <div class="dash-activity__body">
-                      <p class="dash-activity__text">
-                        Your product ranked <strong>#5</strong> in Design Tools
-                      </p>
-                      <span class="dash-activity__time">1d ago</span>
-                    </div>
-                  </li>
-                  <li class="dash-activity__item">
-                    <span
-                      class="dash-activity__dot dash-activity__dot--green"
-                    ></span>
-                    <div class="dash-activity__body">
-                      <p class="dash-activity__text">
-                        New follower: <strong>Jake Miller</strong>
-                      </p>
-                      <span class="dash-activity__time">2d ago</span>
-                    </div>
-                  </li>
-                </ul>
+                <div class="dash-product__meta">
+                  <button class="dash-product__upvote">
+                    <span class="icon">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                      </svg>
+                    </span>
+                    <span>324</span>
+                  </button>
+                </div>
               </div>
 
-              <!-- My Products -->
-              <div class="dash-card">
-                <div class="dash-card__header">
-                  <h6 class="dash-card__title">My Products</h6>
-                  <a href="dashboard-products.html" class="dash-card__link"
-                    >View all</a
-                  >
+              <div class="dash-product">
+                <img
+                  src="assets/images/product/1.png"
+                  alt="Product"
+                  class="dash-product__logo"
+                />
+                <div class="dash-product__info">
+                  <h6 class="dash-product__name">Design System UI</h6>
+                  <p class="dash-product__desc">
+                    Beautiful components for modern apps
+                  </p>
                 </div>
-                <div class="dash-products">
-                  <div class="dash-product">
-                    <img
-                      src="assets/images/product/1.png"
-                      alt="Product"
-                      class="dash-product__logo"
-                    />
-                    <div class="dash-product__info">
-                      <h6 class="dash-product__name">AI Writing Assistant</h6>
-                      <p class="dash-product__desc">
-                        Write better content with AI-powered suggestions
-                      </p>
-                    </div>
-                    <div class="dash-product__meta">
-                      <span class="dash-product__votes"
-                        ><i class="las la-caret-up"></i> 324</span
+                <div class="dash-product__meta">
+                  <button class="dash-product__upvote">
+                    <span class="icon">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                      <span
-                        class="dash-product__badge dash-product__badge--live"
-                        >Live</span
-                      >
-                    </div>
-                  </div>
+                        <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                      </svg>
+                    </span>
+                    <span>156</span>
+                  </button>
+                </div>
+              </div>
 
-                  <div class="dash-product">
-                    <img
-                      src="assets/images/product/1.png"
-                      alt="Product"
-                      class="dash-product__logo"
-                    />
-                    <div class="dash-product__info">
-                      <h6 class="dash-product__name">Design System UI</h6>
-                      <p class="dash-product__desc">
-                        Beautiful components for modern apps
-                      </p>
-                    </div>
-                    <div class="dash-product__meta">
-                      <span class="dash-product__votes"
-                        ><i class="las la-caret-up"></i> 156</span
+              <div class="dash-product">
+                <img
+                  src="assets/images/product/1.png"
+                  alt="Product"
+                  class="dash-product__logo"
+                />
+                <div class="dash-product__info">
+                  <h6 class="dash-product__name">Analytics Dashboard</h6>
+                  <p class="dash-product__desc">
+                    Real-time insights for your business
+                  </p>
+                </div>
+                <div class="dash-product__meta">
+                  <button class="dash-product__upvote">
+                    <span class="icon">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                      <span
-                        class="dash-product__badge dash-product__badge--soon"
-                        >Soon</span
-                      >
-                    </div>
-                  </div>
-
-                  <div class="dash-product">
-                    <img
-                      src="assets/images/product/1.png"
-                      alt="Product"
-                      class="dash-product__logo"
-                    />
-                    <div class="dash-product__info">
-                      <h6 class="dash-product__name">Analytics Dashboard</h6>
-                      <p class="dash-product__desc">
-                        Real-time insights for your business
-                      </p>
-                    </div>
-                    <div class="dash-product__meta">
-                      <span class="dash-product__votes"
-                        ><i class="las la-caret-up"></i> 89</span
-                      >
-                      <span
-                        class="dash-product__badge dash-product__badge--live"
-                        >Live</span
-                      >
-                    </div>
-                  </div>
+                        <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                      </svg>
+                    </span>
+                    <span>89</span>
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Right: Saved + Stats -->
-            <div class="dash-grid__aside">
-              <!-- Saved / Bookmarked -->
-              <div class="dash-card">
-                <div class="dash-card__header">
-                  <h6 class="dash-card__title">Bookmarks</h6>
-                  <a href="#" class="dash-card__link">Browse</a>
-                </div>
-                <div class="dash-bookmarks">
-                  <a href="#" class="dash-bookmark">
-                    <img
-                      src="assets/images/product/1.png"
-                      alt="Saved"
-                      class="dash-bookmark__img"
-                    />
-                    <div>
-                      <h6 class="dash-bookmark__name">Notion AI</h6>
-                      <span class="dash-bookmark__votes"
-                        ><i class="las la-caret-up"></i> 1.2K</span
-                      >
-                    </div>
-                  </a>
-                  <a href="#" class="dash-bookmark">
-                    <img
-                      src="assets/images/product/1.png"
-                      alt="Saved"
-                      class="dash-bookmark__img"
-                    />
-                    <div>
-                      <h6 class="dash-bookmark__name">Linear 2.0</h6>
-                      <span class="dash-bookmark__votes"
-                        ><i class="las la-caret-up"></i> 980</span
-                      >
-                    </div>
-                  </a>
-                  <a href="#" class="dash-bookmark">
-                    <img
-                      src="assets/images/product/1.png"
-                      alt="Saved"
-                      class="dash-bookmark__img"
-                    />
-                    <div>
-                      <h6 class="dash-bookmark__name">Raycast Pro</h6>
-                      <span class="dash-bookmark__votes"
-                        ><i class="las la-caret-up"></i> 756</span
-                      >
-                    </div>
-                  </a>
-                  <a href="#" class="dash-bookmark">
-                    <img
-                      src="assets/images/product/1.png"
-                      alt="Saved"
-                      class="dash-bookmark__img"
-                    />
-                    <div>
-                      <h6 class="dash-bookmark__name">Framer Sites</h6>
-                      <span class="dash-bookmark__votes"
-                        ><i class="las la-caret-up"></i> 543</span
-                      >
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Quick Stats -->
-              <div class="dash-card">
-                <div class="dash-card__header">
-                  <h6 class="dash-card__title">Performance</h6>
-                </div>
-                <div class="dash-perf">
-                  <div class="dash-perf__item">
-                    <div class="dash-perf__top">
-                      <span class="dash-perf__label">Profile views</span>
-                      <span class="dash-perf__value">2.3K</span>
-                    </div>
-                    <div class="dash-perf__bar">
-                      <div class="dash-perf__fill" style="width: 75%"></div>
-                    </div>
-                  </div>
-                  <div class="dash-perf__item">
-                    <div class="dash-perf__top">
-                      <span class="dash-perf__label">Click-through</span>
-                      <span class="dash-perf__value">4.2%</span>
-                    </div>
-                    <div class="dash-perf__bar">
-                      <div class="dash-perf__fill" style="width: 42%"></div>
-                    </div>
-                  </div>
-                  <div class="dash-perf__item">
-                    <div class="dash-perf__top">
-                      <span class="dash-perf__label">Conversion</span>
-                      <span class="dash-perf__value">2.1%</span>
-                    </div>
-                    <div class="dash-perf__bar">
-                      <div class="dash-perf__fill" style="width: 28%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="dash-card">
+            <div class="dash-card__header">
+              <h6 class="dash-card__title">Recent Activity</h6>
+              <a href="#" class="dash-card__link"
+                >View all <i class="las la-angle-right"></i
+              ></a>
             </div>
+            <ul class="dash-activity">
+              <li class="dash-activity__item">
+                <div class="dash-activity__icon dash-activity__icon--upvote">
+                  <i class="las la-caret-up"></i>
+                </div>
+                <div class="dash-activity__body">
+                  <p class="dash-activity__text">
+                    "AI Assistant" received <strong>24 upvotes</strong>
+                  </p>
+                  <span class="dash-activity__time">2 hours ago</span>
+                </div>
+              </li>
+              <li class="dash-activity__item">
+                <div class="dash-activity__icon dash-activity__icon--comment">
+                  <i class="las la-comment"></i>
+                </div>
+                <div class="dash-activity__body">
+                  <p class="dash-activity__text">
+                    New comment from <strong>Sarah</strong> on "Dashboard UI
+                    Kit"
+                  </p>
+                  <span class="dash-activity__time">4 hours ago</span>
+                </div>
+              </li>
+              <li class="dash-activity__item">
+                <div class="dash-activity__icon dash-activity__icon--rank">
+                  <i class="las la-trophy"></i>
+                </div>
+                <div class="dash-activity__body">
+                  <p class="dash-activity__text">
+                    Your product ranked <strong>#5</strong> in Design Tools
+                  </p>
+                  <span class="dash-activity__time">1 day ago</span>
+                </div>
+              </li>
+              <li class="dash-activity__item">
+                <div class="dash-activity__icon dash-activity__icon--follow">
+                  <i class="las la-user-plus"></i>
+                </div>
+                <div class="dash-activity__body">
+                  <p class="dash-activity__text">
+                    New follower: <strong>Jake Miller</strong>
+                  </p>
+                  <span class="dash-activity__time">2 days ago</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
