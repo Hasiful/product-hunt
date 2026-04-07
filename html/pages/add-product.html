@@ -1,0 +1,223 @@
+@@include('../layout/_template-top.html') @@include('../layout/_header.html')
+<main>
+  <section class="my-60">
+    <div class="container">
+      <div class="dash-row">
+        <!-- ===== Sidebar ===== -->
+        <aside class="dash-sidebar">
+          <button class="dash-sidebar-close">
+            <i class="las la-times"></i>
+          </button>
+          <div class="dash-sidebar__inner">
+            <div class="dash-profile">
+              <img
+                src="assets/images/clients/1.webp"
+                alt="Avatar"
+                class="dash-profile__avatar"
+              />
+              <div class="dash-profile__content">
+                <h6 class="dash-profile__name">Hasiful Islam</h6>
+                <span class="dash-profile__tag">hasif@mail.com</span>
+              </div>
+            </div>
+
+            <nav class="dash-nav">
+              <span class="dash-nav__label">Menu</span>
+              <ul class="dash-nav__list">
+                <li class="dash-nav__item">
+                  <a href="dashboard.html" class="dash-nav__link">
+                    <span class="dash-nav__icon"
+                      ><i class="las la-th-large"></i
+                    ></span>
+                    <span class="dash-nav__text">Overview</span>
+                  </a>
+                </li>
+                <li class="dash-nav__item">
+                  <a href="dashboard-products.html" class="dash-nav__link">
+                    <span class="dash-nav__icon"
+                      ><i class="las la-cube"></i
+                    ></span>
+                    <span class="dash-nav__text">My Products</span>
+                  </a>
+                </li>
+                <li class="dash-nav__item active">
+                  <a href="add-product.html" class="dash-nav__link">
+                    <span class="dash-nav__icon"
+                      ><i class="las la-cloud-upload-alt"></i
+                    ></span>
+                    <span class="dash-nav__text">Submit Product</span>
+                  </a>
+                </li>
+                <li class="dash-nav__item">
+                  <a href="#" class="dash-nav__link">
+                    <span class="dash-nav__icon"
+                      ><i class="las la-bookmark"></i
+                    ></span>
+                    <span class="dash-nav__text">Bookmarks</span>
+                  </a>
+                </li>
+                <li class="dash-nav__item">
+                  <a href="#" class="dash-nav__link">
+                    <span class="dash-nav__icon"
+                      ><i class="las la-comments"></i
+                    ></span>
+                    <span class="dash-nav__text">Discussions</span>
+                  </a>
+                </li>
+              </ul>
+
+              <span class="dash-nav__label">Account</span>
+              <ul class="dash-nav__list">
+                <li class="dash-nav__item">
+                  <a href="#" class="dash-nav__link">
+                    <span class="dash-nav__icon"
+                      ><i class="las la-cog"></i
+                    ></span>
+                    <span class="dash-nav__text">Settings</span>
+                  </a>
+                </li>
+                <li class="dash-nav__item">
+                  <a href="#" class="dash-nav__link">
+                    <span class="dash-nav__icon"
+                      ><i class="las la-sign-out-alt"></i
+                    ></span>
+                    <span class="dash-nav__text">Log out</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <!-- ===== Main Body ===== -->
+        <div class="dash-body">
+          <div class="dash-welcome">
+            <h4 class="dash-welcome__title">Submit a Product</h4>
+            <p class="dash-welcome__desc">
+              Share what you've built with the community
+            </p>
+          </div>
+          <form action="#" class="add-product">
+            <div class="dash-card mb-4">
+              <div class="dash-card__header">
+                <h6 class="dash-card__title">Basic Information</h6>
+              </div>
+              <div class="row gy-4">
+                <div class="col-12">
+                  <label class="form--label">Product URL</label>
+                  <div class="input-group style-two">
+                    <span class="input-group-text">https://</span>
+                    <input
+                      type="url"
+                      class="form--control"
+                      placeholder="yourproduct.com"
+                    />
+                  </div>
+                  <span class="add-product__hint"
+                    >The main link where people can find your product</span
+                  >
+                </div>
+
+                <!-- Name -->
+                <div class="col-md-6">
+                  <label class="form--label">Product Name</label>
+                  <input
+                    type="text"
+                    class="form--control"
+                    placeholder="e.g. Notion, Linear, Figma"
+                  />
+                </div>
+
+                <!-- Tagline -->
+                <div class="col-md-6">
+                  <label class="form--label">Tagline</label>
+                  <input
+                    type="text"
+                    class="form--control"
+                    placeholder="A short catchy description"
+                  />
+                  <span class="add-product__hint add-product__hint--right"
+                    ><span class="add-product__char-count">0</span>/80</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="dash-card mb-4">
+              <div class="dash-card__header">
+                <h6 class="dash-card__title">Description</h6>
+              </div>
+
+              <label class="form--label"
+                >Tell the community about your product</label
+              >
+              <div class="editor-wrapper">
+                <div id="editor"></div>
+              </div>
+            </div>
+            <div class="dash-card mb-4">
+              <div class="dash-card__header">
+                <h6 class="dash-card__title">Media</h6>
+              </div>
+
+              <div class="row gy-4">
+                <div class="col-md-4">
+                  <label class="form--label">Product Logo / Thumbnail</label>
+                  <div class="add-product__upload add-product__upload--thumb">
+                    <input type="file" id="thumbUpload" accept="image/*" />
+                    <label for="thumbUpload" class="add-product__upload-area">
+                      <div class="add-product__upload-placeholder">
+                        <i class="las la-cloud-upload-alt"></i>
+                        <span class="add-product__upload-text"
+                          >Upload logo</span
+                        >
+                        <span class="add-product__upload-hint"
+                          >PNG, JPG up to 2MB<br />Recommended 240x240</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="col-md-8">
+                  <label class="form--label">Gallery Images</label>
+                  <div class="add-product__upload add-product__upload--gallery">
+                    <input
+                      type="file"
+                      id="galleryUpload"
+                      accept="image/*"
+                      multiple
+                    />
+                    <label for="galleryUpload" class="add-product__upload-area">
+                      <div class="add-product__upload-placeholder">
+                        <i class="las la-images"></i>
+                        <span class="add-product__upload-text"
+                          >Drag & drop or click to upload</span
+                        >
+                        <span class="add-product__upload-hint"
+                          >Upload up to 5 screenshots or product images<br />Recommended
+                          1270x760</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <!-- Preview Grid (populated via JS) -->
+                  <div class="add-product__gallery-preview"></div>
+                </div>
+              </div>
+            </div>
+            <div class="add-product__actions">
+              <button type="button" class="btn btn--light pill">
+                Save as Draft
+              </button>
+              <button type="submit" class="btn btn--base pill">
+                <i class="las la-rocket"></i> Submit Product
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('../layout/_footer.html') @@include('../layout/_template-bottom.html')
