@@ -1,0 +1,69 @@
+/* ================================= Pagination Css Start =========================== */
+.pagination-wrapper {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid hsl(var(--border-color));
+}
+
+.pagination {
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .page-item {
+    cursor: pointer;
+
+    &.active {
+      .page-link {
+        background-color: hsl(var(--base));
+        color: hsl(var(--black));
+        border-color: hsl(var(--base));
+
+        &:hover {
+          background-color: hsl(var(--base-d-100));
+          color: hsl(var(--black));
+          border-color: hsl(var(--base));
+        }
+      }
+    }
+
+    &.disabled {
+      .page-link {
+        background-color: hsl(var(--section-bg));
+        color: hsl(var(--body-color));
+        border-color: hsl(var(--section-bg));
+      }
+    }
+
+    .page-link {
+      --size: 40px;
+      border: 0;
+      margin: 0 5px;
+      border-radius: 8px;
+      height: var(--size);
+      width: var(--size);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(var(--white) / 0.1);
+      font-weight: 500;
+      padding: 0;
+      color: hsl(var(--white));
+      font-size: rem(14);
+
+      @include lg-screen {
+        --size: 32px;
+      }
+
+      &:hover {
+        background-color: hsl(var(--base));
+        color: hsl(var(--black));
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+/* ================================= Pagination Css End =========================== */

@@ -1,0 +1,343 @@
+.root {
+  margin-block: 32px;
+  --sidebar-w: 350px;
+  --gap: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap);
+
+  @include xl-screen {
+    --gap: 24px;
+  }
+
+  @include lg-screen {
+    --sidebar-w: 280px;
+  }
+
+  @include md-screen {
+    flex-direction: column;
+  }
+
+  &-body {
+    width: calc(100% - (var(--sidebar-w) - var(--gap)));
+
+    @include md-screen {
+      width: 100%;
+    }
+
+    &-wrapper {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &-sidebar {
+    width: var(--sidebar-w);
+
+    @include md-screen {
+      width: 100%;
+    }
+  }
+}
+
+.sidebar-cta {
+  padding: 16px;
+  border: 1px solid hsl(var(--white) / 0.1);
+  border-radius: 12px;
+  background: hsl(var(--white) / 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  &-icon {
+    color: hsl(var(--white));
+  }
+
+  &-content {
+    flex: 1;
+  }
+
+  .title {
+    font-size: 0.9125rem;
+    font-weight: 500;
+    color: hsl(var(--white));
+    margin-bottom: 6px;
+  }
+
+  .desc {
+    font-size: 0.85rem;
+    color: hsl(var(--white) / 0.75);
+    margin-bottom: 8px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: hsl(var(--base));
+    font-size: 0.8125rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.forum-block {
+  margin-top: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &-header {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  &-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(var(--white));
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: hsl(var(--base));
+    font-size: 0.8125rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.forum-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(var(--white) / 0.1);
+  }
+
+  &-auth {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+
+    .thumb {
+      --size: 36px;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      flex: 1;
+
+      .name {
+        font-size: 0.875rem;
+        color: hsl(var(--white));
+        font-weight: 500;
+        display: block;
+        line-height: 1.25;
+      }
+
+      .mail {
+        font-size: 0.8125rem;
+        color: hsl(var(--white) / 0.75);
+      }
+    }
+  }
+
+  &-desc {
+    color: hsl(var(--white));
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+
+    @include lg-screen {
+      font-size: 0.8125rem;
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-item {
+      color: hsl(var(--white));
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8125rem;
+
+      @include lg-screen {
+        font-size: 0.75rem;
+      }
+
+      &:not(:last-child) {
+        padding-right: 12px;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 4px;
+          background-color: hsl(var(--white) / 0.3);
+          border-radius: 50%;
+        }
+      }
+
+      .icon {
+        stroke-width: 1.5px;
+        stroke: hsl(var(--white) / 0.75);
+        color: hsl(var(--white) / 0.75);
+      }
+    }
+  }
+}
+
+// Product Block – Sidebar "Yesterday's Top Products"
+.product-block-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-block-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid hsl(var(--base) / 0.15);
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    filter: blur(25px);
+    mix-blend-mode: plus-lighter;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // Thumbnail
+  &__thumb {
+    --size: 42px;
+    width: var(--size);
+    height: var(--size);
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: hsl(var(--white) / 0.06);
+    border: 1px solid hsl(var(--white) / 0.1);
+    padding: 3px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+  }
+
+  // Content
+  &__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 2px;
+
+    a {
+      color: hsl(var(--white));
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: hsl(var(--base));
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 0.8rem;
+    color: hsl(var(--white) / 0.55);
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  // Link
+  &__link {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid hsl(var(--white) / 0.12);
+    background: hsl(var(--white) / 0.3);
+    transition: all 0.25s ease;
+    color: hsl(var(--white));
+    text-decoration: none;
+    margin-top: 2px;
+
+    .icon {
+      display: flex;
+
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    &:hover {
+      border-color: hsl(var(--base) / 0.5);
+      background: hsl(var(--base) / 0.1);
+      color: hsl(var(--base));
+    }
+  }
+}

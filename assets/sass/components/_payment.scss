@@ -1,0 +1,211 @@
+.payment-system-list {
+    --thumb-width: 80px;
+    --thumb-height: 32px;
+    --radio-size: 20px;
+    border-radius: 5px;
+    height: 100%;
+
+    &.is-scrollable {
+        max-height: min(420px, 70vh);
+        overflow-x: auto;
+        padding-block: 4px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: hsl(var(--base));
+        border-radius: 10px;
+    }
+}
+
+.modal {
+    .table-search {
+        max-width: 100%;
+        background-color: hsl(var(--section-bg));
+        border: 0;
+
+        .icon {
+            background-color: hsl(var(--base) / .1);
+            color: hsl(var(--base));
+        }
+    }
+}
+
+.payment-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid hsl(var(--border-color));
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    &__check {
+        width: var(--radio-size);
+        height: var(--radio-size);
+        border: 1px solid hsl(var(--base));
+        display: inline-block;
+        border-radius: 100%;
+    }
+
+    &__name {
+        padding-left: 10px;
+        width: calc(100% - var(--radio-size));
+        transition: all 0.3s;
+        font-weight: 500;
+        color: hsl(var(--heading-color));
+    }
+
+    &__thumb {
+        flex-shrink: 0;
+        text-align: right;
+        padding-left: 10px;
+        flex-shrink: 0;
+
+        img {
+            max-width: var(--thumb-width);
+            max-height: var(--thumb-height);
+            object-fit: cover;
+        }
+    }
+
+    &__thumb:has(.text) {
+        width: fit-content;
+    }
+
+    &__btn {
+        font-size: 0.875rem;
+        color: hsl(var(--success));
+        font-weight: 600;
+    }
+
+    &__check {
+        border: 1px solid hsl(var(--border-color));
+    }
+
+    &:has(.payment-item__radio:checked) &__check {
+        border: 6px solid hsl(var(--base));
+    }
+}
+
+.dashboard-body:has(.payment-info) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:has(.payment-info) {
+    overflow: hidden;
+    padding: 0;
+
+    .card-header {
+        border-bottom: 1px solid hsl(var(--border-color));
+    }
+
+    .card-header,
+    .card-body {
+        padding: 32px;
+
+        @include msm-screen {
+            padding: 16px;
+        }
+    }
+}
+
+.payment-info-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+    .icon {
+        max-width: 60px;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .content {
+        flex: 1;
+    }
+}
+
+.payment-info {
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: rem(20px);
+        gap: 12px;
+
+        @include xxxl-screen {
+            font-size: rem(16px);
+        }
+
+        @include xsm-screen {
+            font-size: rem(14px);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        .desc {
+            font-weight: 500;
+            color: hsl(var(--heading-color));
+        }
+
+        &.total {
+            padding-top: 12px;
+            border-top: 1px dashed hsl(var(--border-color));
+
+            .desc {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.payment-balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 12px;
+    background: hsl(var(--base) / .05);
+    color: hsl(var(--base));
+
+    .title {
+        font-weight: 500;
+    }
+
+    .amount {
+        font-size: rem(20px);
+        font-weight: 700;
+
+        @include xxxl-screen {
+            font-size: rem(16px);
+        }
+
+        @include xsm-screen {
+            font-size: rem(14px);
+        }
+    }
+}

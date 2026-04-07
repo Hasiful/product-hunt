@@ -1,0 +1,228 @@
+/* ================================= Dashboard Sidebar Css Start =========================== */
+.sidebar-logo {
+  margin-bottom: 32px;
+
+  img {
+    max-width: 184px;
+  }
+}
+
+// Sidebar Menu Start
+
+.sidebar-menu {
+  padding: 24px;
+  height: 100vh;
+  background-color: hsl(var(--white));
+  overflow-y: auto;
+  z-index: 999;
+  transition: 0.2s linear;
+  width: var(--side-w);
+  border-radius: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .dropdown-menu {
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--black) / 0.15);
+  }
+
+  //=========== Sidebar Show hide Css Start =======
+  &.show-sidebar {
+    transform: translateX(0);
+  }
+
+  @include lg-screen {
+    transform: translateX(-100%);
+    z-index: 9992;
+    border-radius: 0;
+  }
+
+  &__close {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: hsl(var(--body-color));
+    font-size: 1.25rem;
+    transition: 0.2s linear;
+    cursor: pointer;
+    z-index: 9;
+
+    &:active {
+      top: 14px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: hsl(var(--white));
+      border-color: hsl(var(--white));
+      color: hsl(var(--base));
+    }
+  }
+
+  /* Menu Title Css */
+  .menu-title {
+    color: hsl(var(--body-color));
+    font-size: rem(14px);
+    font-weight: 500;
+    margin-block: 16px 4px;
+  }
+
+  //=========== Sidebar Show hide Css End =======
+  &-list {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      &.active {
+        > a {
+          background: hsl(var(--base));
+          color: hsl(var(--white));
+        }
+      }
+
+      &.has-dropdown {
+        &.active {
+          > a {
+            color: hsl(var(--base));
+
+            &:after {
+              transform: rotate(90deg);
+              right: 18px;
+              color: hsl(var(--base));
+            }
+          }
+        }
+
+        > a {
+          &:after {
+            position: absolute;
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            right: 16px;
+            top: 14px;
+            transition: 0.1s linear;
+            color: hsl(var(--body-color));
+            @include fs-14;
+          }
+        }
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 14px 24px;
+      width: 100%;
+      color: hsl(var(--heading-color));
+      font-weight: 500;
+      border-radius: 12px;
+      line-height: 1;
+      gap: 12px;
+
+      &.log-out {
+        background-color: hsl(var(--danger) / 0.15);
+        color: hsl(var(--danger));
+
+        &:hover {
+          background-color: hsl(var(--danger));
+          color: hsl(var(--white));
+        }
+      }
+
+      &:hover {
+        background-color: hsl(var(--section-bg));
+        color: hsl(var(--heading-color));
+      }
+
+      &.active {
+        color: hsl(var(--base));
+      }
+
+      .icon {
+        display: flex;
+      }
+    }
+  }
+}
+
+// Sidebar Menu End
+
+// Sidebar Submenu Start
+.sidebar-submenu {
+  display: none;
+
+  &.open-submenu {
+    display: block;
+  }
+
+  &-list {
+    padding: 5px 0;
+
+    &__item {
+      margin-bottom: 6px;
+
+      &.active {
+        > a {
+          color: hsl(var(--base));
+          background-color: hsl(var(--base) / 0.06);
+        }
+      }
+    }
+
+    &__link {
+      padding: 12px 15px;
+      display: block;
+      color: hsl(var(--heading-color));
+      font-weight: 500;
+      @include fs-15;
+      margin-left: 20px;
+      border-radius: 5px;
+      position: relative;
+      padding-left: 25px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border: 1px solid hsl(var(--black) / 0.4);
+        border-radius: 50%;
+      }
+
+      &:hover {
+        background-color: hsl(var(--base) / 0.04);
+      }
+
+      .icon {
+        margin-right: 8px;
+        @include fs-15;
+        text-align: center;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+// Sidebar Submenu End
+
+/* ================================= Dashboard Sidebar Css End =========================== */

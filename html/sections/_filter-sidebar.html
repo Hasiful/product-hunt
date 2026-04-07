@@ -1,0 +1,174 @@
+<div class="filter-sidebar">
+    <button class="filter-sidebar-close-btn">
+        <i class="las la-times"></i>
+    </button>
+
+    <!-- Search -->
+    <div class="filter-sidebar-block">
+        <h6 class="filter-sidebar-title">Search Cars</h6>
+        <form action="#" class="filter-form">
+            <input type="text" class="filter-form-input" placeholder="Search by brand, model...">
+            <button type="submit" class="filter-form-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
+                    stroke="currentColor">
+                    <path d="M17 17L21 21" />
+                    <path
+                        d="M19 11C19 6.58 15.41 3 11 3C6.58 3 3 6.58 3 11C3 15.41 6.58 19 11 19C15.41 19 19 15.41 19 11Z" />
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <!-- Price -->
+    <div class="filter-sidebar-block">
+        <h6 class="filter-sidebar-title">Filter By Price</h6>
+
+        <div class="price-range">
+            <input type="number" class="form--control" min="0" name="min_price" value="0" disabled>
+            <span class="price-range-separator"><span class="line"></span></span>
+            <input type="number" class="form--control" min="0" name="max_price" value="5000000" disabled>
+        </div>
+
+        <div id="slider-range" class="custom--slider"></div>
+    </div>
+
+    <!-- Car Type -->
+    <div class="filter-sidebar-block">
+        <h6 class="filter-sidebar-title">Car Type</h6>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="sedan" class="form-check-input">
+                <label for="sedan" class="form-check-label">Sedan</label>
+            </div>
+        </div>
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="suv" class="form-check-input">
+                <label for="suv" class="form-check-label">SUV</label>
+            </div>
+        </div>
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="hatchback" class="form-check-input">
+                <label for="hatchback" class="form-check-label">Hatchback</label>
+            </div>
+        </div>
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="pickup" class="form-check-input">
+                <label for="pickup" class="form-check-label">Pickup</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Condition -->
+    <div class="filter-sidebar-block">
+        <h6 class="filter-sidebar-title">Condition</h6>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="new" class="form-check-input">
+                <label for="new" class="form-check-label">New</label>
+            </div>
+        </div>
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="used" class="form-check-input">
+                <label for="used" class="form-check-label">Used</label>
+            </div>
+        </div>
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="recondition" class="form-check-input">
+                <label for="recondition" class="form-check-label">Recondition</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fuel Type -->
+    <div class="filter-sidebar-block">
+        <h6 class="filter-sidebar-title">Fuel Type</h6>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="petrol" class="form-check-input">
+                <label for="petrol" class="form-check-label">Petrol</label>
+            </div>
+        </div>
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="diesel" class="form-check-input">
+                <label for="diesel" class="form-check-label">Diesel</label>
+            </div>
+        </div>
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="hybrid" class="form-check-input">
+                <label for="hybrid" class="form-check-label">Hybrid</label>
+            </div>
+        </div>
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="electric" class="form-check-input">
+                <label for="electric" class="form-check-label">Electric</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location -->
+    <div class="filter-sidebar-block">
+        <h6 class="filter-sidebar-title">Location</h6>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="usa" class="form-check-input">
+                <label for="usa" class="form-check-label">United States</label>
+            </div>
+        </div>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="uk" class="form-check-input">
+                <label for="uk" class="form-check-label">United Kingdom</label>
+            </div>
+        </div>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="germany" class="form-check-input">
+                <label for="germany" class="form-check-label">Germany</label>
+            </div>
+        </div>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="japan" class="form-check-input">
+                <label for="japan" class="form-check-label">Japan</label>
+            </div>
+        </div>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="uae" class="form-check-input">
+                <label for="uae" class="form-check-label">UAE</label>
+            </div>
+        </div>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="canada" class="form-check-input">
+                <label for="canada" class="form-check-label">Canada</label>
+            </div>
+        </div>
+
+        <div class="filter-sidebar-item">
+            <div class="form--check">
+                <input type="checkbox" id="australia" class="form-check-input">
+                <label for="australia" class="form-check-label">Australia</label>
+            </div>
+        </div>
+
+    </div>
+
+</div>

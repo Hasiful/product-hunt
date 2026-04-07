@@ -1,0 +1,15 @@
+.top-product-section {
+  position: relative;
+  z-index: 1;
+}
+
+.top-product-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-thumb {
+  border-radius: 12px;
+  overflow: hidden;
+}

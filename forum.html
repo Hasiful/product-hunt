@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Car Dealer</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Fontasosome -->
+    <link rel="stylesheet" href="assets/css/fontasosome.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <!-- Quill -->
+    <link rel="stylesheet" href="assets/css/quill.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+    <!--==================== Overlay Start ====================-->
+    <div class="body-overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="sidebar-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <a class="scroll-top"><i class="fas fa-angle-up"></i></a>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+  </body>
+</html>
+ <!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="assets/images/logo/logo-white.png" alt="img" />
+      </a>
+
+      <button
+        class="navbar-toggler header-button"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span id="hiddenNav"><i class="las la-bars"></i></span>
+      </button>
+
+      <div
+        class="offcanvas border-0 offcanvas-end"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+      >
+        <div class="offcanvas-header">
+          <a class="logo navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo-white.png" alt="img" />
+          </a>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav nav-menu align-items-xl-center ms-xl-4 w-100">
+            <li class="nav-item d-xl-none">
+              <div class="dropdown lang-box">
+                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+                    ></path>
+                  </svg>
+                  <span class="text">English</span>
+                  <span class="icon">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li class="lang-box-item" data-code="en">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/us.png" alt="usa" />
+                      </div>
+                      <span class="text">English</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item selected" data-code="hn">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/bd.png" alt="bd" />
+                      </div>
+                      <span class="text">Bangla</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sp.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Spanish</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sa.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Arabic</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/pak.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Urdu</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/fr.png" alt="Spanish" />
+                      </div>
+                      <span class="text">French</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Best Products
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">
+                    Products
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Launches
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">Car</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html"> News </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html"> Forums </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item d-xl-none d-block">
+              <a href="login.html" class="btn w-100 btn--sm btn--base">
+                <span class="icon">
+                  <i class="fa-regular fa-circle-user"></i>
+                </span>
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-right d-none d-xl-flex">
+        <div class="dropdown lang-box">
+          <button class="lang-box-btn" data-bs-toggle="dropdown">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+              ></path>
+            </svg>
+            <span class="text">English</span>
+            <span class="icon">
+              <i class="fas fa-angle-down"></i>
+            </span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="lang-box-item" data-code="en">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/us.png" alt="usa" />
+                </div>
+                <span class="text">English</span>
+              </a>
+            </li>
+            <li class="lang-box-item selected" data-code="hn">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/bd.png" alt="bd" />
+                </div>
+                <span class="text">Bangla</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sp.png" alt="Spanish" />
+                </div>
+                <span class="text">Spanish</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sa.png" alt="Spanish" />
+                </div>
+                <span class="text">Arabic</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/pak.png" alt="Spanish" />
+                </div>
+                <span class="text">Urdu</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/fr.png" alt="Spanish" />
+                </div>
+                <span class="text">French</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="login.html" class="btn btn--base pill">
+          <span class="icon">
+            <i class="fa-regular fa-circle-user"></i>
+          </span>
+          Login
+        </a>
+        <a href="login.html" class="btn btn--light pill">
+          <span class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </span>
+          Subscribe
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+<main>
+  <section class="my-60">
+    <div class="container">
+      <div class="forum-row">
+        <!-- ===== Sidebar ===== -->
+        <aside class="forum-sidebar">
+          <button class="forum-sidebar-close">
+            <i class="las la-times"></i>
+          </button>
+          <div class="forum-sidebar__inner">
+            <!-- Primary Nav -->
+            <nav class="forum-nav">
+              <form action="" class="forum-nav-search">
+                <input
+                  type="text"
+                  class="form--control"
+                  placeholder="Search here.."
+                />
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    color="currentColor"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M17 17L21 21" />
+                    <path
+                      d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                    />
+                  </svg>
+                </button>
+              </form>
+
+              <ul class="forum-nav__list">
+                <li class="forum-nav__item active">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-home"></i
+                    ></span>
+                    <span class="forum-nav__text">Home</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-comment-dots"></i
+                    ></span>
+                    <span class="forum-nav__text">Recent comments</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon">
+                      <i class="fa-brands fa-threads"></i>
+                    </span>
+                    <span class="forum-nav__text">Start new thread</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Topic Forums -->
+            <div class="forum-group">
+              <span class="forum-group__label">Topic Forums</span>
+              <ul class="forum-nav__list">
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-globe"></i
+                    ></span>
+                    <span class="forum-nav__text">p/general</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-code"></i
+                    ></span>
+                    <span class="forum-nav__text">p/vibecoding</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-question-circle"></i
+                    ></span>
+                    <span class="forum-nav__text">p/ama</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-hand-paper"></i
+                    ></span>
+                    <span class="forum-nav__text">p/introduce-yourself</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-headphones"></i
+                    ></span>
+                    <span class="forum-nav__text">p/self-promotion</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Product Forums -->
+            <div class="forum-group">
+              <span class="forum-group__label">Product Forums</span>
+              <ul class="forum-nav__list">
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/1.png" alt="Peakflow" />
+                    </span>
+                    <span class="forum-nav__text">p/peakflow</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/2.png" alt="Streamline" />
+                    </span>
+                    <span class="forum-nav__text">p/streamline</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/3.png" alt="Focusly" />
+                    </span>
+                    <span class="forum-nav__text">p/focusly</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/4.png" alt="Savestack" />
+                    </span>
+                    <span class="forum-nav__text">p/savestack</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/5.png" alt="Spark AI" />
+                    </span>
+                    <span class="forum-nav__text">p/spark-ai</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img
+                        src="assets/images/product/6.png"
+                        alt="Aurorascape"
+                      />
+                    </span>
+                    <span class="forum-nav__text">p/aurorascape</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/7.png" alt="Castwave" />
+                    </span>
+                    <span class="forum-nav__text">p/castwave</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/8.png" alt="Framecraft" />
+                    </span>
+                    <span class="forum-nav__text">p/framecraft</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/9.png" alt="Blazetrend" />
+                    </span>
+                    <span class="forum-nav__text">p/blazetrend</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/10.png" alt="Kodaflare" />
+                    </span>
+                    <span class="forum-nav__text">p/kodaflare</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <!-- ===== Forum Body ===== -->
+        <div class="forum-body">
+          <button type="button" class="forum-body-collapse">
+            Forums
+            <span class="icon">
+              <i class="las la-bars"></i>
+            </span>
+          </button>
+
+          <div class="forum-banner">
+            <div class="forum-banner__left">
+              <div class="forum-banner__icon">
+                <img src="assets/images/logo/favicon.png" alt="Community" />
+              </div>
+              <div class="forum-banner__info">
+                <h2 class="forum-banner__title">Connect with the community</h2>
+                <p class="forum-banner__sub">
+                  Start a thread, join a discussion, stay in the loop.
+                </p>
+              </div>
+            </div>
+            <div class="forum-banner__right">
+              <a href="#" class="forum-banner__btn">
+                <i class="fa-brands fa-threads"></i>
+                <span>Start new thread</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="forum-threads">
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <img
+                      src="assets/images/clients/1.webp"
+                      alt="Aaron"
+                      class="thread-author__avatar"
+                    />
+                    <span>Aaron O'Leary</span>
+                  </span>
+                  <span class="thread-badge thread-badge--pinned">
+                    Pinned
+                  </span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">5d ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    9 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#">Pitch your product. Win $1M+</a>
+                </h3>
+                <p class="thread-card__preview">
+                  We re teaming up with The Pitch by @Deel, a global startup
+                  competition where up to 100 winners will receive $50k in
+                  funding and up to 10 winners will receive $1M+. If you make
+                  the cut, you ll also show up on special Product Hunt
+                  leaderboards, starting with the first event on April 13. We re
+                  teaming up with The Pitch by @Deel, a global startup
+                  competition where up to 100 winners will receive $50k in
+                  funding and up to 10 winners will receive $1M+. If you make
+                  the cut, you ll also show up on special Product Hunt
+                  leaderboards, starting with the first event on April 13.
+                </p>
+              </div>
+
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">48</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">1,204</span>
+                </button>
+              </div>
+            </article>
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <img
+                      src="assets/images/clients/2.webp"
+                      alt="Nika"
+                      class="thread-author__avatar"
+                    />
+                    <span>Nika Vorobieva</span>
+                  </span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">27d ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    6 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#"
+                    >How do you decide what features should be free and what
+                    should be paid?</a
+                  >
+                </h3>
+                <p class="thread-card__preview">
+                  Let me start from the creator's perspective. I personally
+                  don't have a product apart from hiring people for creative
+                  work or offering consultations. But as a creator, I constantly
+                  share content and insights that helps me build trust with real
+                  users.
+                </p>
+              </div>
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">343</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">442</span>
+                </button>
+              </div>
+            </article>
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <span class="thread-author__avatar">J</span>
+                    <span>Jake Mercer</span>
+                  </span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">2d ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    3 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#"
+                    >Built a full-stack app in 2 hours with AI — complete
+                    breakdown inside</a
+                  >
+                </h3>
+                <p class="thread-card__preview">
+                  Started at 9pm, had a working MVP deployed by 11. Here's every
+                  prompt I used, every mistake I made, and what I'd do
+                  completely differently next time. Spoiler: the database schema
+                  was the hardest part.
+                </p>
+              </div>
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">203</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">1.4k</span>
+                </button>
+              </div>
+            </article>
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <span class="thread-author__avatar">S</span>
+                    <span>Sarah Kim</span>
+                  </span>
+                  <span class="thread-badge thread-badge--live">Live</span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">1d ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    12 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#"
+                    >AMA: I grew a SaaS to $50k MRR in 18 months — ask me
+                    anything</a
+                  >
+                </h3>
+                <p class="thread-card__preview">
+                  I'll be answering questions live for the next 3 hours. Nothing
+                  is off limits — pricing, churn, hiring, co-founder dynamics,
+                  and failed launches. Let's get into the weeds on what actually
+                  worked.
+                </p>
+              </div>
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">214</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">1.2k</span>
+                </button>
+              </div>
+            </article>
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <span class="thread-author__avatar">M</span>
+                    <span>Marcus Webb</span>
+                  </span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">3d ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    5 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#"
+                    >Just launched Peakflow on PH – 2k upvotes in 6 hours,
+                    here's the playbook</a
+                  >
+                </h3>
+                <p class="thread-card__preview">
+                  After 6 months of building, we went live and the response
+                  exceeded every expectation. Real-time infrastructure
+                  monitoring finally has a beautiful UI. Sharing the exact
+                  launch strategy we used.
+                </p>
+              </div>
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">88</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">247</span>
+                </button>
+              </div>
+            </article>
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <img
+                      src="assets/images/clients/1.webp"
+                      alt="David"
+                      class="thread-author__avatar"
+                    />
+                    <span>David Park</span>
+                  </span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">4d ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    2 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#"
+                    >Cold email vs LinkedIn DM — which actually converts for B2B
+                    in 2025?</a
+                  >
+                </h3>
+                <p class="thread-card__preview">
+                  I've been running A/B tests for 60 days straight, 3,200
+                  outbound messages across both channels. The winner might
+                  surprise you — and the margin was much larger than I expected
+                  going in.
+                </p>
+              </div>
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">89</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">447</span>
+                </button>
+              </div>
+            </article>
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <span class="thread-author__avatar">Z</span>
+                    <span>Zara Williams</span>
+                  </span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">2d ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    6 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#"
+                    >I sold my SaaS for 7 figures at 26 — the full story,
+                    including the ugly parts</a
+                  >
+                </h3>
+                <p class="thread-card__preview">
+                  Built it in college, grew it to $180k ARR, got acquired 18
+                  months later. Happy to talk about the whole journey —
+                  including the burnout, the failed pivot, and the offer I
+                  almost turned down.
+                </p>
+              </div>
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">312</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">2.1k</span>
+                </button>
+              </div>
+            </article>
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <span class="thread-author__avatar">S</span>
+                    <span>Sophie Laurent</span>
+                  </span>
+                  <span class="thread-badge thread-badge--pinned">Pinned</span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">8h ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    11 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#"
+                    >Streamline v2.4 — real-time collaborative editing is
+                    finally live for all plans</a
+                  >
+                </h3>
+                <p class="thread-card__preview">
+                  Our most requested feature by a wide margin. After 3 months
+                  rebuilding our sync layer from scratch using CRDTs, multi-user
+                  editing is now available on all plans — including the free
+                  tier.
+                </p>
+              </div>
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">67</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">284</span>
+                </button>
+              </div>
+            </article>
+            <article class="thread-card">
+              <div class="thread-card__body">
+                <div class="thread-card__meta">
+                  <span class="thread-author">
+                    <img
+                      src="assets/images/clients/2.webp"
+                      alt="Emily"
+                      class="thread-author__avatar"
+                    />
+                    <span>Emily Chen</span>
+                  </span>
+                  <span class="thread-meta-sep">·</span>
+                  <span class="thread-time">12h ago</span>
+                  <span class="thread-online">
+                    <span class="thread-online__dot"></span>
+                    3 online
+                  </span>
+                </div>
+                <h3 class="thread-card__title">
+                  <a href="#"
+                    >Hi! I'm a solo dev who just quit her job to build
+                    full-time</a
+                  >
+                </h3>
+                <p class="thread-card__preview">
+                  After 4 years at a Fortune 500, I finally took the leap.
+                  Working on a visual workflow builder called Framecraft.
+                  Terrified and thrilled in equal measure — and already shipped
+                  my first paying customer.
+                </p>
+              </div>
+              <div class="thread-card__action">
+                <a href="#" class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 1H2C1.45 1 1 1.45 1 2V11C1 11.55 1.45 12 2 12H4V15L8 12H14C14.55 12 15 11.55 15 11V2C15 1.45 14.55 1 14 1Z"
+                        stroke="currentColor"
+                        stroke-width="1.2"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="count">94</span>
+                </a>
+                <button class="action-btn">
+                  <span class="icon">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M7 1L1 11H13L7 1Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                  <span class="count">521</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="pagination-wrapper">
+    <nav class="d-flex justify-items-center justify-content-between justify-content-end">
+        <div class="d-flex justify-content-between flex-fill d-sm-none">
+            <ul class="pagination">
+                <li class="page-item disabled" aria-disabled="true">
+                    <span class="page-link">‹</span>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="" rel="next">›</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between">
+            <div>
+                <p class="small text-muted">
+                    Showing
+                    <span class="fw-semibold">1</span>
+                    to
+                    <span class="fw-semibold">20</span>
+                    of
+                    <span class="fw-semibold">85</span>
+                    results
+                </p>
+            </div>
+
+            <div>
+                <ul class="pagination">
+                    <li class="page-item disabled" aria-disabled="true" aria-label="‹">
+                        <span class="page-link" aria-hidden="true">‹</span>
+                    </li>
+
+                    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                    <li class="page-item"><a class="page-link" href="">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="">3</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="">4</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="" rel="next" aria-label="›">›</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <!-- ===== Newsletter Strip ===== -->
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="footer-newsletter__inner">
+        <div class="footer-newsletter__text">
+          <h4 class="footer-newsletter__title">Stay in the loop</h4>
+          <p class="footer-newsletter__desc">
+            Get weekly product launches, maker stories & platform updates.
+          </p>
+        </div>
+        <form class="footer-newsletter__form" novalidate>
+          <div class="footer-newsletter__field">
+            <i class="fa-regular fa-envelope footer-newsletter__icon"></i>
+            <input
+              type="email"
+              class="footer-newsletter__input"
+              placeholder="your@email.com"
+            />
+          </div>
+          <button type="submit" class="footer-newsletter__btn">
+            Subscribe
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Main Footer Body ===== -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-brand">
+            <a class="footer-brand__logo" href="index.html">
+              <img src="assets/images/logo/logo-white.png" alt="ProductLab" />
+            </a>
+            <p class="footer-brand__desc">
+              A product discovery platform for makers, builders, and early
+              adopters. Launch, explore, and grow — together.
+            </p>
+            <ul class="footer-socials">
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Platform</h3>
+            <ul class="footer-nav__list">
+              <li><a href="index.html" class="footer-nav__link">Home</a></li>
+              <li><a href="#" class="footer-nav__link">Products</a></li>
+              <li><a href="#" class="footer-nav__link">Launches</a></li>
+              <li><a href="forum.html" class="footer-nav__link">Forums</a></li>
+              <li>
+                <a href="contact.html" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Resources</h3>
+            <ul class="footer-nav__list">
+              <li><a href="blog.html" class="footer-nav__link">Blog</a></li>
+              <li><a href="#" class="footer-nav__link">Documentation</a></li>
+              <li><a href="#" class="footer-nav__link">FAQs</a></li>
+              <li><a href="#" class="footer-nav__link">Changelog</a></li>
+              <li><a href="#" class="footer-nav__link">Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Get in Touch</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="footer-contact-list__text"
+                  >Innovation Hub, Tech City, USA</span
+                >
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <a
+                  href="mailto:hello@productlab.com"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  hello@productlab.com
+                </a>
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <a
+                  href="tel:+1800123456"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  +1 800 123 456
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Bottom Bar ===== -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <p class="footer-bottom__copy">
+          &copy; 2026 <a href="index.html">ProductLab</a>. All rights reserved.
+        </p>
+        <nav class="footer-bottom__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+ <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- select2 -->
+<script src="assets/js/select2.min.js"></script>
+<!-- range slider -->
+<script src="assets/js/jquery-ui.min.js"></script>
+<!-- wow -->
+<script src="assets/js/wow.min.js"></script>
+<!-- popup -->
+<script src="assets/js/popup.js"></script>
+<!-- Quill -->
+<script src="assets/js/quill.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

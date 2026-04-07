@@ -1,0 +1,174 @@
+/* ================================ Testimonials Section Css Start ============================= */
+.testimonials {
+  --inner-m: 12px;
+  --inner-top: 120px;
+  --radius: 20px;
+  position: relative;
+  z-index: 1;
+  overflow-x: clip;
+  margin-inline: var(--inner-m);
+  margin-top: calc(var(--inner-top) * 2);
+  border-radius: var(--radius);
+
+
+  .testimonial-content {
+    @include sm-screen {
+      text-align: center;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: hsl(var(--black) / .1);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+    border-radius: var(--radius);
+  }
+
+  @include md-screen {
+    --inner-top: 80px;
+  }
+
+  @include sm-screen {
+    padding-block: var(--inner-top);
+  }
+
+  @include xsm-screen {
+    --inner-top: 60px;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+}
+
+.testimonial-slider {
+  max-width: 400px;
+  margin-left: auto !important;
+  width: 100%;
+  position: relative;
+  transform: translateY(calc(-1 * var(--inner-top)));
+  background: hsl(var(--white));
+  border-radius: var(--radius);
+
+  @include xl-screen {
+    max-width: 360px;
+  }
+
+  @include md-screen {
+    --inner-p: 20px;
+  }
+
+  @include sm-screen {
+    transform: unset;
+    margin-inline: auto !important;
+    max-width: 100%;
+    background-color: transparent;
+  }
+}
+
+.testimonial-card {
+  --inner-p: 16px;
+  border-radius: var(--radius);
+  position: relative;
+  padding: var(--inner-p);
+  padding-top: 0;
+  background: hsl(var(--white));
+  --circle-size: 32px;
+
+  @include sm-screen {
+    padding: var(--inner-p);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: calc(var(--inner-top) - 24px);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background: transparent;
+    border-top-left-radius: var(--radius);
+    box-shadow: -12px -12px 0 0 hsl(var(--white));
+    transform: rotate(90deg);
+
+    @include sm-screen {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -42px;
+    top: calc(var(--inner-top) - 24px);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background: transparent;
+    border-top-left-radius: var(--radius);
+    box-shadow: -12px -12px 0 0 hsl(var(--white));
+
+    @include sm-screen {
+      display: none;
+    }
+  }
+
+  &__thumb {
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  &__text {
+    color: hsl(var(--black));
+    font-size: rem(17px);
+    line-height: 1.6;
+    font-weight: 500;
+    margin-block: 16px;
+
+    @include sm-screen {
+      font-size: rem(16px);
+    }
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .content {
+      flex: 1;
+
+      .name {
+        color: hsl(var(--black));
+        font-size: rem(16px);
+        font-weight: 600;
+      }
+
+      .role {
+        color: hsl(var(--black) / .5);
+        font-size: rem(14px);
+      }
+    }
+  }
+}
+
+.testimonial-info {
+  padding: 16px 32px;
+  background: #ffffff1a;
+  display: inline-block;
+  border-radius: 16px;
+  border: 1px solid hsl(var(--white) / .4);
+  backdrop-filter: blur(100px);
+
+  &-count {
+    color: hsl(var(--white));
+  }
+
+  &-title {
+    color: hsl(var(--white));
+  }
+}
+
+/* ================================ Testimonials Section Css End ============================= */

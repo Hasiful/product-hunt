@@ -1,0 +1,172 @@
+/* ================================= Modal Css Start =========================== */
+.custom--modal {
+  .select2 + .select2-container {
+    background: hsl(var(--section-bg));
+    border: 0;
+  }
+
+  .modal-header {
+    border-bottom: 1px solid hsl(var(--border-color) / 0.5);
+    padding: 16px;
+
+    .btn-close {
+      background-image: none;
+      font-size: 1.5rem;
+      transition: all linear 0.3s;
+      color: hsl(var(--text-color)) !important;
+      padding: 0;
+      background-color: transparent;
+      height: 36px;
+      width: 36px;
+      display: grid;
+      place-content: center;
+      border-radius: 50%;
+      border: 1px solid hsl(var(--text-color));
+
+      i {
+        display: flex;
+      }
+
+      &:hover {
+        color: hsl(var(--dark)) !important;
+        border-color: hsl(var(--dark));
+      }
+
+      &:focus,
+      &:active {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .input-group {
+    background-color: hsl(var(--section-bg)) !important;
+
+    .form--control {
+      background-color: transparent !important;
+    }
+  }
+
+  .modal-content {
+    background-color: hsl(var(--section-bg));
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0;
+  }
+
+  .modal-body {
+    padding: 16px;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-top: 1px solid hsl(var(--border-color) / 0.5);
+    justify-content: flex-end;
+  }
+}
+
+.modal .modal-dialog {
+  transition: transform 0.3s ease-out !important;
+  transform: scale(0.9) !important;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1) !important;
+}
+
+.modal-dialog-scrollable .modal-content {
+  min-height: 500px;
+}
+
+.qr-modal {
+  .modal-dialog {
+    max-width: 540px;
+  }
+
+  &-thumb {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: hsl(var(--section-bg));
+    border-radius: 20px;
+
+    @include sm-screen {
+      max-width: 300px;
+    }
+
+    @include msm-screen {
+      max-width: 280px;
+    }
+
+    @include xsm-screen {
+      max-width: 220px;
+    }
+  }
+
+  &-note {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  &-form {
+    .title {
+      color: hsl(var(--body-color));
+      margin-bottom: 8px;
+    }
+
+    .number {
+      display: flex;
+      gap: 5px;
+    }
+
+    span {
+      text-align: center;
+      width: 100%;
+      border: 1px solid hsl(var(--border-color));
+      height: 50px;
+      border-radius: 4px;
+      display: grid;
+      place-content: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: hsl(var(--dark));
+
+      @include msm-screen {
+        height: 36px;
+        font-size: 1.125rem;
+      }
+
+      @include xsm-screen {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .modal-footer {
+    flex-wrap: wrap;
+
+    .btn {
+      background-color: hsl(var(--base) / 0.05) !important;
+      flex: 1;
+      padding-inline: 16px;
+
+      @include msm-screen {
+        width: 100%;
+        flex: unset;
+      }
+
+      &:hover {
+        background-color: hsl(var(--base)) !important;
+      }
+    }
+  }
+}
+
+/* ================================= Modal Css End =========================== */

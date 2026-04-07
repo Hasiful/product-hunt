@@ -1,0 +1,128 @@
+/* ====================== Section Heading ==================== */
+.section-heading {
+  --outer-m: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--outer-m);
+
+  &-content {
+    max-width: max-content;
+    width: 100%;
+  }
+
+  &-title {
+    font-size: 1.125rem;
+    line-height: 1.15;
+  }
+
+  &-subheading {
+    color: hsl(var(--body-color));
+    font-weight: 400;
+  }
+
+  &-desc {
+    max-width: 536px;
+    width: 100%;
+    font-size: var(--desc-fs);
+    color: hsl(var(--black));
+    margin-top: 12px;
+  }
+
+  &-subtitle {
+    --extra-x-fs: 180px;
+    font-size: var(--extra-x-fs);
+    font-weight: 900;
+    line-height: 87%;
+    background: linear-gradient(
+      180deg,
+      hsl(var(--white)) -331.4%,
+      transparent 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include xl-screen {
+      --extra-x-fs: 140px;
+    }
+
+    @include lg-screen {
+      --extra-x-fs: 110px;
+    }
+
+    @include md-screen {
+      --extra-x-fs: 80px;
+    }
+
+    @include sm-screen {
+      --extra-x-fs: 70px;
+    }
+
+    @include msm-screen {
+      --extra-x-fs: 64px;
+    }
+
+    @include xsm-screen {
+      --extra-x-fs: 48px;
+    }
+  }
+
+  &-text {
+    font-weight: 400;
+    max-width: 680px;
+    width: 100%;
+
+    .highlight {
+      color: hsl(var(--body-color));
+      display: inline;
+    }
+  }
+
+  &.style-center {
+    justify-content: center;
+    text-align: center;
+
+    .section-heading {
+      &-name {
+        justify-content: center;
+      }
+    }
+  }
+
+  &.style-white {
+    .section-heading {
+      &-title {
+        color: hsl(var(--white));
+
+        .highlight {
+          color: hsl(var(--white) / 0.75);
+        }
+      }
+
+      &-desc {
+        color: hsl(var(--white));
+      }
+    }
+  }
+
+  &[space-bottom="true"] {
+    margin-bottom: -30px;
+
+    @include lg-screen {
+      margin-bottom: -10px;
+    }
+
+    @include xsm-screen {
+      margin-bottom: -6px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-fluid {
+    padding-inline: 80px;
+  }
+}
+
+/* ====================== Section Heading End ==================== */

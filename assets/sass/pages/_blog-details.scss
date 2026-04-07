@@ -1,0 +1,97 @@
+/* =========================================== Blog Details Css Start ==============================*/
+
+.blog {
+  background: radial-gradient(
+    56.8% 50% at 50% 50%,
+    hsl(var(--base) / 0.2) 0,
+    transparent 100%
+  );
+}
+
+.blog-details {
+  padding: 16px 20px;
+  background: hsl(var(--white) / 0.075);
+  border-radius: 12px;
+}
+
+.blog-details__top {
+  text-align: center;
+}
+
+.blog-details__date {
+  display: block;
+  color: var(--body-color);
+  margin-bottom: 12px;
+}
+
+.blog-details__title {
+  margin-bottom: 16px;
+  max-width: 720px;
+  width: 100%;
+}
+
+.blog-share {
+  margin-bottom: 32px;
+}
+
+.blog-share .social-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.blog-share .social-list__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 0;
+  font-size: 0.875rem;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  font-weight: 500;
+  color: hsl(var(--white) / 0.75);
+  border: 1px solid hsl(var(--white) / 0.1);
+  border-radius: 6px;
+
+  &:hover {
+    color: hsl(var(--black)) !important;
+    border-color: hsl(var(--white) / 0.2);
+    background-color: hsl(var(--white));
+  }
+}
+
+.blog-details__thumb {
+  overflow: hidden;
+  margin-bottom: 32px;
+
+  img {
+    border-radius: 12px;
+  }
+}
+
+.content-item :is(h4, h5, h6) {
+  font-family: var(--body-font);
+}
+
+.blog-sidebar-wrapper {
+  position: sticky;
+  top: calc(var(--header-h) + 20px);
+}
+
+.quote-text {
+  background-color: hsl(var(--base) / 0.1);
+  padding: 30px 20px;
+  border-radius: 5px;
+  border-left: 3px solid hsl(var(--base));
+  margin-bottom: 20px;
+
+  @include sm-screen {
+    padding: 25px 15px;
+  }
+}
+
+/* ========================================== Blog Details Css End ======================================*/

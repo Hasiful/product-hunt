@@ -1,0 +1,429 @@
+/* =========================================== Account Css Start =========================*/
+
+// ---- Layout ----
+.account-section {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  height: 100vh;
+
+  @include md-screen {
+    grid-template-columns: 1fr;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    padding-left: 40px;
+  }
+}
+
+.account-content {
+  display: flex;
+  flex-direction: column;
+  padding: 56px 48px;
+  overflow-y: auto;
+  background-color: hsl(var(--dark));
+  height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--white) / 0.1) hsl(var(--white) / 0.2);
+
+  @include xl-screen {
+    padding: 48px 36px;
+  }
+
+  @include msm-screen {
+    padding: 40px 20px;
+  }
+}
+
+.account-form-wrap {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+
+  &--lg {
+    max-width: 580px;
+  }
+}
+
+.account-logo {
+  display: inline-block;
+  margin-bottom: 24px;
+  max-width: 170px;
+}
+
+.account-heading {
+  margin-bottom: 28px;
+
+  &__title {
+    font-size: rem(26px);
+    font-weight: 700;
+    color: hsl(var(--white));
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    color: hsl(var(--body-color));
+    font-size: rem(15px);
+    line-height: 1.5;
+  }
+}
+
+// ---- Social auth ----
+.social-auth {
+  margin-bottom: 0;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0 !important;
+    padding: 0;
+    list-style: none;
+
+    &--row {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    flex: 1;
+  }
+
+  &__link {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: rem(14px);
+    color: hsl(var(--heading-color));
+    font-family: var(--body-font);
+    border-radius: 10px;
+    border: 1px solid hsl(var(--border-color));
+    background: hsl(var(--white) / 0.03);
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease;
+
+    img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+    }
+
+    &:hover {
+      background: hsl(var(--white) / 0.07);
+      border-color: hsl(var(--white) / 0.18);
+      color: hsl(var(--white));
+    }
+  }
+}
+
+// ---- Divider ----
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-block: 24px;
+  color: hsl(var(--body-color));
+  font-size: rem(12px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: hsl(var(--border-color));
+  }
+}
+
+// ---- Form field with icon ----
+.form-field {
+  margin-bottom: 16px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    .form--label {
+      margin-bottom: 0;
+    }
+  }
+
+  .form--label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: rem(13px);
+    font-weight: 500;
+    color: hsl(var(--white) / 0.75);
+  }
+
+  &__input-wrap {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: hsl(var(--body-color));
+    font-size: rem(14px);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1;
+    line-height: 1;
+  }
+
+  .form--control {
+    padding-left: 40px;
+    border-radius: 10px;
+    background: hsl(var(--white) / 0.04);
+    border-color: hsl(var(--border-color));
+    transition:
+      border-color 0.2s ease,
+      background 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      background: hsl(var(--white) / 0.06);
+    }
+
+    &:focus {
+      border-color: hsl(var(--base));
+      background: hsl(var(--white) / 0.05);
+      box-shadow: 0 0 0 3px hsl(var(--base) / 0.12);
+    }
+  }
+
+  &__select {
+    padding-left: 40px;
+  }
+
+  .password-show-hide {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: hsl(var(--body-color));
+    font-size: rem(14px);
+  }
+}
+
+// ---- Account form ----
+.account-form {
+  width: 100%;
+}
+
+// ---- Submit button ----
+.account-submit-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 10px;
+  font-size: rem(15px);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+
+  i {
+    font-size: rem(13px);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover i {
+    transform: translateX(4px);
+  }
+}
+
+// ---- Supporting links ----
+.forgot-password {
+  color: hsl(var(--base));
+  font-size: rem(13px);
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
+
+.account-external {
+  font-size: rem(14px);
+  text-align: center;
+  color: hsl(var(--body-color));
+  margin-top: 20px;
+  padding-bottom: 8px;
+
+  a {
+    color: hsl(var(--base));
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ---- Right: image panel ----
+.account-panel {
+  position: relative;
+  overflow: hidden;
+  background: hsl(var(--dark-d-200, var(--dark)));
+
+  @include md-screen {
+    display: none;
+  }
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    .fit-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      160deg,
+      hsl(var(--white) / 0.05) 0%,
+      hsl(var(--base) / 0.1) 50%,
+      hsl(var(--base-two) / 0.15) 100%
+    );
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 44px;
+
+    @include xl-screen {
+      padding: 40px 36px;
+    }
+  }
+
+  &__badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: hsl(var(--base));
+    box-shadow: 0 0 8px hsl(var(--base) / 0.8);
+    flex-shrink: 0;
+  }
+
+  &__body {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: rem(36px);
+    font-weight: 700;
+    color: hsl(var(--white));
+    line-height: 1.15;
+    margin-bottom: 16px;
+
+    @include xl-screen {
+      font-size: rem(32px);
+    }
+  }
+
+  &__desc {
+    color: hsl(var(--white) / 0.6);
+    font-size: rem(16px);
+    line-height: 1.65;
+    max-width: 340px;
+  }
+
+  // Stats row (login page)
+  &__stats {
+    display: flex;
+    gap: 0;
+    padding-top: 28px;
+    border-top: 1px solid hsl(var(--white) / 0.12);
+  }
+
+  &__stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-right: 24px;
+
+    &:not(:first-child) {
+      padding-left: 24px;
+      border-left: 1px solid hsl(var(--white) / 0.12);
+    }
+  }
+
+  &__stat-value {
+    font-size: rem(24px);
+    font-weight: 700;
+    color: hsl(var(--white));
+    line-height: 1;
+  }
+
+  &__stat-label {
+    font-size: rem(12px);
+    color: hsl(var(--white) / 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  // Features list (register page)
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 28px;
+    border-top: 1px solid hsl(var(--white) / 0.12);
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: hsl(var(--white) / 0.75);
+    font-size: rem(14px);
+    font-weight: 400;
+  }
+
+  &__feature-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: hsl(var(--base) / 0.15);
+    border: 1px solid hsl(var(--base) / 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(var(--base));
+    font-size: rem(13px);
+    flex-shrink: 0;
+  }
+}
+
+/* ============================================ Account Css End ====================================*/

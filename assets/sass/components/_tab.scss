@@ -1,0 +1,79 @@
+/* ================================= Tab Css Start =========================== */
+
+.custom--tab-wrapper {
+  margin-bottom: 50px;
+  overflow: auto hidden;
+
+  @include lg-screen {
+    margin-bottom: 40px;
+  }
+
+  @include md-screen {
+    margin-bottom: 32px;
+  }
+}
+
+.custom--tab {
+  justify-content: flex-start;
+  margin-bottom: 0px;
+  display: inline-flex;
+  border-bottom: 0;
+  position: relative;
+  gap: 8px;
+  flex-wrap: nowrap;
+
+
+  .nav-item {
+    border-bottom: 0;
+
+    .nav-link {
+      transition: all linear 0.3s;
+      background: hsl(var(--white));
+      position: relative;
+      overflow: hidden;
+      font-weight: 700;
+      border-radius: 99px;
+      border: 0;
+      line-height: 1;
+      font-size: rem(16px);
+      color: hsl(var(--body-color));
+      padding: 16px 24px;
+      line-height: 1.2;
+      white-space: nowrap;
+
+      @include lg-screen {
+        padding: 12px 24px;
+        font-size: rem(20px);
+      }
+
+      @include md-screen {
+        padding: 10px 20px;
+        font-size: rem(18px);
+      }
+
+      @include msm-screen {
+        padding: 8px 16px;
+        font-size: rem(16px);
+      }
+
+      &.active {
+        color: hsl(var(--white));
+        border-color: hsl(var(--heading-color));
+        background-color: hsl(var(--heading-color));
+
+        &:hover {
+          color: hsl(var(--white));
+          background-color: hsl(var(--heading-color));
+        }
+      }
+
+      &:hover {
+        color: hsl(var(--heading-color));
+        border-color: hsl(var(--heading-color) / .1);
+        background-color: hsl(var(--heading-color) / .1);
+      }
+    }
+  }
+}
+
+/* ================================= Tab Css End =========================== */

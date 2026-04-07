@@ -1,0 +1,269 @@
+@@include('../layout/_template-top.html') @@include('../layout/_header.html')
+<main>
+  <section class="my-60">
+    <div class="container">
+      <div class="forum-row">
+        <!-- ===== Sidebar ===== -->
+        <aside class="forum-sidebar">
+          <button class="forum-sidebar-close">
+            <i class="las la-times"></i>
+          </button>
+          <div class="forum-sidebar__inner">
+            <!-- Primary Nav -->
+            <nav class="forum-nav">
+              <form action="" class="forum-nav-search">
+                <input
+                  type="text"
+                  class="form--control"
+                  placeholder="Search here.."
+                />
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    color="currentColor"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M17 17L21 21" />
+                    <path
+                      d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                    />
+                  </svg>
+                </button>
+              </form>
+
+              <ul class="forum-nav__list">
+                <li class="forum-nav__item active">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-home"></i
+                    ></span>
+                    <span class="forum-nav__text">Home</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-comment-dots"></i
+                    ></span>
+                    <span class="forum-nav__text">Recent comments</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon">
+                      <i class="fa-brands fa-threads"></i>
+                    </span>
+                    <span class="forum-nav__text">Start new thread</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Topic Forums -->
+            <div class="forum-group">
+              <span class="forum-group__label">Topic Forums</span>
+              <ul class="forum-nav__list">
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-globe"></i
+                    ></span>
+                    <span class="forum-nav__text">p/general</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-code"></i
+                    ></span>
+                    <span class="forum-nav__text">p/vibecoding</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-question-circle"></i
+                    ></span>
+                    <span class="forum-nav__text">p/ama</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-hand-paper"></i
+                    ></span>
+                    <span class="forum-nav__text">p/introduce-yourself</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon"
+                      ><i class="las la-headphones"></i
+                    ></span>
+                    <span class="forum-nav__text">p/self-promotion</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Product Forums -->
+            <div class="forum-group">
+              <span class="forum-group__label">Product Forums</span>
+              <ul class="forum-nav__list">
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/1.png" alt="Peakflow" />
+                    </span>
+                    <span class="forum-nav__text">p/peakflow</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/2.png" alt="Streamline" />
+                    </span>
+                    <span class="forum-nav__text">p/streamline</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/3.png" alt="Focusly" />
+                    </span>
+                    <span class="forum-nav__text">p/focusly</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/4.png" alt="Savestack" />
+                    </span>
+                    <span class="forum-nav__text">p/savestack</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/5.png" alt="Spark AI" />
+                    </span>
+                    <span class="forum-nav__text">p/spark-ai</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img
+                        src="assets/images/product/6.png"
+                        alt="Aurorascape"
+                      />
+                    </span>
+                    <span class="forum-nav__text">p/aurorascape</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/7.png" alt="Castwave" />
+                    </span>
+                    <span class="forum-nav__text">p/castwave</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/8.png" alt="Framecraft" />
+                    </span>
+                    <span class="forum-nav__text">p/framecraft</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/9.png" alt="Blazetrend" />
+                    </span>
+                    <span class="forum-nav__text">p/blazetrend</span>
+                  </a>
+                </li>
+                <li class="forum-nav__item">
+                  <a href="#" class="forum-nav__link">
+                    <span class="forum-nav__icon forum-nav__icon--img">
+                      <img src="assets/images/product/10.png" alt="Kodaflare" />
+                    </span>
+                    <span class="forum-nav__text">p/kodaflare</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <!-- ===== Forum Body ===== -->
+        <div class="forum-body">
+          <button type="button" class="forum-body-collapse">
+            Forums
+            <span class="icon">
+              <i class="las la-bars"></i>
+            </span>
+          </button>
+          <div class="forum-banner">
+            <div class="forum-banner__left">
+              <div class="forum-banner__icon">
+                <img src="assets/images/logo/favicon.png" alt="Community" />
+              </div>
+              <div class="forum-banner__info">
+                <h2 class="forum-banner__title">Connect with the community</h2>
+                <p class="forum-banner__sub">
+                  Start a thread, join a discussion, stay in the loop.
+                </p>
+              </div>
+            </div>
+            <div class="forum-banner__right">
+              <a href="#" class="forum-banner__btn">
+                <span>Back To Home</span>
+              </a>
+            </div>
+          </div>
+
+          <form action="" class="forum-post">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <label for="" class="form--label">Title</label>
+                <input type="text" class="form--control" placeholder="" />
+              </div>
+              <div class="col-md-6">
+                <label for="" class="form--label">Category</label>
+                <select class="form--control select2">
+                  <option value="">Select country</option>
+                  <option value="">Bangladesh</option>
+                  <option value="">Pakistan</option>
+                  <option value="">Sri Lanka</option>
+                  <option value="">Nepal</option>
+                  <option value="">China</option>
+                  <option value="">United States</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="editor-wrapper">
+                  <div id="editor"></div>
+                  <div class="editor-options">
+                    <button class="btn btn--base btn--sm">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('../layout/_footer.html') @@include('../layout/_template-bottom.html')

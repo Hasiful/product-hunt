@@ -1,0 +1,1229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Car Dealer</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Fontasosome -->
+    <link rel="stylesheet" href="assets/css/fontasosome.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <!-- Quill -->
+    <link rel="stylesheet" href="assets/css/quill.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+    <!--==================== Overlay Start ====================-->
+    <div class="body-overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="sidebar-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <a class="scroll-top"><i class="fas fa-angle-up"></i></a>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+  </body>
+</html>
+ <!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="assets/images/logo/logo-white.png" alt="img" />
+      </a>
+
+      <button
+        class="navbar-toggler header-button"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span id="hiddenNav"><i class="las la-bars"></i></span>
+      </button>
+
+      <div
+        class="offcanvas border-0 offcanvas-end"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+      >
+        <div class="offcanvas-header">
+          <a class="logo navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo-white.png" alt="img" />
+          </a>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav nav-menu align-items-xl-center ms-xl-4 w-100">
+            <li class="nav-item d-xl-none">
+              <div class="dropdown lang-box">
+                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+                    ></path>
+                  </svg>
+                  <span class="text">English</span>
+                  <span class="icon">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li class="lang-box-item" data-code="en">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/us.png" alt="usa" />
+                      </div>
+                      <span class="text">English</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item selected" data-code="hn">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/bd.png" alt="bd" />
+                      </div>
+                      <span class="text">Bangla</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sp.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Spanish</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sa.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Arabic</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/pak.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Urdu</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/fr.png" alt="Spanish" />
+                      </div>
+                      <span class="text">French</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Best Products
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">
+                    Products
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Launches
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">Car</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html"> News </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html"> Forums </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item d-xl-none d-block">
+              <a href="login.html" class="btn w-100 btn--sm btn--base">
+                <span class="icon">
+                  <i class="fa-regular fa-circle-user"></i>
+                </span>
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-right d-none d-xl-flex">
+        <div class="dropdown lang-box">
+          <button class="lang-box-btn" data-bs-toggle="dropdown">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+              ></path>
+            </svg>
+            <span class="text">English</span>
+            <span class="icon">
+              <i class="fas fa-angle-down"></i>
+            </span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="lang-box-item" data-code="en">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/us.png" alt="usa" />
+                </div>
+                <span class="text">English</span>
+              </a>
+            </li>
+            <li class="lang-box-item selected" data-code="hn">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/bd.png" alt="bd" />
+                </div>
+                <span class="text">Bangla</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sp.png" alt="Spanish" />
+                </div>
+                <span class="text">Spanish</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sa.png" alt="Spanish" />
+                </div>
+                <span class="text">Arabic</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/pak.png" alt="Spanish" />
+                </div>
+                <span class="text">Urdu</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/fr.png" alt="Spanish" />
+                </div>
+                <span class="text">French</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="login.html" class="btn btn--base pill">
+          <span class="icon">
+            <i class="fa-regular fa-circle-user"></i>
+          </span>
+          Login
+        </a>
+        <a href="login.html" class="btn btn--light pill">
+          <span class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </span>
+          Subscribe
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+<main>
+  <section class="details my-60">
+    <div class="container">
+      <!-- Product Hero -->
+      <div class="details-hero">
+        <div class="details-hero-left">
+          <div class="details-hero-thumb">
+            <img src="assets/images/product/1.png" alt="ZooClaw" />
+          </div>
+          <div class="details-hero-info">
+            <div class="details-hero-name-row">
+              <h1 class="details-hero-name h5">ZooClaw</h1>
+              <span class="details-hero-badge">Launched this week</span>
+            </div>
+            <p class="details-hero-desc">
+              Your proactive team of AI specialists in one place
+            </p>
+            <span class="details-hero-followers">1.2K followers</span>
+          </div>
+        </div>
+        <a href="#" class="details-hero-website">Visit website</a>
+      </div>
+      <div class="details-wrapper">
+        <div class="details-content">
+          <div class="details-tab" id="scrollSpy">
+            <a
+              href="#details-body-car-details"
+              data-spy="scroll"
+              class="details-tab-item active"
+            >
+              Details
+            </a>
+            <a
+              href="#details-body-comments"
+              data-spy="scroll"
+              class="details-tab-item"
+            >
+              Discussion
+            </a>
+            <a
+              href="#details-body-review"
+              data-spy="scroll"
+              class="details-tab-item"
+            >
+              Reviews
+            </a>
+          </div>
+
+          <div class="details-body">
+            <div id="details-body-car-details" class="mb-5">
+              <h3 class="details-body-title h5">Product Details</h3>
+
+              <p class="details-body-desc">
+                This vehicle offers a perfect balance of performance, comfort,
+                and modern technology. Designed for both city driving and long
+                journeys, it delivers smooth handling and excellent fuel
+                efficiency.
+              </p>
+
+              <div class="details-view mb-5">
+                <a
+                  href="assets/images/product/lg-1.jpg"
+                  class="details-view-item"
+                >
+                  <img
+                    src="assets/images/product/lg-1.jpg"
+                    alt="gallery-image"
+                  />
+                </a>
+                <a
+                  href="assets/images/product/lg-2.jpg"
+                  class="details-view-item"
+                >
+                  <img
+                    src="assets/images/product/lg-2.jpg"
+                    alt="gallery-image"
+                  />
+                </a>
+                <a
+                  href="assets/images/product/lg-3.jpg"
+                  class="details-view-item"
+                >
+                  <img
+                    src="assets/images/product/lg-3.jpg"
+                    alt="gallery-image"
+                  />
+                </a>
+                <a
+                  href="assets/images/product/lg-4.jpg"
+                  class="details-view-item"
+                >
+                  <img
+                    src="assets/images/product/lg-4.jpg"
+                    alt="gallery-image"
+                  />
+                </a>
+              </div>
+
+              <p class="details-body-desc">
+                The interior features premium materials, advanced infotainment,
+                and driver-assist technologies to ensure a safe and enjoyable
+                driving experience.
+              </p>
+              <ul class="details-body-list">
+                <li class="details-body-list-item">
+                  <span>Touchscreen infotainment system</span>
+                </li>
+                <li class="details-body-list-item">
+                  <span>Rear parking camera & sensors</span>
+                </li>
+                <li class="details-body-list-item">
+                  <span>Bluetooth & smartphone connectivity</span>
+                </li>
+                <li class="details-body-list-item">
+                  <span>Air conditioning with climate control</span>
+                </li>
+                <li class="details-body-list-item">
+                  <span>Alloy wheels & LED headlights</span>
+                </li>
+              </ul>
+
+              <h3 class="details-body-title h5 mt-5">Additional Information</h3>
+              <ul class="details-body-list">
+                <li class="details-body-list-item">
+                  <span>Single owner vehicle</span>
+                </li>
+                <li class="details-body-list-item">
+                  <span>No accident history</span>
+                </li>
+                <li class="details-body-list-item">
+                  <span>Full service history available</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- ==================== Discussion / Comments ==================== -->
+            <div id="details-body-comments" class="mb-5">
+              <div class="flex-between mb-4">
+                <h3 class="h5">Discussion</h3>
+              </div>
+
+              <div class="editor-wrapper">
+                <div id="editor"></div>
+                <div class="editor-options">
+                  <button class="btn btn--base btn--sm">Comment</button>
+                </div>
+              </div>
+              <div class="comment-list-wrapper">
+                <div class="comment-list">
+                  <div class="comment-thread">
+                    <div class="comment-item">
+                      <div class="comment-avatar">
+                        <img
+                          src="assets/images/clients/1.webp"
+                          alt="Lakshay Gupta"
+                        />
+                      </div>
+                      <div class="comment-content">
+                        <div class="comment-meta">
+                          <span class="comment-author">Lakshay Gupta</span>
+                        </div>
+                        <p class="comment-text">
+                          Interesting! But if multiple agents can handle the
+                          same task (e.g., marketing or research) how does
+                          zooclaw decide which specialist is actually the best
+                          fit in real time?
+                        </p>
+                        <div class="comment-actions">
+                          <button class="comment-upvote">
+                            <i class="la la-caret-up"></i>
+                            <span class="count">13</span>
+                          </button>
+                          <button class="comment-reply-btn">
+                            <i class="la la-reply"></i> Reply
+                          </button>
+                          <span class="comment-time">
+                            <i class="la la-clock-o"></i> 2d ago
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment-replies-wrapper">
+                      <button
+                        class="comment-collapse-btn active"
+                        data-target="thread-1-replies"
+                      >
+                        <i class="la la-minus-circle"></i>
+                      </button>
+                      <div class="comment-replies" id="thread-1-replies">
+                        <!-- Reply 1 (Maker) -->
+                        <div class="comment-item">
+                          <div class="comment-avatar">
+                            <img
+                              src="assets/images/clients/2.webp"
+                              alt="Ning Hu"
+                            />
+                          </div>
+                          <div class="comment-content">
+                            <div class="comment-meta">
+                              <span class="comment-author">Ning Hu</span>
+                              <span class="comment-org">ZooClaw</span>
+                              <span class="comment-badge comment-badge--maker"
+                                >Maker</span
+                              >
+                            </div>
+                            <p class="comment-text">
+                              <span class="comment-mention">@lak7</span> Such a
+                              great question! Different specialists bring
+                              different strengths, so we believe the best fit
+                              really depends on the task and personal
+                              preference. The trickier part is choosing between
+                              specialists of the same type — we don't want users
+                              overwhelmed.
+                            </p>
+                            <div class="comment-actions">
+                              <button class="comment-upvote">
+                                <i class="la la-caret-up"></i>
+                                <span class="count">12</span>
+                              </button>
+                              <button class="comment-reply-btn">
+                                <i class="la la-reply"></i> Reply
+                              </button>
+                              <span class="comment-time">
+                                <i class="la la-clock-o"></i> 2d ago
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Reply 2 -->
+                        <div class="comment-item">
+                          <div class="comment-avatar">
+                            <img
+                              src="assets/images/clients/1.webp"
+                              alt="Marina Romero"
+                            />
+                          </div>
+                          <div class="comment-content">
+                            <div class="comment-meta">
+                              <span class="comment-author">Marina Romero</span>
+                            </div>
+                            <p class="comment-text">
+                              <span class="comment-mention">@lak7</span>
+                              <span class="comment-mention">@ninghu</span>
+                              Interesting, so would you have the ability to tell
+                              ZooClaw to change the agent or model if you're not
+                              happy with the answer and there's a different
+                              specialised agent that is suitable? If so, does
+                              ZooClaw also learn from your preferences?
+                            </p>
+                            <div class="comment-actions">
+                              <button class="comment-upvote">
+                                <i class="la la-caret-up"></i>
+                                <span class="count">5</span>
+                              </button>
+                              <button class="comment-reply-btn">
+                                <i class="la la-reply"></i> Reply
+                              </button>
+                              <span class="comment-time">
+                                <i class="la la-clock-o"></i> 1d ago
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Sub-replies with own toggle -->
+                        <div
+                          class="comment-replies-wrapper comment-replies-wrapper--sub"
+                        >
+                          <button
+                            class="comment-collapse-btn active"
+                            data-target="thread-1-sub"
+                          >
+                            <i class="la la-minus-circle"></i>
+                          </button>
+                          <div class="comment-replies" id="thread-1-sub">
+                            <div class="comment-item">
+                              <div class="comment-avatar">
+                                <img
+                                  src="assets/images/clients/2.webp"
+                                  alt="Ning Hu"
+                                />
+                              </div>
+                              <div class="comment-content">
+                                <div class="comment-meta">
+                                  <span class="comment-author">Ning Hu</span>
+                                  <span class="comment-org">ZooClaw</span>
+                                  <span
+                                    class="comment-badge comment-badge--maker"
+                                    >Maker</span
+                                  >
+                                </div>
+                                <p class="comment-text">
+                                  <span class="comment-mention">@lak7</span>
+                                  <span class="comment-mention"
+                                    >@marina_romero</span
+                                  >
+                                  Yes, users can already do that — nothing's
+                                  stopping them. But since we're focused on
+                                  non-technical users, what we're launching soon
+                                  is smart routing: automatically directing each
+                                  task to the most suitable agent or model. And
+                                  your point on learning preferences is great —
+                                  that's absolutely on our roadmap too.
+                                </p>
+                                <div class="comment-actions">
+                                  <button class="comment-upvote">
+                                    <i class="la la-caret-up"></i>
+                                    <span class="count">0</span>
+                                  </button>
+                                  <button class="comment-reply-btn">
+                                    <i class="la la-reply"></i> Reply
+                                  </button>
+                                  <span class="comment-time">
+                                    <i class="la la-clock-o"></i> 1d ago
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment-thread">
+                    <div class="comment-item">
+                      <div class="comment-avatar">
+                        <img
+                          src="assets/images/clients/2.webp"
+                          alt="Alex Johnson"
+                        />
+                      </div>
+                      <div class="comment-content">
+                        <div class="comment-meta">
+                          <span class="comment-author">Alex Johnson</span>
+                        </div>
+                        <p class="comment-text">
+                          This looks incredibly promising. How does the pricing
+                          model work for teams vs individual users?
+                        </p>
+                        <div class="comment-actions">
+                          <button class="comment-upvote">
+                            <i class="la la-caret-up"></i>
+                            <span class="count">8</span>
+                          </button>
+                          <button class="comment-reply-btn">
+                            <i class="la la-reply"></i> Reply
+                          </button>
+                          <span class="comment-time">
+                            <i class="la la-clock-o"></i> 1d ago
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Replies -->
+                    <div class="comment-replies-wrapper">
+                      <button
+                        class="comment-collapse-btn active"
+                        data-target="thread-2-replies"
+                      >
+                        <i class="la la-minus-circle"></i>
+                      </button>
+                      <div class="comment-replies" id="thread-2-replies">
+                        <div class="comment-item">
+                          <div class="comment-avatar">
+                            <img
+                              src="assets/images/clients/1.webp"
+                              alt="Ning Hu"
+                            />
+                          </div>
+                          <div class="comment-content">
+                            <div class="comment-meta">
+                              <span class="comment-author">Ning Hu</span>
+                              <span class="comment-org">ZooClaw</span>
+                              <span class="comment-badge comment-badge--maker"
+                                >Maker</span
+                              >
+                            </div>
+                            <p class="comment-text">
+                              <span class="comment-mention">@alexj</span> Great
+                              question! We offer a free tier for individuals and
+                              flexible team plans starting from 5 seats.
+                              Enterprise pricing is custom — reach out and we'll
+                              find something that works!
+                            </p>
+                            <div class="comment-actions">
+                              <button class="comment-upvote">
+                                <i class="la la-caret-up"></i>
+                                <span class="count">4</span>
+                              </button>
+                              <button class="comment-reply-btn">
+                                <i class="la la-reply"></i> Reply
+                              </button>
+                              <span class="comment-time">
+                                <i class="la la-clock-o"></i> 1d ago
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment-thread">
+                    <div class="comment-item">
+                      <div class="comment-avatar">
+                        <img
+                          src="assets/images/clients/1.webp"
+                          alt="Sarah Kim"
+                        />
+                      </div>
+                      <div class="comment-content">
+                        <div class="comment-meta">
+                          <span class="comment-author">Sarah Kim</span>
+                        </div>
+                        <p class="comment-text">
+                          Just signed up for early access — the demo on the
+                          website is super impressive. Congrats on the launch!
+                        </p>
+                        <div class="comment-actions">
+                          <button class="comment-upvote">
+                            <i class="la la-caret-up"></i>
+                            <span class="count">21</span>
+                          </button>
+                          <button class="comment-reply-btn">
+                            <i class="la la-reply"></i> Reply
+                          </button>
+                          <span class="comment-time">
+                            <i class="la la-clock-o"></i> 3h ago
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ==================== End Discussion ==================== -->
+
+            <div id="details-body-review">
+              <div class="flex-between mb-4">
+                <h3 class="h5">Reviews</h3>
+                <button
+                  class="btn btn--base btn--sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#writeReviewModal"
+                >
+                  Write a review
+                </button>
+              </div>
+
+              <div class="review-info">
+                <div class="review-info-average">
+                  <h2 class="count">4.6</h2>
+                  <div class="rating">
+                    <p class="rating-item">
+                      <i class="la la-star"></i>
+                      <i class="la la-star"></i>
+                      <i class="la la-star"></i>
+                      <i class="la la-star"></i>
+                      <i class="la la-star"></i>
+                    </p>
+                  </div>
+                  <p class="desc">based on 6,854 reviews</p>
+                </div>
+                <div class="review-info-count">
+                  <p class="text">
+                    Total reviews and rating from Viator & TravelLab
+                  </p>
+                  <div class="review-info-count-item">
+                    <span class="label">5 stars</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg--base"
+                        style="width: 75%"
+                      ></div>
+                    </div>
+                    <span class="value">5527</span>
+                  </div>
+                  <div class="review-info-count-item">
+                    <span class="label">4 stars</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg--base"
+                        style="width: 22%"
+                      ></div>
+                    </div>
+                    <span class="value">622</span>
+                  </div>
+                  <div class="review-info-count-item">
+                    <span class="label">3 stars</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg--base"
+                        style="width: 6%"
+                      ></div>
+                    </div>
+                    <span class="value">292</span>
+                  </div>
+                  <div class="review-info-count-item">
+                    <span class="label">2 stars</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg--base"
+                        style="width: 9%"
+                      ></div>
+                    </div>
+                    <span class="value">122</span>
+                  </div>
+                  <div class="review-info-count-item">
+                    <span class="label">3 stars</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg--base"
+                        style="width: 5%"
+                      ></div>
+                    </div>
+                    <span class="value">291</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-wrapper">
+                <div class="review-item">
+                  <div class="review-item-thumb">
+                    <img src="assets/images/clients/1.webp" alt />
+                  </div>
+                  <div class="review-item-content">
+                    <div class="review-item-top">
+                      <p class="name">Emily Carter</p>
+                      <p class="time">2h ago</p>
+                    </div>
+                    <div class="rating mt-2">
+                      <p class="rating-item">
+                        <i class="la la-star"></i>
+                        <i class="la la-star"></i>
+                        <i class="la la-star"></i>
+                        <i class="la la-star"></i>
+                        <i class="la la-star"></i>
+                      </p>
+                    </div>
+
+                    <p class="review-item-text">
+                      Living Art: Koi are known for their bright colors and
+                      beautiful patterns — they’re often called
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="details-sidebar">
+          <div class="details-sidebar-inner">
+            <!-- Actions -->
+            <ul class="details-sidebar-actions">
+              <li class="details-sidebar-actions-item">
+                <a href="#" class="details-sidebar-actions-link">
+                  <span class="icon"><i class="la la-plus-square"></i></span>
+                  <span>Follow OpenRouter Model Fusion</span>
+                </a>
+              </li>
+              <li class="details-sidebar-actions-item">
+                <a href="#" class="details-sidebar-actions-link">
+                  <span class="icon"><i class="la la-bookmark"></i></span>
+                  <span>Add to collection</span>
+                </a>
+              </li>
+              <li class="details-sidebar-actions-item">
+                <a href="#" class="details-sidebar-actions-link">
+                  <span class="icon"><i class="la la-share"></i></span>
+                  <span>Share</span>
+                </a>
+              </li>
+              <li class="details-sidebar-actions-item">
+                <a href="#" class="details-sidebar-actions-link">
+                  <span class="icon"><i class="la la-bar-chart"></i></span>
+                  <span>Analytics</span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- Upvote -->
+            <button class="btn btn--base w-100 mt-4">
+              <i class="la la-caret-up"></i>
+              Upvote
+            </button>
+          </div>
+          <!-- Company Info -->
+          <div class="details-sidebar-group">
+            <h6 class="details-sidebar-group-title">Company Info</h6>
+            <a href="#" class="details-sidebar-group-link">
+              <i class="la la-external-link"></i>
+              openrouter.ai/labs/fusion
+            </a>
+          </div>
+          <!-- Product Info -->
+          <div class="details-sidebar-group">
+            <h6 class="details-sidebar-group-title">
+              OpenRouter Model Fusion Info
+            </h6>
+            <p class="details-sidebar-group-meta">
+              <i class="la la-rocket"></i>
+              Launched in 2026
+            </p>
+          </div>
+          <!-- Forum -->
+          <div class="details-sidebar-group">
+            <h6 class="details-sidebar-group-title">Forum</h6>
+            <p class="details-sidebar-group-meta">
+              <i class="la la-dot-circle-o"></i>
+              p/openrouter
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal custom--modal fade" id="writeReviewModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title h5" id="writeReviewModalLabel">
+          Write a review
+        </h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <i class="la la-close"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <div class="form-group">
+            <label class="form--label d-block">Your rating</label>
+
+            <div class="rating-group">
+              <input
+                disabled
+                checked
+                class="rating__input"
+                name="rating2"
+                id="rating2-none"
+                type="radio"
+              />
+              <label class="rating__label" for="rating2-1"
+                ><i class="rating__icon rating__icon--star la la-star"></i
+              ></label>
+              <input
+                class="rating__input"
+                name="rating2"
+                id="rating2-1"
+                value="1"
+                type="radio"
+              />
+              <label class="rating__label" for="rating2-2"
+                ><i class="rating__icon rating__icon--star la la-star"></i
+              ></label>
+              <input
+                class="rating__input"
+                name="rating2"
+                id="rating2-2"
+                value="2"
+                type="radio"
+              />
+              <label class="rating__label" for="rating2-3"
+                ><i class="rating__icon rating__icon--star la la-star"></i
+              ></label>
+              <input
+                class="rating__input"
+                name="rating2"
+                id="rating2-3"
+                value="3"
+                type="radio"
+              />
+              <label class="rating__label" for="rating2-4"
+                ><i class="rating__icon rating__icon--star la la-star"></i
+              ></label>
+              <input
+                class="rating__input"
+                name="rating2"
+                id="rating2-4"
+                value="4"
+                type="radio"
+              />
+              <label class="rating__label" for="rating2-5"
+                ><i class="rating__icon rating__icon--star la la-star"></i
+              ></label>
+              <input
+                class="rating__input"
+                name="rating2"
+                id="rating2-5"
+                value="5"
+                type="radio"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form--label">Your review</label>
+            <textarea class="form--control"></textarea>
+          </div>
+
+          <button class="btn btn--base w-100">Submit review</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <!-- ===== Newsletter Strip ===== -->
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="footer-newsletter__inner">
+        <div class="footer-newsletter__text">
+          <h4 class="footer-newsletter__title">Stay in the loop</h4>
+          <p class="footer-newsletter__desc">
+            Get weekly product launches, maker stories & platform updates.
+          </p>
+        </div>
+        <form class="footer-newsletter__form" novalidate>
+          <div class="footer-newsletter__field">
+            <i class="fa-regular fa-envelope footer-newsletter__icon"></i>
+            <input
+              type="email"
+              class="footer-newsletter__input"
+              placeholder="your@email.com"
+            />
+          </div>
+          <button type="submit" class="footer-newsletter__btn">
+            Subscribe
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Main Footer Body ===== -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-brand">
+            <a class="footer-brand__logo" href="index.html">
+              <img src="assets/images/logo/logo-white.png" alt="ProductLab" />
+            </a>
+            <p class="footer-brand__desc">
+              A product discovery platform for makers, builders, and early
+              adopters. Launch, explore, and grow — together.
+            </p>
+            <ul class="footer-socials">
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Platform</h3>
+            <ul class="footer-nav__list">
+              <li><a href="index.html" class="footer-nav__link">Home</a></li>
+              <li><a href="#" class="footer-nav__link">Products</a></li>
+              <li><a href="#" class="footer-nav__link">Launches</a></li>
+              <li><a href="forum.html" class="footer-nav__link">Forums</a></li>
+              <li>
+                <a href="contact.html" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Resources</h3>
+            <ul class="footer-nav__list">
+              <li><a href="blog.html" class="footer-nav__link">Blog</a></li>
+              <li><a href="#" class="footer-nav__link">Documentation</a></li>
+              <li><a href="#" class="footer-nav__link">FAQs</a></li>
+              <li><a href="#" class="footer-nav__link">Changelog</a></li>
+              <li><a href="#" class="footer-nav__link">Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Get in Touch</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="footer-contact-list__text"
+                  >Innovation Hub, Tech City, USA</span
+                >
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <a
+                  href="mailto:hello@productlab.com"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  hello@productlab.com
+                </a>
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <a
+                  href="tel:+1800123456"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  +1 800 123 456
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Bottom Bar ===== -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <p class="footer-bottom__copy">
+          &copy; 2026 <a href="index.html">ProductLab</a>. All rights reserved.
+        </p>
+        <nav class="footer-bottom__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+ <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- select2 -->
+<script src="assets/js/select2.min.js"></script>
+<!-- range slider -->
+<script src="assets/js/jquery-ui.min.js"></script>
+<!-- wow -->
+<script src="assets/js/wow.min.js"></script>
+<!-- popup -->
+<script src="assets/js/popup.js"></script>
+<!-- Quill -->
+<script src="assets/js/quill.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

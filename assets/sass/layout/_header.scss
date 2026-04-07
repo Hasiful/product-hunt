@@ -1,0 +1,334 @@
+/* ============= Header Start Here ======================= */
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 164px;
+
+      @include md-screen {
+        max-width: 148px;
+      }
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  z-index: 999;
+  background-color: hsl(var(--section-bg));
+
+  .navbar {
+    position: unset;
+  }
+
+  &.fixed-header {
+    transition: 0.3s linear;
+    animation: slide-down 0.8s;
+    width: 100%;
+    box-shadow: 0px 0px 10px hsl(var(--white) / 0.1);
+    position: sticky;
+    top: 0;
+  }
+
+  .offcanvas {
+    @include lg-screen {
+      min-height: 100vh;
+    }
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  padding: 0 !important;
+}
+
+/* ========================= Desktop Device Start ========================= */
+.header {
+  @media (min-width: 1200px) {
+    .offcanvas-body {
+      height: 100%;
+      justify-content: center;
+    }
+
+    .nav-menu {
+      .nav-item {
+        padding-right: 6px;
+        padding-block: 16px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &.active {
+          .nav-link {
+            color: hsl(var(--heading-color)) !important;
+            background-color: hsl(var(--black) / 0.1);
+            font-weight: 600;
+          }
+        }
+
+        &:hover {
+          .nav-link {
+            color: hsl(var(--heading-color)) !important;
+          }
+
+          .header-dropdown {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1) !important;
+          }
+        }
+
+        .nav-link {
+          color: hsl(var(--heading-color) / 0.75) !important;
+          position: relative;
+          cursor: pointer;
+          padding: 8px 12px;
+          font-size: 0.935rem;
+          font-weight: 500;
+          border-radius: 12px;
+
+          .nav-item__icon {
+            margin-left: 4px;
+            font-size: rem(12px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ========================== Desktop Device End ========================= */
+
+/* ============================== Small Device ======================= */
+.header {
+  @include lg-screen {
+    overflow: hidden;
+
+    .navbar {
+      padding-block: 20px !important;
+    }
+
+    .nav-menu {
+      .nav-item {
+        text-align: left;
+        display: block;
+        position: relative;
+        margin: 0;
+
+        &:hover .nav-link .nav-item__icon {
+          transform: rotate(0deg) !important;
+        }
+      }
+
+      .header-dropdown {
+        position: static !important;
+        display: none !important;
+
+        &.show {
+          display: block !important;
+        }
+      }
+    }
+
+    .nav-item {
+      &:first-child {
+        border-bottom: none;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 16px !important;
+      }
+
+      .nav-link {
+        padding: 0 !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 !important;
+        font-size: rem(16px);
+        color: hsl(var(--white));
+
+        &.show {
+          &[aria-expanded="true"] {
+            color: hsl(var(--base)) !important;
+
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-toggler {
+    &.header-button {
+      border-color: transparent;
+      color: hsl(var(--white));
+      padding: 0 !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      transition: 0.15s ease-in-out;
+      width: auto;
+      font-size: 2.125rem;
+      order: 1;
+      margin-left: 10px;
+      background-color: transparent;
+
+      @include msm-screen {
+        font-size: 2rem;
+      }
+
+      &:focus {
+        box-shadow: none !important;
+      }
+
+      &[aria-expanded="true"] i::before {
+        content: "\f00d";
+      }
+    }
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+
+  @include xl-screen {
+    gap: 12px;
+  }
+}
+
+.lang-box {
+  @include lg-screen {
+    margin-right: 0;
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 6px;
+    border: 1px solid hsl(var(--border-color));
+  }
+
+  &-btn {
+    color: hsl(var(--heading-color) / 0.75) !important;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    svg {
+      height: 18px;
+      width: 18px;
+    }
+
+    &.show {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    .text {
+      color: hsl(var(--heading-color) / 0.75) !important;
+      font-size: rem(15px);
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .icon {
+      color: hsl(var(--heading-color) / 0.75) !important;
+      font-size: rem(12px);
+      transition: all linear 0.3s;
+      margin-top: 3px;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 10px;
+    font-size: 0.9125rem;
+    color: hsl(var(--heading-color));
+    transition: all 0.15s linear;
+    border-radius: 6px;
+
+    &:hover {
+      background-color: hsl(var(--white) / 0.05);
+      color: hsl(var(--white));
+    }
+
+    .thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    @include lg-screen {
+      left: 0 !important;
+      right: auto !important;
+    }
+  }
+}
+
+.dropdown-menu {
+  padding: 12px;
+  border: 0;
+  box-shadow: none;
+  background-color: #373636;
+  border-radius: 12px;
+  display: unset !important;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute !important;
+  border: 1px solid hsl(var(--black) / 0.1);
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.header {
+  .offcanvas-header {
+    background-color: hsl(var(--white) / 0.05);
+  }
+
+  .offcanvas {
+    background-color: hsl(var(--section-bg));
+  }
+}
+
+.btn-close {
+  filter: var(--bs-btn-close-white-filter);
+}
+
+/* ================================= Header Css End =========================== */

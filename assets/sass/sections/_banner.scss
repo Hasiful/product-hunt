@@ -1,0 +1,190 @@
+/* =========================== Banner Section Start Here ========================= */
+.banner-section {
+  --this-p: 32px;
+  --radius: 12px;
+  position: relative;
+  z-index: 1;
+  padding: var(--this-p);
+  overflow: hidden;
+  background-position: top center;
+  border-radius: var(--radius);
+  background-color: hsl(var(--base) / 0.075);
+  background-image: radial-gradient(
+    circle,
+    hsl(var(--white) / 0.075) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 18px 18px;
+  background-position: 0 0;
+
+  @include sm-screen {
+    --this-p: 24px;
+  }
+
+  @include msm-screen {
+    --this-p: 16px;
+  }
+
+  &-img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+
+    @include msm-screen {
+      display: none;
+    }
+  }
+
+  @keyframes backgroundSize {
+    to {
+      background-size: 100%;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+    max-width: 300px;
+    z-index: -1;
+    animation: floatAnimation 5s linear infinite;
+
+    @include sm-screen {
+      display: none;
+    }
+
+    &.shape1 {
+      bottom: -30%;
+      right: 20%;
+      animation-delay: 0s;
+    }
+
+    &.shape2 {
+      top: -20%;
+      right: 20%;
+      animation-delay: 2s;
+    }
+  }
+
+  @keyframes floatAnimation {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(15px, -12px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.banner-content {
+  max-width: 660px;
+  position: relative;
+
+  @include md-screen {
+    max-width: 520px;
+  }
+
+  @include sm-screen {
+    max-width: 460px;
+  }
+
+  &__subtitle {
+    color: hsl(var(--heading-color));
+    border: 1px solid hsl(var(--white) / 0.075);
+    font-weight: 400;
+    margin-bottom: 12px;
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 9999px;
+    font-size: 0.8125rem;
+    box-shadow:
+      0 1px 2px hsl(var(--white) / 0.1),
+      0 0.5px hsl(var(--white) / 0.3) !important;
+    background-color: hsl(var(--section-bg));
+
+    @include lg-screen {
+      font-size: 0.75rem;
+    }
+  }
+
+  &__title {
+    font-size: rem(28px);
+    margin-bottom: 16px;
+    font-weight: 600;
+    max-width: 420px;
+
+    @include lg-screen {
+      font-size: rem(24px);
+    }
+  }
+
+  &__desc {
+    color: hsl(var(--white) / 0.75);
+    font-size: 0.9125rem;
+    margin-bottom: 32px;
+
+    @include lg-screen {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid hsl(var(--white) / 0.1);
+    border-radius: 32px;
+    padding: 6px;
+    background-color: hsl(var(--black));
+    box-shadow:
+      0 1px 2px #00000014,
+      0 0.5px #0000001f;
+
+    @include md-screen {
+      max-width: 420px;
+      padding: 4px;
+    }
+
+    @include sm-screen {
+      max-width: 360px;
+    }
+
+    .search-input {
+      width: 100%;
+      outline: 0;
+      border: 0;
+      color: hsl(var(--heading-color));
+      padding-inline: 13px;
+      background-color: transparent;
+      font-size: 0.9125rem;
+    }
+
+    .btn {
+      flex-shrink: 0;
+      border-radius: 8px;
+      padding: 8px 16px;
+
+      @include sm-screen {
+        padding: 7px 12px;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }
+}
+
+/* ========================= Banner Section End Here ========================= */

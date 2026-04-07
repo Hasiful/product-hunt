@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Car Dealer</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Fontasosome -->
+    <link rel="stylesheet" href="assets/css/fontasosome.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <!-- Quill -->
+    <link rel="stylesheet" href="assets/css/quill.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+    <!--==================== Overlay Start ====================-->
+    <div class="body-overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="sidebar-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <a class="scroll-top"><i class="fas fa-angle-up"></i></a>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+  </body>
+</html>
+
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="assets/images/logo/logo-white.png" alt="img" />
+      </a>
+
+      <button
+        class="navbar-toggler header-button"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span id="hiddenNav"><i class="las la-bars"></i></span>
+      </button>
+
+      <div
+        class="offcanvas border-0 offcanvas-end"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+      >
+        <div class="offcanvas-header">
+          <a class="logo navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo-white.png" alt="img" />
+          </a>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav nav-menu align-items-xl-center ms-xl-4 w-100">
+            <li class="nav-item d-xl-none">
+              <div class="dropdown lang-box">
+                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+                    ></path>
+                  </svg>
+                  <span class="text">English</span>
+                  <span class="icon">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li class="lang-box-item" data-code="en">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/us.png" alt="usa" />
+                      </div>
+                      <span class="text">English</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item selected" data-code="hn">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/bd.png" alt="bd" />
+                      </div>
+                      <span class="text">Bangla</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sp.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Spanish</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sa.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Arabic</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/pak.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Urdu</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/fr.png" alt="Spanish" />
+                      </div>
+                      <span class="text">French</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Best Products
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">
+                    Products
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Launches
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">Car</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html"> News </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html"> Forums </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item d-xl-none d-block">
+              <a href="login.html" class="btn w-100 btn--sm btn--base">
+                <span class="icon">
+                  <i class="fa-regular fa-circle-user"></i>
+                </span>
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-right d-none d-xl-flex">
+        <div class="dropdown lang-box">
+          <button class="lang-box-btn" data-bs-toggle="dropdown">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+              ></path>
+            </svg>
+            <span class="text">English</span>
+            <span class="icon">
+              <i class="fas fa-angle-down"></i>
+            </span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="lang-box-item" data-code="en">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/us.png" alt="usa" />
+                </div>
+                <span class="text">English</span>
+              </a>
+            </li>
+            <li class="lang-box-item selected" data-code="hn">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/bd.png" alt="bd" />
+                </div>
+                <span class="text">Bangla</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sp.png" alt="Spanish" />
+                </div>
+                <span class="text">Spanish</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sa.png" alt="Spanish" />
+                </div>
+                <span class="text">Arabic</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/pak.png" alt="Spanish" />
+                </div>
+                <span class="text">Urdu</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/fr.png" alt="Spanish" />
+                </div>
+                <span class="text">French</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="login.html" class="btn btn--base pill">
+          <span class="icon">
+            <i class="fa-regular fa-circle-user"></i>
+          </span>
+          Login
+        </a>
+        <a href="login.html" class="btn btn--light pill">
+          <span class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </span>
+          Subscribe
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+<!-- ==================== Breadcrumb Start Here ==================== -->
+<div class="breadcrumb">
+    <div class="breadcrumb__bg">
+        <video class="fit-image" muted loop autoplay src="assets/images/thumbs/banner.mp4"></video>
+    </div>
+    <div class="container">
+        <h2 class="breadcrumb__title">Demo for developer</h2>
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Home</a> </li>
+            <li class="breadcrumb__item">/</li>
+            <li class="breadcrumb__item"> <span class="breadcrumb__item-text">Demo for developer</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ==================== Breadcrumb End Here ==================== -->
+<main>
+    <section class="py-60">
+        <div class="container">
+            <div class="row gy-4 mb-4">
+                <!-- alert -->
+                <div class="col-lg-12">
+                    <div class="alert alert--base mb-4">
+                        <div class="alert__icon">
+                            <i class="fa fa-info"></i>
+                        </div>
+                        <div class="alert__content">
+                            <h6 class="alert__title">Tracking Update</h6>
+                            <p class="alert__desc">
+                                Shipment ID 654321 has departed from the sorting facility and is on its way to
+                                the
+                                delivery
+                                center
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="alert alert--info alert-dismissible fade show">
+                        <div class="alert__icon">
+                            <i class="fa fa-info"></i>
+                        </div>
+                        <div class="alert__content">
+
+                            <h6 class="alert__title">Alert Dismissible</h6>
+                            <p class="alert__desc">
+                                Shipment ID 654321 has departed from the sorting facility and is on its way to
+                                the
+                                delivery
+                                center
+                            </p>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                <i class="las la-times"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-6">
+                    <div class="card custom--card">
+                        <div class="card-header">
+                            <h5 class="card-title">Demo Card Title</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima officia eos quia
+                                numquam
+                                eligendi quo aliquam nemo saepe? Nostrum, numquam ratione cupiditate asperiores
+                                commodi
+                                nisi
+                                error. Facere perferendis sit id?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card custom--card mt-3">
+                        <div class="card-body">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn--base" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                demo modal
+                            </button>
+                            <p class="mt-4">
+                                <span class="badge badge--secondary">New</span>
+                                <span class="badge badge--base">New</span>
+                                <span class="badge badge--primary">New</span>
+                                <span class="badge badge--warning">New</span>
+                                <span class="badge badge--danger">New</span>
+                                <span class="badge badge--info">New</span>
+                                <span class="badge badge--dark">New</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal custom--modal fade" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                        <i class="las la-times"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima officia eos
+                                        quia
+                                        numquam
+                                        eligendi quo aliquam nemo saepe? Nostrum, numquam ratione cupiditate asperiores
+                                        commodi
+                                        nisi
+                                        error. Facere perferendis sit id?
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn--sm btn--secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn--sm btn--base">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- input style -->
+                <div class="col-lg-6">
+                    <div class="card custom--card">
+                        <div class="card-header">
+                            <h5 class="card-title">Input Style</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="input-group style-two">
+                                <input type="text" class="form-control form--control" placeholder="Add a comment">
+                                <button class="input-group-text" type="submit">
+                                    Send
+                                </button>
+                            </div>
+                            <div class="input-group my-3">
+                                <button class="input-group-text" type="submit">
+                                    <i class="fa fa-dollar"></i>
+                                </button>
+                                <input type="text" class="form-control form--control" placeholder="Add a comment">
+                            </div>
+                            <input type="file" class="form-control mb-3 form--control">
+
+                            <input type="text" class="form-control mb-3 form--control">
+
+                            <div class="form-group">
+                                <select name="country" id="country" class="select2">
+                                    <option value="">One</option>
+                                    <option value="">Two</option>
+                                    <option value="">Three</option>
+                                    <option value="">Four</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal -->
+                <div class="col-lg-6">
+                    <div class="card custom--card">
+                        <div class="card-header">
+                            <h5 class="card-title">list group</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordion -->
+                <div class="col-lg-6">
+                    <div class="card custom--card">
+                        <div class="card-body">
+                            <div class="accordion custom--accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is
+                                            shown by default, until the collapse
+                                            plugin adds the appropriate classes that we use to style each
+                                            element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions.
+                                            You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth
+                                            noting that just about any HTML can go
+                                            within the <code>.accordion-body</code>, though the transition does
+                                            limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is
+                                            hidden by default, until the collapse
+                                            plugin adds the appropriate classes that we use to style each
+                                            element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions.
+                                            You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth
+                                            noting that just about any HTML can go
+                                            within the <code>.accordion-body</code>, though the transition does
+                                            limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is
+                                            hidden by default, until the collapse
+                                            plugin adds the appropriate classes that we use to style each
+                                            element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions.
+                                            You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth
+                                            noting that just about any HTML can go
+                                            within the <code>.accordion-body</code>, though the transition does
+                                            limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- empty table -->
+            <div class="flex-between gap-2 mb-3">
+                <h4>History</h4>
+                <form class="dashboard-search-form">
+                    <div class="dashboard-search-form-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path d="M20.9992 21.0002L16.6992 16.7002" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+
+                    </div>
+                    <input type="text" class="form--control" placeholder="Search">
+                </form>
+            </div>
+            <table class="table table-responsive--md">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Shares Bought</th>
+                        <th>Total Profit </th>
+                        <th>Success Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="100%">
+                            <div class="empty-message">
+                                <p class="empty-message-icon">
+                                    <img src="assets/images/thumbs/no-data.gif" alt="img">
+                                </p>
+                                <p class="empty-message-text">
+                                    No transactions found
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- pagination -->
+            <div class="pagination-wrapper">
+    <nav class="d-flex justify-items-center justify-content-between justify-content-end">
+        <div class="d-flex justify-content-between flex-fill d-sm-none">
+            <ul class="pagination">
+                <li class="page-item disabled" aria-disabled="true">
+                    <span class="page-link">‹</span>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="" rel="next">›</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between">
+            <div>
+                <p class="small text-muted">
+                    Showing
+                    <span class="fw-semibold">1</span>
+                    to
+                    <span class="fw-semibold">20</span>
+                    of
+                    <span class="fw-semibold">85</span>
+                    results
+                </p>
+            </div>
+
+            <div>
+                <ul class="pagination">
+                    <li class="page-item disabled" aria-disabled="true" aria-label="‹">
+                        <span class="page-link" aria-hidden="true">‹</span>
+                    </li>
+
+                    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                    <li class="page-item"><a class="page-link" href="">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="">3</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="">4</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="" rel="next" aria-label="›">›</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+        </div>
+    </section>
+</main>
+<footer class="footer">
+  <!-- ===== Newsletter Strip ===== -->
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="footer-newsletter__inner">
+        <div class="footer-newsletter__text">
+          <h4 class="footer-newsletter__title">Stay in the loop</h4>
+          <p class="footer-newsletter__desc">
+            Get weekly product launches, maker stories & platform updates.
+          </p>
+        </div>
+        <form class="footer-newsletter__form" novalidate>
+          <div class="footer-newsletter__field">
+            <i class="fa-regular fa-envelope footer-newsletter__icon"></i>
+            <input
+              type="email"
+              class="footer-newsletter__input"
+              placeholder="your@email.com"
+            />
+          </div>
+          <button type="submit" class="footer-newsletter__btn">
+            Subscribe
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Main Footer Body ===== -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-brand">
+            <a class="footer-brand__logo" href="index.html">
+              <img src="assets/images/logo/logo-white.png" alt="ProductLab" />
+            </a>
+            <p class="footer-brand__desc">
+              A product discovery platform for makers, builders, and early
+              adopters. Launch, explore, and grow — together.
+            </p>
+            <ul class="footer-socials">
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Platform</h3>
+            <ul class="footer-nav__list">
+              <li><a href="index.html" class="footer-nav__link">Home</a></li>
+              <li><a href="#" class="footer-nav__link">Products</a></li>
+              <li><a href="#" class="footer-nav__link">Launches</a></li>
+              <li><a href="forum.html" class="footer-nav__link">Forums</a></li>
+              <li>
+                <a href="contact.html" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Resources</h3>
+            <ul class="footer-nav__list">
+              <li><a href="blog.html" class="footer-nav__link">Blog</a></li>
+              <li><a href="#" class="footer-nav__link">Documentation</a></li>
+              <li><a href="#" class="footer-nav__link">FAQs</a></li>
+              <li><a href="#" class="footer-nav__link">Changelog</a></li>
+              <li><a href="#" class="footer-nav__link">Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Get in Touch</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="footer-contact-list__text"
+                  >Innovation Hub, Tech City, USA</span
+                >
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <a
+                  href="mailto:hello@productlab.com"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  hello@productlab.com
+                </a>
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <a
+                  href="tel:+1800123456"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  +1 800 123 456
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Bottom Bar ===== -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <p class="footer-bottom__copy">
+          &copy; 2026 <a href="index.html">ProductLab</a>. All rights reserved.
+        </p>
+        <nav class="footer-bottom__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- select2 -->
+<script src="assets/js/select2.min.js"></script>
+<!-- range slider -->
+<script src="assets/js/jquery-ui.min.js"></script>
+<!-- wow -->
+<script src="assets/js/wow.min.js"></script>
+<!-- popup -->
+<script src="assets/js/popup.js"></script>
+<!-- Quill -->
+<script src="assets/js/quill.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

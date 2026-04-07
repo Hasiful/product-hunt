@@ -1,0 +1,463 @@
+/* ================================= Form Css Start =========================== */
+/* Form Label */
+.form--label {
+  margin-bottom: 8px;
+  color: hsl(var(--heading-color));
+  font-weight: 500;
+  line-height: 140%;
+  font-size: 0.875rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Form Select */
+.select {
+  color: hsl(var(--black) / 0.6) !important;
+
+  &:focus {
+    border-color: hsl(var(--base));
+    color: hsl(var(--black)) !important;
+  }
+
+  option {
+    background-color: hsl(var(--black));
+    color: hsl(var(--white));
+  }
+}
+
+/* Form Select End */
+
+/* Form Control Start */
+
+.form--control {
+  border-radius: 8px;
+  font-weight: 400;
+  outline: none;
+  width: 100%;
+  padding: 14px 20px;
+  background: hsl(var(--white) / 0.04);
+  font-size: 0.875rem;
+  border: 1px solid hsl(var(--border-color));
+  color: hsl(var(--white)) !important;
+  line-height: 1.4;
+  --file-margin-left: 8px;
+  --file-line-height: 48px;
+
+  @include sm-screen {
+    padding: 11px 20px;
+  }
+
+  &.sm-style {
+    padding: 9px 16px;
+    font-size: 0.875rem;
+    --file-line-height: 38px;
+    --file-margin-left: 6px;
+
+    @include sm-screen {
+      padding: 7px 16px;
+      --file-line-height: 35px;
+    }
+  }
+
+  &::placeholder {
+    color: hsl(var(--body-color) / 0.5);
+  }
+
+  &:focus {
+    border-color: hsl(var(--base));
+    background: hsl(var(--white) / 0.05);
+    box-shadow: 0 0 0 3px hsl(var(--base) / 0.12);
+  }
+
+  &:disabled,
+  &[readonly] {
+    background-color: hsl(var(--black) / 0.2);
+    opacity: 1;
+    border: 0;
+  }
+
+  &[type="password"] {
+    color: hsl(var(--black) / 0.5);
+
+    &:focus {
+      color: hsl(var(--black));
+    }
+  }
+
+  &[type="file"] {
+    line-height: var(--file-line-height);
+    padding: 0;
+    position: relative;
+
+    &::file-selector-button {
+      border: 1px solid hsl(var(--black) / 0.08);
+      padding: 3px;
+      border-radius: 4px;
+      background-color: hsl(var(--base)) !important;
+      transition: 0.2s linear;
+      line-height: 25px;
+      position: relative;
+      margin-left: var(--file-margin-left);
+      color: hsl(var(--dark)) !important;
+
+      @include sm-screen {
+        padding: 2px;
+        font-size: rem(14);
+        line-height: 20px;
+      }
+
+      &:hover {
+        background-color: hsl(var(--base));
+        border: 1px solid hsl(var(--base));
+        color: hsl(var(--black));
+      }
+    }
+  }
+}
+
+/* Form Control End */
+
+// Message Field Css
+textarea.form--control {
+  height: 150px;
+
+  @include lg-screen {
+    height: 120px;
+  }
+
+  @include md-screen {
+    height: 100px;
+  }
+
+  @include sm-screen {
+    height: 80px;
+  }
+}
+
+/* Autofill Css */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: hsl(var(--white)) !important;
+  caret-color: hsl(var(--white));
+}
+
+/* Autofill Css End */
+
+/* input group */
+.input--group {
+  position: relative;
+}
+
+/* Show Hide Password */
+input#your-password,
+input#confirm-password {
+  padding-right: 50px;
+}
+
+.password-show-hide {
+  position: absolute;
+  right: 20px;
+  z-index: 5;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  color: hsl(var(--white) / 0.4);
+}
+
+/* --------------- Number Arrow None --------------------- */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+/* Custom Checkbox Design */
+.form--check {
+  @extend .flex-wrap;
+  gap: 6px;
+
+  a {
+    display: inline;
+  }
+
+  .form-check-input {
+    box-shadow: none;
+    background-color: transparent;
+    box-shadow: none !important;
+    border: 0;
+    position: relative;
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid hsl(var(--white) / 0.2);
+    cursor: pointer;
+
+    &:checked {
+      background-color: hsl(var(--base)) !important;
+      border-color: hsl(var(--base)) !important;
+      box-shadow: none;
+
+      &[type="checkbox"] {
+        background-image: none;
+      }
+
+      &::before {
+        position: absolute;
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: hsl(var(--black));
+        @include fs-11;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .form-check-label {
+    cursor: pointer;
+    font-size: rem(14px);
+    user-select: none;
+    color: hsl(var(--white));
+  }
+
+  label {
+    @include xsm-screen {
+      @include fs-15;
+    }
+  }
+
+  a {
+    @include xsm-screen {
+      @include fs-15;
+    }
+  }
+}
+
+/* Custom Radio Design */
+.form--radio {
+  @extend .flex-wrap;
+
+  .form-check-input {
+    box-shadow: none;
+    border: 1px solid hsl(var(--white) / 0.2);
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+
+    &:active {
+      filter: brightness(100%);
+    }
+
+    &:checked {
+      background-color: transparent;
+      border-color: hsl(var(--base));
+
+      &[type="radio"] {
+        background-image: none;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 7px;
+        height: 7px;
+        background-color: hsl(var(--base));
+        border-radius: 50%;
+        z-index: 999;
+      }
+    }
+  }
+
+  .form-check-label {
+    font-weight: 600;
+    width: calc(100% - 16px);
+    padding-left: 12px;
+    cursor: pointer;
+    @include fs-14;
+  }
+}
+
+/*  Custom Switch Design */
+.form--switch {
+  --width: 44px;
+  --height: 24px;
+  --offset: 2px;
+  --color: hsl(var(--base));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 8px;
+
+  .form-check-input {
+    width: var(--width);
+    height: var(--height);
+    border: none;
+    margin-top: 0px;
+    border-radius: 999px;
+    position: relative;
+    background: hsl(var(--border-color)) !important;
+    cursor: pointer;
+    transition: 0.2s linear;
+
+    &::before {
+      --size: calc(var(--height) * 0.8333333333);
+      content: "";
+      width: var(--size);
+      height: var(--size);
+      background-color: hsl(var(--white));
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 2px;
+      left: var(--offset);
+      border-radius: 50%;
+      transition: 0.2s linear;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:checked {
+      background-image: none;
+      background: var(--color) !important;
+
+      &::before {
+        left: calc(100% - (var(--size) + var(--offset)));
+        background-color: hsl(var(--dark)) !important;
+      }
+    }
+  }
+
+  .form-check-label {
+    font-size: rem(14px);
+    font-weight: 400;
+    line-height: 100%;
+    color: hsl(var(--gray-l-500));
+    cursor: pointer;
+  }
+
+  &.base {
+    --color: hsl(var(--base));
+  }
+
+  &.base-two {
+    --color: hsl(var(--base-two));
+  }
+
+  &.primary {
+    --color: hsl(var(--primary));
+  }
+
+  &.success {
+    --color: hsl(var(--success));
+  }
+
+  &.danger {
+    --color: hsl(var(--danger));
+  }
+
+  &.warning {
+    --color: hsl(var(--warning));
+  }
+
+  &.info {
+    --color: hsl(var(--info));
+  }
+}
+
+/*  Custom Switch End Design */
+/* ================================= Form Css End =========================== */
+
+/* --======================Custom Input group Start ======================*/
+
+.input-group {
+  border-radius: 8px;
+  border: 1px solid hsl(var(--border-color));
+  overflow: hidden;
+
+  &.style-two {
+    border: 1px solid hsl(var(--border-color) / 0.4);
+    background: hsl(var(--section-bg) / 0.2);
+
+    .input-group-text {
+      color: hsl(var(--body-color));
+      background-color: hsl(var(--section-bg));
+      font-weight: 700;
+      color: hsl(var(--heading-color));
+    }
+  }
+
+  .form--control {
+    border-width: 0px !important;
+    box-shadow: unset;
+  }
+
+  &-text {
+    border-width: 0px;
+    background-color: transparent;
+    position: relative;
+    color: hsl(var(--white));
+  }
+
+  &:focus-within {
+    border: 1px solid hsl(var(--base));
+  }
+
+  .form--control[readonly] {
+    background: hsl(var(--black) / 0.3) !important;
+  }
+
+  .form--control[readonly]:focus {
+    border-color: hsl(var(--black) / 0.3);
+  }
+
+  .form--control:focus {
+    box-shadow: unset !important;
+  }
+
+  &:has(.form--control[readonly]) {
+    background: hsl(var(--black) / 0.3) !important;
+  }
+
+  &:has(.form--control[readonly]):focus-within {
+    border-color: hsl(var(--black) / 0.4) !important;
+  }
+}
+
+/* --======================Custom Input group End ======================*/
+
+.list-group-item {
+  padding-inline: 0;
+  background: transparent;
+  color: hsl(var(--white));
+
+  &:not(:last-child) {
+    border-bottom: 1px solid hsl(var(--border-color) / 0.5);
+  }
+}

@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Car Dealer</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Fontasosome -->
+    <link rel="stylesheet" href="assets/css/fontasosome.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <!-- Quill -->
+    <link rel="stylesheet" href="assets/css/quill.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+    <!--==================== Overlay Start ====================-->
+    <div class="body-overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="sidebar-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <a class="scroll-top"><i class="fas fa-angle-up"></i></a>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+  </body>
+</html>
+ <!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="assets/images/logo/logo-white.png" alt="img" />
+      </a>
+
+      <button
+        class="navbar-toggler header-button"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span id="hiddenNav"><i class="las la-bars"></i></span>
+      </button>
+
+      <div
+        class="offcanvas border-0 offcanvas-end"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+      >
+        <div class="offcanvas-header">
+          <a class="logo navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo-white.png" alt="img" />
+          </a>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav nav-menu align-items-xl-center ms-xl-4 w-100">
+            <li class="nav-item d-xl-none">
+              <div class="dropdown lang-box">
+                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+                    ></path>
+                  </svg>
+                  <span class="text">English</span>
+                  <span class="icon">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li class="lang-box-item" data-code="en">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/us.png" alt="usa" />
+                      </div>
+                      <span class="text">English</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item selected" data-code="hn">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/bd.png" alt="bd" />
+                      </div>
+                      <span class="text">Bangla</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sp.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Spanish</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sa.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Arabic</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/pak.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Urdu</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/fr.png" alt="Spanish" />
+                      </div>
+                      <span class="text">French</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Best Products
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">
+                    Products
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Launches
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">Car</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html"> News </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html"> Forums </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item d-xl-none d-block">
+              <a href="login.html" class="btn w-100 btn--sm btn--base">
+                <span class="icon">
+                  <i class="fa-regular fa-circle-user"></i>
+                </span>
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-right d-none d-xl-flex">
+        <div class="dropdown lang-box">
+          <button class="lang-box-btn" data-bs-toggle="dropdown">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+              ></path>
+            </svg>
+            <span class="text">English</span>
+            <span class="icon">
+              <i class="fas fa-angle-down"></i>
+            </span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="lang-box-item" data-code="en">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/us.png" alt="usa" />
+                </div>
+                <span class="text">English</span>
+              </a>
+            </li>
+            <li class="lang-box-item selected" data-code="hn">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/bd.png" alt="bd" />
+                </div>
+                <span class="text">Bangla</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sp.png" alt="Spanish" />
+                </div>
+                <span class="text">Spanish</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sa.png" alt="Spanish" />
+                </div>
+                <span class="text">Arabic</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/pak.png" alt="Spanish" />
+                </div>
+                <span class="text">Urdu</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/fr.png" alt="Spanish" />
+                </div>
+                <span class="text">French</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="login.html" class="btn btn--base pill">
+          <span class="icon">
+            <i class="fa-regular fa-circle-user"></i>
+          </span>
+          Login
+        </a>
+        <a href="login.html" class="btn btn--light pill">
+          <span class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </span>
+          Subscribe
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+<main>
+  <!-- ==================== Blog Start Here ==================== -->
+  <section class="blog-detials my-60">
+    <div class="container">
+      <div class="row gy-5 justify-content-center">
+        <div class="col-xl-9 col-lg-8">
+          <div class="blog-details">
+            <div class="blog-details-top">
+              <h4 class="blog-details__title">
+                How to Choose Personalized Gifts
+              </h4>
+
+              <h5 class="blog-details__date h6">Posted On 14 August 25</h5>
+              <div class="blog-share">
+                <ul class="social-list">
+                  <li class="social-list__item">
+                    <a
+                      class="social-list__link flex-center"
+                      target="_blank"
+                      href=""
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                      Facebook
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      class="social-list__link flex-center"
+                      target="_blank"
+                      href=""
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                      Twitter
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      class="social-list__link flex-center"
+                      target="_blank"
+                      href=""
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                      Linkedin
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      class="social-list__link flex-center"
+                      target="_blank"
+                      href=""
+                    >
+                      <i class="fab fa-pinterest"></i>
+                      Pinterest
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="blog-details__thumb">
+              <img src="assets/images/blog/1.png" class="fit-image" alt="img" />
+            </div>
+            <div class="blog-details__content">
+              <div class="content-item">
+                <h5 class="mb-3">Empower Your Creativity with Smart Tools</h5>
+                <div class="mb-3">
+                  From automatic clipping to subtitle syncing, our intelligent
+                  tools work behind the scenes to help you bring your ideas to
+                  lifeu2014faster and with less effort. Focus on the story;
+                  weu2019ll handle the tech.
+                </div>
+                <blockquote
+                  style="
+                    font-style: italic;
+                    padding: 20px;
+                    background: #ffae9825;
+                    font-weight: 500;
+                    font-size: 18px;
+                    border-left: 4px solid #ffae98;
+                    color: #ffff;
+                  "
+                >
+                  Technology should amplify creativity, not get in its way.
+                </blockquote>
+                <h5 class="mb-3">
+                  Automate the Repetitive, Personalize the Creative
+                </h5>
+                <div class="mb-3">
+                  Let automation take care of time-consuming tasks like
+                  formatting, exporting, or subtitle generationu2014while you
+                  stay in full control of creative direction and style.<br />
+                </div>
+
+                <h5 class="mb-3">
+                  Maintain Consistency Across All Your Content
+                </h5>
+                <div class="mb-3">
+                  Build a library of visual presets and reusable templates. With
+                  just a few clicks, keep every video aligned with your brand,
+                  voice, and publishing standards.<br />
+                </div>
+                <h5 class="mb-3">Collaboration Made Simple</h5>
+                <div class="mb-3">
+                  Invite teammates, share drafts, or get instant
+                  feedbacku2014all from one central platform. Whether you work
+                  solo or with a team, content creation becomes smoother and
+                  more connected.<br />
+                </div>
+
+                <blockquote
+                  style="
+                    font-style: italic;
+                    padding: 20px;
+                    background: #ffae9825;
+                    font-weight: 500;
+                    font-size: 18px;
+                    border-left: 4px solid #ffae98;
+                    color: #ffff;
+                  "
+                >
+                  Great content is rarely made alone. Share. Collaborate. Grow
+                  together.
+                </blockquote>
+                <h5 class="mb-3">Track Every Clipu2019s Performance</h5>
+                <div class="mb-3">
+                  Integrated analytics help you measure what works and optimize
+                  future clips. View engagement, click-through rates, and watch
+                  time in real-timeu2014all in one place.<br />
+                </div>
+                <h5 class="mb-3">Built-In Quality Control</h5>
+                <div class="mb-3">
+                  Preview, proof, and perfect every video before publishing.
+                  Flag errors, tweak subtitle timing, or adjust transitions
+                  until everything looks just right.<br />
+                </div>
+                <h5 class="mb-3">Flexible Enough to Fit Any Workflow</h5>
+                <div class="mb-3">
+                  No matter your content strategyu2014daily posts, campaign
+                  rollouts, or one-off editsu2014our platform adapts to your
+                  process, not the other way around.<br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <!-- ============================= Blog Details Sidebar Start ======================== -->
+<div class="blog-sidebar-wrapper">
+    <div class="blog-sidebar">
+        <h5 class="blog-sidebar__title wow fadeInUp" data-wow-delay="0.2s"> Related post </h5>
+
+        <div class="latest-blog-wrapper">
+            <div class="latest-blog wow fadeInUp" data-wow-delay="0.2s">
+                <div class="latest-blog__thumb">
+                    <a href="blog-details.html"> <img src="assets/images/blog/4.png" class="fit-image" alt="image"></a>
+                </div>
+                <div class="latest-blog__content">
+                    <p class="latest-blog__title">
+                        <a href="blog-details.html">Bill Walsh leadership lessons</a>
+                    </p>
+                    <p class="latest-blog__desc">
+                        Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                    </p>
+                    <span class="latest-blog__date">17 Jan 2024</span>
+                </div>
+            </div>
+            <div class="latest-blog wow fadeInUp" data-wow-delay="0.2s">
+                <div class="latest-blog__thumb">
+                    <a href="blog-details.html"> <img src="assets/images/blog/2.png" class="fit-image" alt="image"></a>
+                </div>
+                <div class="latest-blog__content">
+                    <p class="latest-blog__title">
+                        <a href="blog-details.html">PM mental models</a>
+                    </p>
+                    <p class="latest-blog__desc">
+                        Mental models are simple expressions of complex processes or relationships.
+                    </p>
+                    <span class="latest-blog__date">17 Jan 2024</span>
+                </div>
+            </div>
+            <div class="latest-blog wow fadeInUp" data-wow-delay="0.2s">
+                <div class="latest-blog__thumb">
+                    <a href="blog-details.html"> <img src="assets/images/blog/3.png" class="fit-image" alt="image"></a>
+                </div>
+                <div class="latest-blog__content">
+                    <p class="latest-blog__title">
+                        <a href="blog-details.html">What is Wireframing?</a>
+                    </p>
+                    <p class="latest-blog__desc">
+                        Introduction to Wireframing and its Principles. Learn from the best in the industry.
+                    </p>
+                    <span class="latest-blog__date">17 Jan 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================= Blog Details Sidebar End ======================== -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== Blog End Here ==================== -->
+</main>
+<!-- Footer -->
+<footer class="footer">
+  <!-- ===== Newsletter Strip ===== -->
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="footer-newsletter__inner">
+        <div class="footer-newsletter__text">
+          <h4 class="footer-newsletter__title">Stay in the loop</h4>
+          <p class="footer-newsletter__desc">
+            Get weekly product launches, maker stories & platform updates.
+          </p>
+        </div>
+        <form class="footer-newsletter__form" novalidate>
+          <div class="footer-newsletter__field">
+            <i class="fa-regular fa-envelope footer-newsletter__icon"></i>
+            <input
+              type="email"
+              class="footer-newsletter__input"
+              placeholder="your@email.com"
+            />
+          </div>
+          <button type="submit" class="footer-newsletter__btn">
+            Subscribe
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Main Footer Body ===== -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-brand">
+            <a class="footer-brand__logo" href="index.html">
+              <img src="assets/images/logo/logo-white.png" alt="ProductLab" />
+            </a>
+            <p class="footer-brand__desc">
+              A product discovery platform for makers, builders, and early
+              adopters. Launch, explore, and grow — together.
+            </p>
+            <ul class="footer-socials">
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Platform</h3>
+            <ul class="footer-nav__list">
+              <li><a href="index.html" class="footer-nav__link">Home</a></li>
+              <li><a href="#" class="footer-nav__link">Products</a></li>
+              <li><a href="#" class="footer-nav__link">Launches</a></li>
+              <li><a href="forum.html" class="footer-nav__link">Forums</a></li>
+              <li>
+                <a href="contact.html" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Resources</h3>
+            <ul class="footer-nav__list">
+              <li><a href="blog.html" class="footer-nav__link">Blog</a></li>
+              <li><a href="#" class="footer-nav__link">Documentation</a></li>
+              <li><a href="#" class="footer-nav__link">FAQs</a></li>
+              <li><a href="#" class="footer-nav__link">Changelog</a></li>
+              <li><a href="#" class="footer-nav__link">Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Get in Touch</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="footer-contact-list__text"
+                  >Innovation Hub, Tech City, USA</span
+                >
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <a
+                  href="mailto:hello@productlab.com"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  hello@productlab.com
+                </a>
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <a
+                  href="tel:+1800123456"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  +1 800 123 456
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Bottom Bar ===== -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <p class="footer-bottom__copy">
+          &copy; 2026 <a href="index.html">ProductLab</a>. All rights reserved.
+        </p>
+        <nav class="footer-bottom__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+ <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- select2 -->
+<script src="assets/js/select2.min.js"></script>
+<!-- range slider -->
+<script src="assets/js/jquery-ui.min.js"></script>
+<!-- wow -->
+<script src="assets/js/wow.min.js"></script>
+<!-- popup -->
+<script src="assets/js/popup.js"></script>
+<!-- Quill -->
+<script src="assets/js/quill.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Car Dealer</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Fontasosome -->
+    <link rel="stylesheet" href="assets/css/fontasosome.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <!-- Quill -->
+    <link rel="stylesheet" href="assets/css/quill.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+    <!--==================== Overlay Start ====================-->
+    <div class="body-overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="sidebar-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <a class="scroll-top"><i class="fas fa-angle-up"></i></a>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+  </body>
+</html>
+ <!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="assets/images/logo/logo-white.png" alt="img" />
+      </a>
+
+      <button
+        class="navbar-toggler header-button"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span id="hiddenNav"><i class="las la-bars"></i></span>
+      </button>
+
+      <div
+        class="offcanvas border-0 offcanvas-end"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+      >
+        <div class="offcanvas-header">
+          <a class="logo navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo-white.png" alt="img" />
+          </a>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav nav-menu align-items-xl-center ms-xl-4 w-100">
+            <li class="nav-item d-xl-none">
+              <div class="dropdown lang-box">
+                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+                    ></path>
+                  </svg>
+                  <span class="text">English</span>
+                  <span class="icon">
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li class="lang-box-item" data-code="en">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/us.png" alt="usa" />
+                      </div>
+                      <span class="text">English</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item selected" data-code="hn">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/bd.png" alt="bd" />
+                      </div>
+                      <span class="text">Bangla</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sp.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Spanish</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/sa.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Arabic</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/pak.png" alt="Spanish" />
+                      </div>
+                      <span class="text">Urdu</span>
+                    </a>
+                  </li>
+                  <li class="lang-box-item" data-code="es">
+                    <a href="" class="lang-box-link">
+                      <div class="thumb">
+                        <img src="assets/images/flags/fr.png" alt="Spanish" />
+                      </div>
+                      <span class="text">French</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Best Products
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">
+                    Products
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Launches
+                <span class="nav-item__icon">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu header-dropdown">
+                <li class="dropdown-menu__list">
+                  <a class="dropdown-item dropdown-menu__link" href="">Car</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html"> News </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html"> Forums </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item d-xl-none d-block">
+              <a href="login.html" class="btn w-100 btn--sm btn--base">
+                <span class="icon">
+                  <i class="fa-regular fa-circle-user"></i>
+                </span>
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-right d-none d-xl-flex">
+        <div class="dropdown lang-box">
+          <button class="lang-box-btn" data-bs-toggle="dropdown">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z"
+              ></path>
+            </svg>
+            <span class="text">English</span>
+            <span class="icon">
+              <i class="fas fa-angle-down"></i>
+            </span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="lang-box-item" data-code="en">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/us.png" alt="usa" />
+                </div>
+                <span class="text">English</span>
+              </a>
+            </li>
+            <li class="lang-box-item selected" data-code="hn">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/bd.png" alt="bd" />
+                </div>
+                <span class="text">Bangla</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sp.png" alt="Spanish" />
+                </div>
+                <span class="text">Spanish</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/sa.png" alt="Spanish" />
+                </div>
+                <span class="text">Arabic</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/pak.png" alt="Spanish" />
+                </div>
+                <span class="text">Urdu</span>
+              </a>
+            </li>
+            <li class="lang-box-item" data-code="es">
+              <a href="" class="lang-box-link">
+                <div class="thumb">
+                  <img src="assets/images/flags/fr.png" alt="Spanish" />
+                </div>
+                <span class="text">French</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="login.html" class="btn btn--base pill">
+          <span class="icon">
+            <i class="fa-regular fa-circle-user"></i>
+          </span>
+          Login
+        </a>
+        <a href="login.html" class="btn btn--light pill">
+          <span class="icon">
+            <i class="fa-regular fa-envelope"></i>
+          </span>
+          Subscribe
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+<main>
+  <section class="contact-section my-60">
+    <div class="container">
+      <ul class="row gy-4 mb-60">
+        <div class="col-lg-4 col-sm-6">
+          <li class="contact-info-item">
+            <span class="contact-info-item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              </svg>
+            </span>
+            <div class="contact-info-item__body">
+              <span class="contact-info-item__label">Email</span>
+              <a
+                class="contact-info-item__value"
+                href="mailto:support@viserexam.com"
+                >support@viserexam.com</a
+              >
+            </div>
+          </li>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <li class="contact-info-item">
+            <span class="contact-info-item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                ></path>
+              </svg>
+            </span>
+            <div class="contact-info-item__body">
+              <span class="contact-info-item__label">Phone</span>
+              <a class="contact-info-item__value" href="tel:+52300000000"
+                >+523-00000000</a
+              >
+            </div>
+          </li>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <li class="contact-info-item">
+            <span class="contact-info-item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                ></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </span>
+            <div class="contact-info-item__body">
+              <span class="contact-info-item__label">Address</span>
+              <span class="contact-info-item__value"
+                >123 Roofing Avenue, Suite 04 City, State 12345</span
+              >
+            </div>
+          </li>
+        </div>
+      </ul>
+
+      <div class="contact-wrapper">
+        <div class="contact-info-panel">
+          <span
+            class="contact-info-panel__blob contact-info-panel__blob--1"
+            aria-hidden="true"
+          ></span>
+          <span
+            class="contact-info-panel__blob contact-info-panel__blob--2"
+            aria-hidden="true"
+          ></span>
+
+          <div class="contact-info-panel__content">
+            <h2 class="contact-info-panel__heading">Let's talk</h2>
+            <p class="contact-info-panel__desc">
+              Have a question or want to work together? Fill in the form or
+              reach us directly — we'd love to hear from you.
+            </p>
+
+            <div class="contact-info-thumb">
+              <img src="assets/images/thumbs/contact.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-panel">
+          <h3 class="contact-form-panel__title">Send us a message</h3>
+          <p class="contact-form-panel__subtitle">
+            We typically respond within one business day.
+          </p>
+
+          <form class="contact-form" novalidate>
+            <div class="contact-form__row">
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="contact-name"
+                  >Full Name</label
+                >
+                <input
+                  id="contact-name"
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="contact-email"
+                  >Email Address</label
+                >
+                <input
+                  id="contact-email"
+                  type="email"
+                  class="contact-form__input"
+                  placeholder="john@example.com"
+                />
+              </div>
+            </div>
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="contact-subject"
+                >Subject
+                <span class="contact-form__optional">(optional)</span></label
+              >
+              <input
+                id="contact-subject"
+                type="text"
+                class="contact-form__input"
+                placeholder="What's this about?"
+              />
+            </div>
+            <div class="contact-form__group">
+              <label class="contact-form__label" for="contact-message"
+                >Message</label
+              >
+              <textarea
+                id="contact-message"
+                class="contact-form__input contact-form__textarea"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <button type="submit" class="contact-form__submit">
+              Send Message
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+  <!-- ===== Newsletter Strip ===== -->
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="footer-newsletter__inner">
+        <div class="footer-newsletter__text">
+          <h4 class="footer-newsletter__title">Stay in the loop</h4>
+          <p class="footer-newsletter__desc">
+            Get weekly product launches, maker stories & platform updates.
+          </p>
+        </div>
+        <form class="footer-newsletter__form" novalidate>
+          <div class="footer-newsletter__field">
+            <i class="fa-regular fa-envelope footer-newsletter__icon"></i>
+            <input
+              type="email"
+              class="footer-newsletter__input"
+              placeholder="your@email.com"
+            />
+          </div>
+          <button type="submit" class="footer-newsletter__btn">
+            Subscribe
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Main Footer Body ===== -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-brand">
+            <a class="footer-brand__logo" href="index.html">
+              <img src="assets/images/logo/logo-white.png" alt="ProductLab" />
+            </a>
+            <p class="footer-brand__desc">
+              A product discovery platform for makers, builders, and early
+              adopters. Launch, explore, and grow — together.
+            </p>
+            <ul class="footer-socials">
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-socials__link" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Platform</h3>
+            <ul class="footer-nav__list">
+              <li><a href="index.html" class="footer-nav__link">Home</a></li>
+              <li><a href="#" class="footer-nav__link">Products</a></li>
+              <li><a href="#" class="footer-nav__link">Launches</a></li>
+              <li><a href="forum.html" class="footer-nav__link">Forums</a></li>
+              <li>
+                <a href="contact.html" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Resources</h3>
+            <ul class="footer-nav__list">
+              <li><a href="blog.html" class="footer-nav__link">Blog</a></li>
+              <li><a href="#" class="footer-nav__link">Documentation</a></li>
+              <li><a href="#" class="footer-nav__link">FAQs</a></li>
+              <li><a href="#" class="footer-nav__link">Changelog</a></li>
+              <li><a href="#" class="footer-nav__link">Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+          <div class="footer-nav">
+            <h3 class="footer-nav__title">Get in Touch</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="footer-contact-list__text"
+                  >Innovation Hub, Tech City, USA</span
+                >
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <a
+                  href="mailto:hello@productlab.com"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  hello@productlab.com
+                </a>
+              </li>
+              <li class="footer-contact-list__item">
+                <span class="footer-contact-list__icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <a
+                  href="tel:+1800123456"
+                  class="footer-contact-list__text footer-contact-list__link"
+                >
+                  +1 800 123 456
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Bottom Bar ===== -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <p class="footer-bottom__copy">
+          &copy; 2026 <a href="index.html">ProductLab</a>. All rights reserved.
+        </p>
+        <nav class="footer-bottom__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+ <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- select2 -->
+<script src="assets/js/select2.min.js"></script>
+<!-- range slider -->
+<script src="assets/js/jquery-ui.min.js"></script>
+<!-- wow -->
+<script src="assets/js/wow.min.js"></script>
+<!-- popup -->
+<script src="assets/js/popup.js"></script>
+<!-- Quill -->
+<script src="assets/js/quill.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
