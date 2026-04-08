@@ -182,13 +182,6 @@
 
       // =======Gallery magnific Popup Icon Js Start ===
 
-      // Hide items beyond the first 5 in the view
-      $(".details-view-item").each(function (index) {
-        if (index >= 5) {
-          $(this).hide();
-        }
-      });
-
       $(".details-view-item").magnificPopup({
         type: "image",
         gallery: {
@@ -301,21 +294,6 @@
     const tooltipList = [...tooltipTriggerList].map(
       (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
     );
-
-    // Range slider start
-
-    $("#slider-range").slider({
-      range: true,
-      min: 60,
-      max: 100,
-      values: [60, 100],
-      slide: function (event, ui) {
-        $("input[name=min_price]").val(ui.values[0]);
-        $("input[name=max_price]").val(ui.values[1]);
-      },
-    });
-
-    // Range slider end
   });
 
   // ==========================================
