@@ -26,7 +26,7 @@
     transform: translateY(-3px);
   }
 
-  @include lg-screen {
+  @include msm-screen {
     padding: 12px;
   }
 
@@ -48,7 +48,7 @@
     border: 1px solid hsl(var(--base) / 0.3);
     flex-shrink: 0;
 
-    @include lg-screen {
+    @include msm-screen {
       --size: 36px;
       font-size: rem(20px);
     }
@@ -58,7 +58,7 @@
     font-size: 1rem;
     margin-bottom: 6px;
 
-    @include lg-screen {
+    @include msm-screen {
       font-size: 0.875rem;
     }
   }
@@ -68,9 +68,9 @@
     align-items: center;
     gap: 6px;
     color: hsl(var(--white) / 0.75);
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
 
-    @include lg-screen {
+    @include sm-screen {
       font-size: 0.75rem;
       white-space: nowrap;
     }

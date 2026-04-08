@@ -61,14 +61,14 @@
   }
 
   &-title {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 500;
     margin-bottom: 6px;
     line-height: 1.2;
   }
 
   &-desc {
-    font-size: 0.8125rem;
+    font-size: 0.9125rem;
     color: hsl(var(--white) / 0.8);
     margin-bottom: 12px;
     line-height: 1.5;
@@ -82,7 +82,7 @@
     gap: 10px;
 
     .tag {
-      font-size: 0.75rem;
+      font-size: 0.875rem;
       padding: 4px 14px;
       border-radius: 30px;
       font-weight: 500;

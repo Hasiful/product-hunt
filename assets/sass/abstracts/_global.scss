@@ -2,9 +2,11 @@
 .section-heading {
   --outer-m: 24px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: var(--outer-m);
+  flex-wrap: wrap;
+  gap: 16px;
 
   &-content {
     max-width: max-content;
@@ -12,8 +14,12 @@
   }
 
   &-title {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.15;
+
+    @include sm-screen {
+      font-size: 1.125rem;
+    }
   }
 
   &-subheading {
