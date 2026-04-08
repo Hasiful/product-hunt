@@ -9415,7 +9415,7 @@ input.ql-image {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
 }
 
 .review-info {
@@ -10189,7 +10189,7 @@ input.ql-image {
 }
 
 .thread-card__preview {
-    font-size: 1rem;
+    font-size: 0.925rem;
     color: hsl(var(--white)/0.85);
     line-height: 1.65;
     margin-bottom: 0;
