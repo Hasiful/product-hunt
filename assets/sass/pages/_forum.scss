@@ -305,7 +305,8 @@
   }
 }
 
-.forum-body-collapse {
+.forum-body-collapse,
+.dash-body-collapse {
   font-size: 0.9125rem;
   color: hsl(var(--white));
   align-items: center;
@@ -323,7 +324,8 @@
   }
 }
 
-.forum-sidebar-close {
+.forum-sidebar-close,
+.dash-sidebar-close {
   color: hsl(var(--white));
   font-size: 1.125rem;
   width: 40px;

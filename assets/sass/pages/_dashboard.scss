@@ -38,22 +38,9 @@
 }
 
 .dash-sidebar-close {
-  display: none;
-  background: none;
-  border: none;
-  color: hsl(var(--body-color));
-  font-size: 22px;
-  cursor: pointer;
-  padding: 4px;
-  margin-bottom: 8px;
-
-  &:hover {
-    color: hsl(var(--heading-color));
-  }
-
-  @include md-screen {
-    display: block;
-  }
+  position: absolute;
+  right: 0;
+  top: 4px;
 }
 
 .dash-sidebar__inner {

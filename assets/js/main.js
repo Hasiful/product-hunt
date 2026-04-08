@@ -62,13 +62,13 @@
     // Sidebar Dropdown Menu End
 
     // Sidebar Icon & Overlay js
-    $(".navigation-bar").on("click", function () {
-      $(".sidebar-menu").addClass("show-sidebar");
+    $(".dash-body-collapse").on("click", function () {
+      $(".dash-sidebar").addClass("show");
       $(".sidebar-overlay").addClass("show");
     });
 
-    $(".sidebar-menu__close, .sidebar-overlay").on("click", function () {
-      $(".sidebar-menu").removeClass("show-sidebar");
+    $(".dash-sidebar-close, .sidebar-overlay").on("click", function () {
+      $(".dash-sidebar").removeClass("show");
       $(".sidebar-overlay").removeClass("show");
     });
 
