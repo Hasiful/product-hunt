@@ -7241,7 +7241,6 @@ input.ql-image {
 
 .contact-info-panel__desc {
     color: hsl(var(--white)/0.6);
-    font-size: 0.9375rem;
     line-height: 1.65;
     margin-bottom: 48px;
     max-width: 340px;
@@ -7320,7 +7319,7 @@ input.ql-image {
 }
 
 .contact-info-item__value {
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 400;
     color: hsl(var(--white)/0.85);
     line-height: 1.5;
@@ -7377,7 +7376,6 @@ input.ql-image {
 }
 
 .contact-form-panel__subtitle {
-    font-size: 0.875rem;
     color: hsl(var(--white)/0.75);
     margin-bottom: 36px;
     line-height: 1.5;
@@ -7418,14 +7416,14 @@ input.ql-image {
 }
 
 .contact-form__label {
-    font-size: 0.8125rem;
+    font-size: 0.9375rem;
     font-weight: 500;
     color: hsl(var(--white)/0.75);
     line-height: 1;
 }
 
 .contact-form__optional {
-    font-size: 0.75rem;
+    font-size: 0.9375rem;
     font-weight: 400;
     color: hsl(var(--body-color));
 }
@@ -7436,7 +7434,7 @@ input.ql-image {
     border: 1px solid hsl(var(--border-color));
     border-radius: 12px;
     padding: 12px 16px;
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: hsl(var(--white));
     outline: none;
     line-height: 1.5;
