@@ -92,13 +92,13 @@
   }
 
   &__link {
-    height: 46px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     font-weight: 500;
-    font-size: rem(14px);
+    font-size: rem(16px);
     color: hsl(var(--heading-color));
     font-family: var(--body-font);
     border-radius: 10px;
@@ -110,8 +110,8 @@
       color 0.2s ease;
 
     img {
-      width: 18px;
-      height: 18px;
+      width: 22px;
+      height: 22px;
       object-fit: contain;
     }
 
@@ -159,10 +159,6 @@
   }
 
   .form--label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: rem(13px);
-    font-weight: 500;
     color: hsl(var(--white) / 0.75);
   }
 
@@ -216,7 +212,7 @@
     transform: translateY(-50%);
     cursor: pointer;
     color: hsl(var(--body-color));
-    font-size: rem(14px);
+    font-size: rem(16px);
   }
 }
 
@@ -233,13 +229,13 @@
   gap: 8px;
   padding: 13px 24px;
   border-radius: 10px;
-  font-size: rem(15px);
+  font-size: rem(16px);
   font-weight: 600;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 
   i {
-    font-size: rem(13px);
+    font-size: rem(16px);
     transition: transform 0.2s ease;
   }
 
@@ -251,7 +247,7 @@
 // ---- Supporting links ----
 .forgot-password {
   color: hsl(var(--base));
-  font-size: rem(13px);
+  font-size: rem(16px);
   transition: opacity 0.2s ease;
 
   &:hover {
@@ -261,7 +257,7 @@
 }
 
 .account-external {
-  font-size: rem(14px);
+  font-size: rem(16px);
   text-align: center;
   color: hsl(var(--body-color));
   margin-top: 20px;
@@ -326,15 +322,6 @@
     }
   }
 
-  &__badge-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: hsl(var(--base));
-    box-shadow: 0 0 8px hsl(var(--base) / 0.8);
-    flex-shrink: 0;
-  }
-
   &__body {
     flex: 1;
   }
@@ -358,7 +345,6 @@
     max-width: 340px;
   }
 
-  // Stats row (login page)
   &__stats {
     display: flex;
     gap: 0;
@@ -387,42 +373,9 @@
   }
 
   &__stat-label {
-    font-size: rem(12px);
+    font-size: rem(15px);
     color: hsl(var(--white) / 0.5);
-    text-transform: uppercase;
     letter-spacing: 0.06em;
-  }
-
-  // Features list (register page)
-  &__features {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    padding-top: 28px;
-    border-top: 1px solid hsl(var(--white) / 0.12);
-  }
-
-  &__feature {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: hsl(var(--white) / 0.75);
-    font-size: rem(14px);
-    font-weight: 400;
-  }
-
-  &__feature-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    background: hsl(var(--base) / 0.15);
-    border: 1px solid hsl(var(--base) / 0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: hsl(var(--base));
-    font-size: rem(13px);
-    flex-shrink: 0;
   }
 }
 

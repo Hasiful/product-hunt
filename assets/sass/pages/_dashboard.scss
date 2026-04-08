@@ -88,7 +88,7 @@
   }
 
   &__tag {
-    font-size: rem(13px);
+    font-size: rem(14px);
     color: hsl(var(--body-color));
   }
 }
@@ -118,10 +118,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 10px;
+  padding: 10px 12px;
   border-radius: 8px;
   color: hsl(var(--body-color));
-  font-size: rem(14px);
+  font-size: rem(15px);
   font-weight: 500;
   transition:
     background 0.15s ease,
@@ -149,7 +149,7 @@
   width: 22px;
   height: 22px;
   flex-shrink: 0;
-  font-size: rem(17px);
+  font-size: rem(18px);
   color: hsl(var(--body-color));
   transition: color 0.15s ease;
 }
@@ -185,7 +185,7 @@
   }
 
   &__desc {
-    font-size: rem(13px);
+    font-size: rem(15px);
     color: hsl(var(--body-color));
     margin: 0;
   }
@@ -288,7 +288,7 @@
   }
 
   &__link {
-    font-size: rem(11px);
+    font-size: rem(14px);
     color: hsl(var(--body-color));
     text-decoration: none;
     font-weight: 500;
@@ -371,7 +371,7 @@
   }
 
   &__text {
-    font-size: rem(14px);
+    font-size: rem(15px);
     color: hsl(var(--body-color));
     margin: 0;
     line-height: 1.5;
@@ -383,7 +383,7 @@
   }
 
   &__time {
-    font-size: rem(12px);
+    font-size: rem(14px);
     color: hsl(var(--body-color) / 0.5);
     margin-top: 2px;
     display: block;
@@ -429,7 +429,7 @@
   }
 
   &__name {
-    font-size: rem(14px);
+    font-size: rem(16px);
     font-weight: 600;
     color: hsl(var(--heading-color));
     margin: 0 0 2px;
@@ -439,7 +439,7 @@
   }
 
   &__desc {
-    font-size: rem(13px);
+    font-size: rem(15px);
     color: hsl(var(--body-color));
     margin: 0;
     white-space: nowrap;
@@ -468,7 +468,7 @@
     border: 1px solid hsl(var(--border-color) / 0.4);
     background: transparent;
     color: hsl(var(--body-color));
-    font-size: rem(12px);
+    font-size: rem(13px);
     font-weight: 700;
     cursor: pointer;
     transition: all 0.15s;
@@ -494,7 +494,7 @@
   // ==================== Hints ====================
   &__hint {
     display: block;
-    font-size: rem(11px);
+    font-size: rem(14px);
     color: hsl(var(--body-color) / 0.5);
     margin-top: 6px;
     padding-left: 2px;
@@ -556,14 +556,14 @@
   }
 
   &__upload-text {
-    font-size: rem(15px);
+    font-size: rem(16px);
     font-weight: 500;
     color: hsl(var(--heading-color));
   }
 
   &__upload-hint {
-    font-size: rem(11px);
-    color: hsl(var(--body-color) / 0.45);
+    font-size: rem(14px);
+    color: hsl(var(--body-color) / 0.75);
     line-height: 1.5;
   }
 

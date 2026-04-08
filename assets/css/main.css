@@ -1744,9 +1744,8 @@ button:focus {
 .form--label {
     margin-bottom: 8px;
     color: hsl(var(--heading-color));
-    font-weight: 500;
     line-height: 140%;
-    font-size: 0.875rem;
+    font-size: 0.9125rem;
 }
 
 .form-group {
@@ -1775,9 +1774,9 @@ button:focus {
     font-weight: 400;
     outline: none;
     width: 100%;
-    padding: 14px 20px;
+    padding: 13px 20px;
     background: hsl(var(--white)/0.04);
-    font-size: 0.875rem;
+    font-size: 1rem;
     border: 1px solid hsl(var(--border-color));
     color: hsl(var(--white)) !important;
     line-height: 1.4;
@@ -5185,7 +5184,7 @@ input[type=number] {
 
 .latest-blog__desc {
     color: hsl(var(--body-color));
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     margin-bottom: 12px;
     font-weight: 500;
 }
@@ -5193,7 +5192,6 @@ input[type=number] {
 .latest-blog__date {
     color: hsl(var(--base));
     font-size: 0.875rem;
-    font-weight: 600;
 }
 
 /* ========================= Latest Blog Css End ===================*/
@@ -5895,7 +5893,7 @@ input[type=number] {
     -ms-flex-align: center;
     align-items: center;
     gap: 6px;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-weight: 400;
     color: hsl(var(--white)/0.75);
     line-height: 1;
@@ -5935,7 +5933,7 @@ input[type=number] {
     -ms-flex-align: center;
     align-items: center;
     gap: 6px;
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: hsl(var(--base));
     text-decoration: none;
@@ -6189,7 +6187,7 @@ input[type=number] {
     --select-bg: var(--section-bg);
     --select-shadow: none;
     --border-radius: 8px;
-    --font-size: 0.875rem;
+    --font-size: 1rem;
     --font-weight: 400;
     --select-width: 100%;
     --select-color: hsl(var(--heading-color));
@@ -7658,7 +7656,7 @@ input.ql-image {
 }
 
 .social-auth__link {
-    height: 46px;
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7670,7 +7668,7 @@ input.ql-image {
     justify-content: center;
     gap: 10px;
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: hsl(var(--heading-color));
     font-family: var(--body-font);
     border-radius: 10px;
@@ -7681,8 +7679,8 @@ input.ql-image {
 }
 
 .social-auth__link img {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     -o-object-fit: contain;
     object-fit: contain;
 }
@@ -7739,10 +7737,6 @@ input.ql-image {
 }
 
 .form-field .form--label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 0.8125rem;
-    font-weight: 500;
     color: hsl(var(--white)/0.75);
 }
 
@@ -7803,7 +7797,7 @@ input.ql-image {
     transform: translateY(-50%);
     cursor: pointer;
     color: hsl(var(--body-color));
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .account-form {
@@ -7823,14 +7817,14 @@ input.ql-image {
     gap: 8px;
     padding: 13px 24px;
     border-radius: 10px;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
 }
 
 .account-submit-btn i {
-    font-size: 0.8125rem;
+    font-size: 1rem;
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
@@ -7844,7 +7838,7 @@ input.ql-image {
 
 .forgot-password {
     color: hsl(var(--base));
-    font-size: 0.8125rem;
+    font-size: 1rem;
     -webkit-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
 }
@@ -7855,7 +7849,7 @@ input.ql-image {
 }
 
 .account-external {
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: center;
     color: hsl(var(--body-color));
     margin-top: 20px;
@@ -7928,17 +7922,6 @@ input.ql-image {
     }
 }
 
-.account-panel__badge-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: hsl(var(--base));
-    -webkit-box-shadow: 0 0 8px hsl(var(--base)/0.8);
-    box-shadow: 0 0 8px hsl(var(--base)/0.8);
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-}
-
 .account-panel__body {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -8003,57 +7986,9 @@ input.ql-image {
 }
 
 .account-panel__stat-label {
-    font-size: 0.75rem;
+    font-size: 0.9375rem;
     color: hsl(var(--white)/0.5);
-    text-transform: uppercase;
     letter-spacing: 0.06em;
-}
-
-.account-panel__features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 14px;
-    padding-top: 28px;
-    border-top: 1px solid hsl(var(--white)/0.12);
-}
-
-.account-panel__feature {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 12px;
-    color: hsl(var(--white)/0.75);
-    font-size: 0.875rem;
-    font-weight: 400;
-}
-
-.account-panel__feature-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    background: hsl(var(--base)/0.15);
-    border: 1px solid hsl(var(--base)/0.25);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    color: hsl(var(--base));
-    font-size: 0.8125rem;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
 }
 
 /* ============================================ Account Css End ====================================*/
@@ -8166,7 +8101,7 @@ input.ql-image {
 }
 
 .dash-profile__tag {
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     color: hsl(var(--body-color));
 }
 
@@ -8208,10 +8143,10 @@ input.ql-image {
     -ms-flex-align: center;
     align-items: center;
     gap: 10px;
-    padding: 8px 10px;
+    padding: 10px 12px;
     border-radius: 8px;
     color: hsl(var(--body-color));
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 500;
     -webkit-transition: background 0.15s ease, color 0.15s ease;
     transition: background 0.15s ease, color 0.15s ease;
@@ -8245,7 +8180,7 @@ input.ql-image {
     height: 22px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     color: hsl(var(--body-color));
     -webkit-transition: color 0.15s ease;
     transition: color 0.15s ease;
@@ -8290,7 +8225,7 @@ input.ql-image {
 }
 
 .dash-welcome__desc {
-    font-size: 0.8125rem;
+    font-size: 0.9375rem;
     color: hsl(var(--body-color));
     margin: 0;
 }
@@ -8410,7 +8345,7 @@ input.ql-image {
 }
 
 .dash-card__link {
-    font-size: 0.6875rem;
+    font-size: 0.875rem;
     color: hsl(var(--body-color));
     text-decoration: none;
     font-weight: 500;
@@ -8519,7 +8454,7 @@ input.ql-image {
 }
 
 .dash-activity__text {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     color: hsl(var(--body-color));
     margin: 0;
     line-height: 1.5;
@@ -8531,7 +8466,7 @@ input.ql-image {
 }
 
 .dash-activity__time {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: hsl(var(--body-color)/0.5);
     margin-top: 2px;
     display: block;
@@ -8590,7 +8525,7 @@ input.ql-image {
 }
 
 .dash-product__name {
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 600;
     color: hsl(var(--heading-color));
     margin: 0 0 2px;
@@ -8600,7 +8535,7 @@ input.ql-image {
 }
 
 .dash-product__desc {
-    font-size: 0.8125rem;
+    font-size: 0.9375rem;
     color: hsl(var(--body-color));
     margin: 0;
     white-space: nowrap;
@@ -8646,7 +8581,7 @@ input.ql-image {
     border: 1px solid hsl(var(--border-color)/0.4);
     background: transparent;
     color: hsl(var(--body-color));
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 700;
     cursor: pointer;
     -webkit-transition: all 0.15s;
@@ -8667,7 +8602,7 @@ input.ql-image {
 
 .add-product__hint {
     display: block;
-    font-size: 0.6875rem;
+    font-size: 0.875rem;
     color: hsl(var(--body-color)/0.5);
     margin-top: 6px;
     padding-left: 2px;
@@ -8743,14 +8678,14 @@ input.ql-image {
 }
 
 .add-product__upload-text {
-    font-size: 0.9375rem;
+    font-size: 1rem;
     font-weight: 500;
     color: hsl(var(--heading-color));
 }
 
 .add-product__upload-hint {
-    font-size: 0.6875rem;
-    color: hsl(var(--body-color)/0.45);
+    font-size: 0.875rem;
+    color: hsl(var(--body-color)/0.75);
     line-height: 1.5;
 }
 
@@ -8962,7 +8897,7 @@ input.ql-image {
 }
 
 .details-hero-followers {
-    font-size: 0.875rem;
+    font-size: 0.9125rem;
     font-weight: 600;
     color: hsl(var(--base));
 }
@@ -8980,7 +8915,7 @@ input.ql-image {
     border-radius: 50px;
     border: 1px solid hsl(var(--border-color));
     color: hsl(var(--white));
-    font-size: 0.9rem;
+    font-size: 0.9125rem;
     font-weight: 500;
     -webkit-transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
     transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
@@ -9110,7 +9045,7 @@ input.ql-image {
 
 .details-body-desc {
     color: hsl(var(--white)/0.8);
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin-bottom: 24px;
 }
 
@@ -9122,7 +9057,7 @@ input.ql-image {
 .details-body-list-item {
     list-style: circle;
     color: hsl(var(--white)/0.8);
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .details-body-list-item:not(:last-child) {
@@ -9149,7 +9084,7 @@ input.ql-image {
     gap: 12px;
     padding: 8px 0;
     color: hsl(var(--white)/0.8);
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     -webkit-transition: background-color 0.2s ease, color 0.2s ease;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -9180,7 +9115,7 @@ input.ql-image {
 }
 
 .details-sidebar-group-title {
-    font-size: 0.825rem;
+    font-size: 1rem;
     font-weight: 700;
     color: hsl(var(--white));
     text-transform: uppercase;
@@ -9197,7 +9132,7 @@ input.ql-image {
     align-items: center;
     gap: 6px;
     color: hsl(var(--base));
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease;
@@ -9288,14 +9223,14 @@ input.ql-image {
 }
 
 .comment-author {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     color: hsl(var(--white));
     line-height: 1;
 }
 
 .comment-org {
-    font-size: 0.8rem;
+    font-size: 0.9125rem;
     color: hsl(var(--white)/0.5);
     line-height: 1;
 }
@@ -9308,7 +9243,7 @@ input.ql-image {
     display: inline-block;
     padding: 2px 8px;
     border-radius: 50px;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 700;
     line-height: 1.4;
     white-space: nowrap;
@@ -9321,7 +9256,7 @@ input.ql-image {
 }
 
 .comment-text {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: hsl(var(--white)/0.8);
     line-height: 1.55;
     margin-bottom: 8px;
@@ -9355,7 +9290,7 @@ input.ql-image {
     border: 1px solid hsl(var(--border-color));
     background: transparent;
     color: hsl(var(--white)/0.6);
-    font-size: 0.8rem;
+    font-size: 0.9125rem;
     font-weight: 600;
     cursor: pointer;
     -webkit-transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
@@ -9394,7 +9329,7 @@ input.ql-image {
     background: transparent;
     border: none;
     color: hsl(var(--white)/0.5);
-    font-size: 0.8rem;
+    font-size: 0.9125rem;
     font-weight: 500;
     cursor: pointer;
     padding: 0;
@@ -9403,7 +9338,7 @@ input.ql-image {
 }
 
 .comment-reply-btn i {
-    font-size: 0.85rem;
+    font-size: 0.9125rem;
 }
 
 .comment-reply-btn:hover {
@@ -9419,11 +9354,11 @@ input.ql-image {
     align-items: center;
     gap: 4px;
     color: hsl(var(--white)/0.4);
-    font-size: 0.8rem;
+    font-size: 0.9125rem;
 }
 
 .comment-time i {
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 
 .comment-replies-wrapper {
@@ -9545,7 +9480,7 @@ input.ql-image {
 }
 
 .review-info-average .desc {
-    font-size: 0.875rem;
+    font-size: 0.9125rem;
     color: hsl(var(--white));
 }
 
@@ -9560,7 +9495,7 @@ input.ql-image {
 }
 
 .review-info-count .text {
-    font-size: 0.875rem;
+    font-size: 0.9125rem;
     color: hsl(var(--white));
     margin-bottom: 12px;
 }
@@ -9583,7 +9518,7 @@ input.ql-image {
 .review-info-count-item .value {
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    font-size: 0.875rem;
+    font-size: 0.9125rem;
     color: hsl(var(--white)/0.75);
 }
 
@@ -9704,7 +9639,7 @@ input.ql-image {
 }
 
 .review-item-top .time {
-    font-size: 0.8125rem;
+    font-size: 0.9125rem;
     font-weight: 400;
     color: hsl(var(--white)/0.7);
     line-height: 1;
@@ -9832,7 +9767,7 @@ input.ql-image {
     padding: 8px 10px;
     border-radius: 9px;
     color: hsl(var(--white));
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 500;
     text-decoration: none;
     -webkit-transition: background 0.15s ease, color 0.15s ease;
@@ -10069,15 +10004,15 @@ input.ql-image {
     gap: 16px;
     -webkit-transition: background 0.15s ease;
     transition: background 0.15s ease;
-    border-radius: 0;
+    border-radius: 12px;
+    padding: 16px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(hsl(var(--white)/0.1)), to(transparent));
+    background: linear-gradient(to right, transparent, hsl(var(--white)/0.1), transparent);
+    border: 1px solid hsl(var(--white)/0.1);
 }
 
 .thread-card:not(:last-child) {
-    margin-bottom: 32px;
-}
-
-.thread-card:last-child {
-    border-bottom: none;
+    margin-bottom: 24px;
 }
 
 .thread-card:hover .thread-card__title a {
@@ -10166,12 +10101,12 @@ input.ql-image {
     align-items: center;
     gap: 6px;
     color: hsl(var(--white)/0.85);
-    font-size: 0.8125rem;
+    font-size: 0.9375rem;
     font-weight: 500;
 }
 
 .thread-author__avatar {
-    --size: 24px;
+    --size: 32px;
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
@@ -10204,9 +10139,9 @@ input.ql-image {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 2px 8px;
+    padding: 4px 8px;
     border-radius: 6px;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     font-weight: 600;
     line-height: 1.6;
 }
@@ -10218,7 +10153,7 @@ input.ql-image {
 }
 
 .thread-time {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: hsl(var(--white)/0.85);
 }
 
@@ -10230,7 +10165,7 @@ input.ql-image {
     -ms-flex-align: center;
     align-items: center;
     gap: 5px;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: hsl(var(--white)/0.85);
     margin-left: 2px;
 }
@@ -10247,17 +10182,23 @@ input.ql-image {
 }
 
 .thread-card__title {
-    font-size: 0.9125rem;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.4;
     margin-bottom: 8px;
 }
 
 .thread-card__preview {
-    font-size: 0.8125rem;
+    font-size: 1rem;
     color: hsl(var(--white)/0.85);
     line-height: 1.65;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .thread-card__preview {
+        font-size: 0.9125rem;
+    }
 }
 
 .thread-comment__avatar {

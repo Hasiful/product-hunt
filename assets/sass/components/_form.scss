@@ -3,9 +3,8 @@
 .form--label {
   margin-bottom: 8px;
   color: hsl(var(--heading-color));
-  font-weight: 500;
   line-height: 140%;
-  font-size: 0.875rem;
+  font-size: 0.9125rem;
 }
 
 .form-group {
@@ -36,9 +35,9 @@
   font-weight: 400;
   outline: none;
   width: 100%;
-  padding: 14px 20px;
+  padding: 13px 20px;
   background: hsl(var(--white) / 0.04);
-  font-size: 0.875rem;
+  font-size: 1rem;
   border: 1px solid hsl(var(--border-color));
   color: hsl(var(--white)) !important;
   line-height: 1.4;

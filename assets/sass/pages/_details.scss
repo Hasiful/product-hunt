@@ -89,7 +89,7 @@
   }
 
   &-followers {
-    font-size: 0.875rem;
+    font-size: 0.9125rem;
     font-weight: 600;
     color: hsl(var(--base));
   }
@@ -102,7 +102,7 @@
     border-radius: 50px;
     border: 1px solid hsl(var(--border-color));
     color: hsl(var(--white));
-    font-size: 0.9rem;
+    font-size: 0.9125rem;
     font-weight: 500;
     transition:
       border-color 0.2s ease,
@@ -215,7 +215,7 @@
 
   &-desc {
     color: hsl(var(--white) / 0.8);
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin-bottom: 24px;
   }
 
@@ -226,7 +226,7 @@
     &-item {
       list-style: circle;
       color: hsl(var(--white) / 0.8);
-      font-size: 0.875rem;
+      font-size: 1rem;
 
       &:not(:last-child) {
         margin-bottom: 16px;
@@ -260,7 +260,7 @@
     gap: 12px;
     padding: 8px 0;
     color: hsl(var(--white) / 0.8);
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     transition:
       background-color 0.2s ease,
@@ -290,7 +290,7 @@
   border-top: 1px solid hsl(var(--border-color) / 0.5);
 
   &-title {
-    font-size: 0.825rem;
+    font-size: 1rem;
     font-weight: 700;
     color: hsl(var(--white));
     text-transform: uppercase;
@@ -304,7 +304,7 @@
     align-items: center;
     gap: 6px;
     color: hsl(var(--base));
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: color 0.2s ease;
 
@@ -380,14 +380,14 @@
 }
 
 .comment-author {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   color: hsl(var(--white));
   line-height: 1;
 }
 
 .comment-org {
-  font-size: 0.8rem;
+  font-size: 0.9125rem;
   color: hsl(var(--white) / 0.5);
   line-height: 1;
 
@@ -400,7 +400,7 @@
   display: inline-block;
   padding: 2px 8px;
   border-radius: 50px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.4;
   white-space: nowrap;
@@ -413,7 +413,7 @@
 }
 
 .comment-text {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: hsl(var(--white) / 0.8);
   line-height: 1.55;
   margin-bottom: 8px;
@@ -439,7 +439,7 @@
   border: 1px solid hsl(var(--border-color));
   background: transparent;
   color: hsl(var(--white) / 0.6);
-  font-size: 0.8rem;
+  font-size: 0.9125rem;
   font-weight: 600;
   cursor: pointer;
   transition:
@@ -476,14 +476,14 @@
   background: transparent;
   border: none;
   color: hsl(var(--white) / 0.5);
-  font-size: 0.8rem;
+  font-size: 0.9125rem;
   font-weight: 500;
   cursor: pointer;
   padding: 0;
   transition: color 0.2s ease;
 
   i {
-    font-size: 0.85rem;
+    font-size: 0.9125rem;
   }
 
   &:hover {
@@ -496,10 +496,10 @@
   align-items: center;
   gap: 4px;
   color: hsl(var(--white) / 0.4);
-  font-size: 0.8rem;
+  font-size: 0.9125rem;
 
   i {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 }
 
@@ -589,7 +589,7 @@
     }
 
     .desc {
-      font-size: 0.875rem;
+      font-size: 0.9125rem;
       color: hsl(var(--white));
     }
   }
@@ -602,7 +602,7 @@
     }
 
     .text {
-      font-size: 0.875rem;
+      font-size: 0.9125rem;
       color: hsl(var(--white));
       margin-bottom: 12px;
     }
@@ -619,7 +619,7 @@
       .label,
       .value {
         flex-shrink: 0;
-        font-size: 0.875rem;
+        font-size: 0.9125rem;
         color: hsl(var(--white) / 0.75);
       }
 
@@ -723,7 +723,7 @@
     }
 
     .time {
-      font-size: 0.8125rem;
+      font-size: 0.9125rem;
       font-weight: 400;
       color: hsl(var(--white) / 0.7);
       line-height: 1;

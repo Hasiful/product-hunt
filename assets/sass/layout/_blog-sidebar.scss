@@ -71,7 +71,7 @@
 
   &__desc {
     color: hsl(var(--body-color));
-    font-size: rem(14px);
+    font-size: rem(15px);
     margin-bottom: 12px;
     font-weight: 500;
   }
@@ -79,7 +79,6 @@
   &__date {
     color: hsl(var(--base));
     font-size: rem(14px);
-    font-weight: 600;
   }
 }
 
