@@ -1274,13 +1274,13 @@ button:focus {
 .custom--accordion .accordion-item {
     overflow: hidden;
     border-radius: 12px;
-    border: 0;
-    background-color: #efefef;
+    border: 1px solid hsl(var(--white)/0.1);
+    background-color: hsl(var(--white)/0.05);
     color: hsl(var(--body-color));
 }
 
 .custom--accordion .accordion-item:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .custom--accordion .accordion-header {
@@ -1289,26 +1289,29 @@ button:focus {
 
 .custom--accordion .accordion-body {
     padding: 20px;
-    background-color: #efefef;
+    background-color: transparent;
     padding-top: 0;
 }
 
 @media screen and (max-width: 1199px) {
     .custom--accordion .accordion-body {
         padding: 16px;
-        padding-top: 0;
     }
 }
 
+.custom--accordion .accordion-body:has(.track-data-list) {
+    padding: 0;
+}
+
 .custom--accordion .accordion-button {
-    background-color: #efefef;
+    background-color: transparent;
     color: var(--heading-color);
     font-size: 1.125rem;
-    padding: 20px;
-    padding-right: 36px;
+    padding: 24px;
+    padding-right: 40px;
     font-weight: 700;
-    font-family: var(--heading-font);
-    border-bottom: 1px solid transparent;
+    font-family: var(--body-font);
+    border-radius: 12px;
 }
 
 @media screen and (max-width: 1399px) {
@@ -1351,19 +1354,19 @@ button:focus {
 }
 
 .custom--accordion .accordion-button[aria-expanded=true]::after, .custom--accordion .accordion-button[aria-expanded=false]::after {
-    font-family: "font Awesome 5 Free";
+    font-family: "font Awesome 6 Free";
     font-weight: 900;
     position: absolute;
     right: 16px;
     height: unset;
     width: unset;
-    content: "+";
+    content: "\f068";
     -webkit-transition: all linear 0.3s;
     transition: all linear 0.3s;
     top: 50% !important;
-    -webkit-transform: translateY(-50%) rotate(135deg);
-    transform: translateY(-50%) rotate(135deg);
-    font-size: 1.125rem;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+    font-size: 1rem;
     color: hsl(var(--heading-color));
 }
 
@@ -1371,6 +1374,7 @@ button:focus {
     -webkit-transform: translateY(-50%) rotate(0deg);
     transform: translateY(-50%) rotate(0deg);
     color: hsl(var(--heading-color)/0.5);
+    content: "+";
 }
 
 /* ================================= Accordion Css End =========================== */
@@ -1687,7 +1691,7 @@ button:focus {
 /* ================================= Card Css Start =========================== */
 .custom--card {
     border-radius: 12px;
-    background-color: hsl(var(--white));
+    background-color: hsl(var(--section-bg));
     --inner-p: 24px;
     overflow: hidden;
     border: 0;
@@ -1702,7 +1706,7 @@ button:focus {
 }
 
 .custom--card .card-header {
-    background-color: hsl(var(--white));
+    background-color: hsl(var(--section-bg));
     padding: 0;
     border-bottom: 1px solid hsl(var(--border-color));
     padding: calc(var(--inner-p) / 2) var(--inner-p);
@@ -1710,10 +1714,11 @@ button:focus {
 
 .custom--card .card-title {
     margin-bottom: 0;
+    color: hsl(var(--white));
 }
 
 .custom--card .card-body {
-    background-color: hsl(var(--white));
+    background-color: hsl(var(--section-bg));
     padding: var(--inner-p);
 }
 
@@ -2535,17 +2540,12 @@ input[type=number] {
 
 /* ================================= Pagination Css End =========================== */
 /* ================================= Table Css Start =========================== */
-.card-body .table {
-    border-radius: 0;
-    border: 0;
-}
-
 .table {
     margin: 0;
     border-collapse: collapse;
     border-collapse: separate;
     border-spacing: 0px 0px;
-    border-radius: 16px;
+    border-radius: 8px;
     overflow: hidden;
     border: 1px solid hsl(var(--border-color));
 }
@@ -2553,14 +2553,14 @@ input[type=number] {
 .table thead tr th {
     background-color: hsl(var(--section-bg));
     text-align: left;
-    padding: 12px 24px;
+    padding: 16px 24px;
     color: hsl(var(--body-color));
     font-weight: 700;
     border-bottom: 0;
     max-width: 220px;
     font-size: 0.875rem;
     border: 0;
-    border-bottom: 1px solid hsl(var(--black)/0.05);
+    border-bottom: 1px solid hsl(var(--white)/0.05);
 }
 
 .table thead tr th:not(:first-child) {
@@ -2577,10 +2577,6 @@ input[type=number] {
 
 .table tbody {
     border: 0 !important;
-}
-
-.table tbody tr:nth-child(even) {
-    background-color: hsl(var(--black)/0.02);
 }
 
 .table tbody tr:last-child {
@@ -2602,13 +2598,13 @@ input[type=number] {
 .table tbody tr td {
     text-align: left;
     vertical-align: middle;
-    padding: 16px 24px;
+    padding: 18px 24px;
     border-width: 1px;
     border: 0;
     color: hsl(var(--body-color));
     max-width: 220px;
-    font-size: 0.9375rem;
-    border-bottom: 1px solid hsl(var(--black)/0.05);
+    font-size: 0.875rem;
+    border-bottom: 1px solid hsl(var(--border-color));
     background-color: transparent;
 }
 
@@ -2663,11 +2659,11 @@ input[type=number] {
     }
 
     .table-responsive--md tbody tr:nth-child(even) {
-        background-color: hsl(var(--section-bg)/0.4);
+        background-color: hsl(var(--section-bg)/0.5);
     }
 
     .table-responsive--md tbody tr:last-child td {
-        border-bottom: 1px solid hsl(var(--black)/0.05);
+        border-bottom: 1px solid hsl(var(--border-color));
     }
 
     .table-responsive--md tbody tr td {
@@ -2684,7 +2680,7 @@ input[type=number] {
         text-align: right;
         padding: 16px !important;
         border: none;
-        border-bottom: 1px solid hsl(var(--black)/0.05);
+        border-bottom: 1px solid hsl(var(--border-color));
         max-width: unset;
         background-color: transparent;
     }
@@ -2736,11 +2732,11 @@ input[type=number] {
     }
 
     .table-responsive--lg tbody tr:nth-child(even) {
-        background-color: hsl(var(--section-bg)/0.4);
+        background-color: hsl(var(--section-bg)/0.5);
     }
 
     .table-responsive--lg tbody tr:last-child td {
-        border-bottom: 1px solid hsl(var(--black)/0.05);
+        border-bottom: 1px solid hsl(var(--border-color));
     }
 
     .table-responsive--lg tbody tr td {
@@ -2757,7 +2753,7 @@ input[type=number] {
         text-align: right;
         padding: 16px !important;
         border: none;
-        border-bottom: 1px solid hsl(var(--black)/0.05);
+        border-bottom: 1px solid hsl(var(--border-color));
         max-width: unset;
         background-color: transparent;
     }
@@ -2809,11 +2805,11 @@ input[type=number] {
     }
 
     .table-responsive--xl tbody tr:nth-child(even) {
-        background-color: hsl(var(--section-bg)/0.4);
+        background-color: hsl(var(--section-bg)/0.5);
     }
 
     .table-responsive--xl tbody tr:last-child td {
-        border-bottom: 1px solid hsl(var(--black)/0.05);
+        border-bottom: 1px solid hsl(var(--border-color));
     }
 
     .table-responsive--xl tbody tr td {
@@ -2830,7 +2826,7 @@ input[type=number] {
         text-align: right;
         padding: 16px !important;
         border: none;
-        border-bottom: 1px solid hsl(var(--black)/0.05);
+        border-bottom: 1px solid hsl(var(--border-color));
         max-width: unset;
         background-color: transparent;
     }
@@ -2876,11 +2872,11 @@ input[type=number] {
     }
 
     .table-responsive--xxl tbody tr:nth-child(even) {
-        background-color: hsl(var(--section-bg)/0.4);
+        background-color: hsl(var(--section-bg)/0.5);
     }
 
     .table-responsive--xxl tbody tr:last-child td {
-        border-bottom: 1px solid hsl(var(--black)/0.05);
+        border-bottom: 1px solid hsl(var(--border-color));
     }
 
     .table-responsive--xxl tbody tr td {
@@ -2897,7 +2893,7 @@ input[type=number] {
         text-align: right;
         padding: 16px !important;
         border: none;
-        border-bottom: 1px solid hsl(var(--black)/0.05);
+        border-bottom: 1px solid hsl(var(--border-color));
         max-width: unset;
         background-color: transparent;
     }
@@ -2951,8 +2947,7 @@ input[type=number] {
 }
 
 .empty-message-text {
-    color: hsl(var(--black)/0.3);
-    font-weight: 500;
+    color: hsl(var(--white)/0.6);
 }
 
 .dashboard-search-form {
@@ -2981,7 +2976,7 @@ input[type=number] {
 .dashboard-search-form .form--control {
     padding-left: 40px;
     border-radius: 8px;
-    background: hsl(var(--white));
+    background: hsl(var(--section-bg));
     border: 1px solid hsl(var(--border-color));
 }
 
@@ -8695,33 +8690,14 @@ input.ql-image {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     text-align: center;
+    width: 100%;
+    min-height: 180px;
+    padding: 32px 20px;
 }
 
 .add-product__upload-area:hover {
     border-color: hsl(var(--base)/0.5);
     background: hsl(var(--base)/0.03);
-}
-
-.add-product__upload--thumb .add-product__upload-area {
-    width: 100%;
-    aspect-ratio: 1;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 991px) {
-    .add-product__upload--thumb .add-product__upload-area {
-        aspect-ratio: auto;
-        padding: 32px 16px;
-    }
-}
-
-.add-product__upload--gallery .add-product__upload-area {
-    width: 100%;
-    min-height: 180px;
-    padding: 32px 20px;
 }
 
 .add-product__upload-placeholder {
@@ -8745,13 +8721,9 @@ input.ql-image {
     transition: color 0.2s;
 }
 
-.add-product__upload-area:hover .add-product__upload-placeholder i {
-    color: hsl(var(--base)/0.6);
-}
-
 .add-product__upload-text {
-    font-size: 0.8125rem;
-    font-weight: 600;
+    font-size: 0.9375rem;
+    font-weight: 500;
     color: hsl(var(--heading-color));
 }
 

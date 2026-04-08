@@ -545,31 +545,13 @@
     cursor: pointer;
     transition: all 0.2s;
     text-align: center;
+    width: 100%;
+    min-height: 180px;
+    padding: 32px 20px;
 
     &:hover {
       border-color: hsl(var(--base) / 0.5);
       background: hsl(var(--base) / 0.03);
-    }
-  }
-
-  &__upload--thumb {
-    .add-product__upload-area {
-      width: 100%;
-      aspect-ratio: 1;
-      flex-direction: column;
-
-      @include md-screen {
-        aspect-ratio: auto;
-        padding: 32px 16px;
-      }
-    }
-  }
-
-  &__upload--gallery {
-    .add-product__upload-area {
-      width: 100%;
-      min-height: 180px;
-      padding: 32px 20px;
     }
   }
 
@@ -586,13 +568,9 @@
     }
   }
 
-  &__upload-area:hover &__upload-placeholder i {
-    color: hsl(var(--base) / 0.6);
-  }
-
   &__upload-text {
-    font-size: rem(13px);
-    font-weight: 600;
+    font-size: rem(15px);
+    font-weight: 500;
     color: hsl(var(--heading-color));
   }
 

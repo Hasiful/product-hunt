@@ -1,18 +1,10 @@
 /* ================================= Table Css Start =========================== */
-
-.card-body {
-  .table {
-    border-radius: 0;
-    border: 0;
-  }
-}
-
 .table {
   margin: 0;
   border-collapse: collapse;
   border-collapse: separate;
   border-spacing: 0px 0px;
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
   border: 1px solid hsl(var(--border-color));
 
@@ -21,14 +13,14 @@
       th {
         background-color: hsl(var(--section-bg));
         text-align: left;
-        padding: 12px 24px;
+        padding: 16px 24px;
         color: hsl(var(--body-color));
         font-weight: 700;
         border-bottom: 0;
         max-width: 220px;
         font-size: rem(14px);
         border: 0;
-        border-bottom: 1px solid hsl(var(--black) / .05);
+        border-bottom: 1px solid hsl(var(--white) / 0.05);
 
         &:not(:first-child) {
           border-left: 0;
@@ -49,10 +41,6 @@
     border: 0 !important;
 
     tr {
-      &:nth-child(even) {
-        background-color: hsl(var(--black) / .02);
-      }
-
       &:last-child {
         border-bottom: 0;
       }
@@ -74,13 +62,13 @@
       td {
         text-align: left;
         vertical-align: middle;
-        padding: 16px 24px;
+        padding: 18px 24px;
         border-width: 1px;
         border: 0;
         color: hsl(var(--body-color));
         max-width: 220px;
-        @include fs-15;
-        border-bottom: 1px solid hsl(var(--black) / .05);
+        @include fs-14;
+        border-bottom: 1px solid hsl(var(--border-color));
         background-color: transparent;
 
         &::before {
@@ -106,7 +94,6 @@
 }
 
 @mixin responsive-table($breakpoint) {
-
   @if $breakpoint==991px {
     @include xl-screen {
       tr {
@@ -164,11 +151,11 @@
         display: block;
 
         &:nth-child(even) {
-          background-color: hsl(var(--section-bg) / .4);
+          background-color: hsl(var(--section-bg) / 0.5);
         }
 
         &:last-child td {
-          border-bottom: 1px solid hsl(var(--black) / .05);
+          border-bottom: 1px solid hsl(var(--border-color));
         }
 
         td {
@@ -179,7 +166,7 @@
           text-align: right;
           padding: 16px !important;
           border: none;
-          border-bottom: 1px solid hsl(var(--black) / .05);
+          border-bottom: 1px solid hsl(var(--border-color));
           max-width: unset;
           background-color: transparent;
 
@@ -255,10 +242,8 @@
 }
 
 .empty-message-text {
-  color: hsl(var(--black)/0.3);
-  font-weight: 500;
+  color: hsl(var(--white) / 0.6);
 }
-
 
 .dashboard-search-form {
   position: relative;
@@ -282,7 +267,7 @@
   .form--control {
     padding-left: 40px;
     border-radius: 8px;
-    background: hsl(var(--white));
+    background: hsl(var(--section-bg));
     border: 1px solid hsl(var(--border-color));
 
     &:focus {
