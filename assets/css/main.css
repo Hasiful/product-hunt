@@ -9163,14 +9163,15 @@ input.ql-image {
 }
 
 .comment-thread {
-    padding-bottom: 24px;
-    border-bottom: 1px solid hsl(var(--border-color)/0.5);
-    margin-bottom: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid hsl(var(--border-color)/0.75);
+    margin-bottom: 32px;
 }
 
 .comment-thread:last-child {
     border-bottom: none;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .comment-item {
@@ -9180,19 +9181,19 @@ input.ql-image {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    gap: 12px;
+    gap: 14px;
     position: relative;
 }
 
 .comment-avatar {
-    --size: 34px;
+    --size: 38px;
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
     overflow: hidden;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    border: 1px solid hsl(var(--border-color));
+    border: 1px solid hsl(var(--border-color)/0.5);
 }
 
 .comment-avatar img {
@@ -9216,22 +9217,22 @@ input.ql-image {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .comment-author {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: 600;
     color: hsl(var(--white));
     line-height: 1;
 }
 
 .comment-org {
-    font-size: 0.9125rem;
-    color: hsl(var(--white)/0.5);
+    font-size: 0.8125rem;
+    color: hsl(var(--white)/0.4);
     line-height: 1;
 }
 
@@ -9239,27 +9240,11 @@ input.ql-image {
     content: "@";
 }
 
-.comment-badge {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 1.4;
-    white-space: nowrap;
-}
-
-.comment-badge--maker {
-    background-color: #248f5d;
-    color: hsl(var(--white));
-    border: 1px solid #2eb877;
-}
-
 .comment-text {
-    font-size: 1rem;
-    color: hsl(var(--white)/0.8);
-    line-height: 1.55;
-    margin-bottom: 8px;
+    font-size: 0.9375rem;
+    color: hsl(var(--white)/0.75);
+    line-height: 1.7;
+    margin-bottom: 12px;
 }
 
 .comment-mention {
@@ -9268,13 +9253,16 @@ input.ql-image {
 }
 
 .comment-actions {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 14px;
+    gap: 18px;
+    padding: 8px 12px;
+    background: hsl(var(--section-bg));
+    border-radius: 999px;
 }
 
 .comment-upvote {
@@ -9284,13 +9272,13 @@ input.ql-image {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 4px;
-    padding: 3px 10px;
+    gap: 5px;
+    padding: 4px 12px;
     border-radius: 50px;
-    border: 1px solid hsl(var(--border-color));
+    border: 1px solid hsl(var(--border-color)/0.6);
     background: transparent;
-    color: hsl(var(--white)/0.6);
-    font-size: 0.9125rem;
+    color: hsl(var(--white)/0.75);
+    font-size: 0.8125rem;
     font-weight: 600;
     cursor: pointer;
     -webkit-transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
@@ -9298,8 +9286,8 @@ input.ql-image {
 }
 
 .comment-upvote i {
-    font-size: 1rem;
-    color: hsl(var(--white)/0.5);
+    font-size: 0.9125rem;
+    color: hsl(var(--white)/0.75);
     -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease;
 }
@@ -9309,8 +9297,8 @@ input.ql-image {
 }
 
 .comment-upvote:hover, .comment-upvote.active {
-    border-color: hsl(var(--base)/0.6);
-    background-color: hsl(var(--base)/0.08);
+    border-color: hsl(var(--base)/0.5);
+    background-color: hsl(var(--base)/0.06);
     color: hsl(var(--base));
 }
 
@@ -9325,11 +9313,11 @@ input.ql-image {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 4px;
+    gap: 5px;
     background: transparent;
     border: none;
-    color: hsl(var(--white)/0.5);
-    font-size: 0.9125rem;
+    color: hsl(var(--white)/0.75);
+    font-size: 0.8125rem;
     font-weight: 500;
     cursor: pointer;
     padding: 0;
@@ -9338,11 +9326,11 @@ input.ql-image {
 }
 
 .comment-reply-btn i {
-    font-size: 0.9125rem;
+    font-size: 0.875rem;
 }
 
 .comment-reply-btn:hover {
-    color: hsl(var(--white));
+    color: hsl(var(--white)/0.8);
 }
 
 .comment-time {
@@ -9352,13 +9340,13 @@ input.ql-image {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 4px;
-    color: hsl(var(--white)/0.4);
-    font-size: 0.9125rem;
+    gap: 5px;
+    color: hsl(var(--white)/0.75);
+    font-size: 0.8125rem;
 }
 
 .comment-time i {
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 
 .comment-replies-wrapper {
@@ -9369,8 +9357,8 @@ input.ql-image {
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 0;
-    margin-top: 12px;
-    padding-left: 46px;
+    margin-top: 20px;
+    padding-left: 52px;
 }
 
 .comment-replies-wrapper--sub {
@@ -9383,9 +9371,9 @@ input.ql-image {
     flex-shrink: 0;
     background: transparent;
     border: none;
-    padding: 0 8px 0 0;
+    padding: 0 10px 0 0;
     cursor: pointer;
-    color: hsl(var(--white)/0.3);
+    color: hsl(var(--white)/0.2);
     font-size: 1.1rem;
     line-height: 1;
     -webkit-transition: color 0.2s ease;
@@ -9394,11 +9382,11 @@ input.ql-image {
 }
 
 .comment-collapse-btn:hover {
-    color: hsl(var(--white)/0.7);
+    color: hsl(var(--white)/0.6);
 }
 
 .comment-collapse-btn.active {
-    color: hsl(var(--white)/0.4);
+    color: hsl(var(--white)/0.35);
 }
 
 .comment-replies {
@@ -9406,8 +9394,8 @@ input.ql-image {
     -ms-flex: 1;
     flex: 1;
     min-width: 0;
-    border-left: 1px solid hsl(var(--border-color)/0.5);
-    padding-left: 16px;
+    border-left: 1px solid hsl(var(--border-color)/0.75);
+    padding-left: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9415,7 +9403,7 @@ input.ql-image {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 32px;
+    gap: 28px;
 }
 
 .review-info {
